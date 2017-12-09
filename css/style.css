@@ -29,7 +29,7 @@ body {
 	
 	h2 {
 		position:relative;
-	    font-size:134%;
+	        font-size:134%;
 		margin-left:2%;
 		font-family: Didot, sans-serif/*Arial Black, "Helvetica Neue", Helvetica, sans-serif*/;
 		font-weight:900;
@@ -46,7 +46,7 @@ body {
 	
 	div {
 		position:absolute;
-		border-radius:0px 40px 40px 0px;
+		/*border-radius:0px 40px 40px 0px;*/
 		transition:0.5s all;
 		-webkit-transition:all 0.7, border 0.01s;
 		/*border:10px solid black;*/
@@ -163,7 +163,7 @@ body {
 		background:#26FFFF;
 		color:white;
 		margin-bottom:10%;
-		border-radius:0px 50px 50px 20px;
+		border-radius:0px 0px 40px 40px;
 	}	
 	
 	.licni>p:nth-child(2) {
