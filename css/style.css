@@ -1,5 +1,9 @@
-.img {
-	    position:absolute;
+           body {
+		background: #050007/*#000005*/ /*#0059DE*/;
+	}  
+
+          .img {
+	         position:absolute;
 		bottom:7.5%;
 		right:15%;
 		height:75%;
