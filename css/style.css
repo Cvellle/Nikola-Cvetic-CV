@@ -22,16 +22,6 @@
 		
 	}
 	
-	.img:hover {
-	        position:absolute;
-		transition:0.5s;
-		-webkit-transition:0.5s;
-		border-radius:25px;
-		transform:scale(1.02,1.02);
-		-ms-transform:scale(1.02,1.02);
-		-webkit-transform:scale(1.02,1.02);
-	}
-	
 	h2 {
 		position:relative;
 	        font-size:134%;
