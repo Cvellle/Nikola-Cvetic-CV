@@ -1,9 +1,9 @@
-           body {
+        body {
 		background: #050007/*#000005*/ /*#0059DE*/;
 	}  
-
-          .img {
-	         position:absolute;
+ 
+        .img {
+	        position:absolute;
 		bottom:7.5%;
 		right:15%;
 		height:75%;
@@ -16,7 +16,7 @@
 	}
 	
 	.img:hover {
-	    position:absolute;
+	        position:absolute;
 		transition:0.5s;
 		-webkit-transition:0.5s;
 		border-radius:0px;
@@ -27,7 +27,7 @@
 	
 	h2 {
 		position:relative;
-	    font-size:140%;
+	        font-size:140%;
 		margin-left:3%;
 		font-family: Trebuchet MS, sans-serif/*Arial Black, "Helvetica Neue", Helvetica, sans-serif*/;
 		font-weight:900;
@@ -46,10 +46,6 @@
 	.licni>p {
 		/*color:#F7EA8C*/;
 		font-weight:600;
-	}
-	
-	.licni>h2 {
-
 	}
 	
 	div {
@@ -97,6 +93,15 @@
 		border-radius:0px 3.5rem 0px 0px;
 		border-top:0.8rem solid #FFD644 /*#F4E8A1*/;
 	}
+		
+	.iskustvo>pre:nth-child(2) {
+		position:absolute;
+		top:1%;
+		text-align:left;
+		left:23%;
+		line-height:190%;
+	}
+	
 	
 	.obrazovanje {
 		position:absolute;
