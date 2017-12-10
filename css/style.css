@@ -34,14 +34,14 @@
 		font-family: Didot, sans-serif/*Arial Black, "Helvetica Neue", Helvetica, sans-serif*/;
 		font-weight:900;
 		top:0%;
-		color: blue/*#ffbb33*/ /*#ffcc66/* /*#ffdb4d*/;
+		color: #3A2449/*#ffbb33*/ /*#ffcc66/* /*#ffdb4d*/;
 	}
 	
 	p {
 		font-family:Didot, sans-serif;
 		font-size: 1rem;
 		font-weight:700;
-		color:black;
+		color:#281C30;
 	}
 	
 	div {
@@ -51,7 +51,7 @@
 		-webkit-transition:all 0.7, border 0.01s;
 		/*border:10px solid black;*/
 		filter: blur(0px);
-		border-right:0.7rem solid #ffaa00;
+		border-right:0.7rem solid #F4E8A1;
 	}
 	
 	div:hover {
@@ -72,7 +72,7 @@
 		left:7.5%;
 		height:30%;
 		color:white;
-		background:#0762f8;
+		background:#EAD272;
 		border-radius:40px 40px 20px 0px;
 		border-right:none;
 	}
@@ -86,7 +86,7 @@
 		background:#0a74f5;
 		color:white;
 		border-radius:0px 20px 0px 0px;
-		border-top:0.7rem solid #ffaa00;
+		border-top:0.7rem solid/*#ffaa00*/ #F4E8A1;
 	}
 	
 	.obrazovanje {
@@ -350,16 +350,16 @@
 	}
 	
 	.iskustvo>p>a {
-		color:#ffaa00/*#e69900*/;
+		color:#FFE868/*#e69900*/;
 		opacity:1;
 		-webkit-text-stroke: 0px black;
-		text-decoration: underline;
+		text-decoration: none;
 	}
-	
+	/*
 	.iskustvo>p:nth-child(3)>a {
 		color:#ffaa00;
 		opacity:1;
-	}
+	}*/
 	
 	
 	
