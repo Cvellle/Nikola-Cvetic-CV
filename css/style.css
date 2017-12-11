@@ -103,7 +103,7 @@
 		border-top:0.8rem solid #FFD644 /*#F4E8A1*/;
 	}
 		
-	.iskustvo>pre:nth-child(2) {
+	.iskustvo>p:nth-child(2) {
 		position:absolute;
 		top:1%;
 		text-align:left;
