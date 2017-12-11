@@ -75,6 +75,7 @@
 		/*border:5px solid black;*/
 		border:0px solid black\9;
 		z-index:2;
+		filter:brightness(107%);
 	}
 	
 	.licni {
@@ -82,7 +83,7 @@
 		width:92.5%;
 		top:10%;
 		left:7.5%;
-		height:28.4%;
+		height:28.3%;
 		background:#050007/*#FFE972*//*E0912A*/;
 		border-top:0.8rem solid #FFD644;
 		border-left:0.8rem solid #FFD644;
