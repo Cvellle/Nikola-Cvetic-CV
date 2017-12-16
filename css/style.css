@@ -69,8 +69,12 @@
 		-webkit-transition: 0.3s;
 		/*border:5px solid black;*/
 		border:0px solid black\9;
-		z-index:-1;
-		filter:brightness(108%);
+		z-index:2;
+     	        filter:brightness(108%);
+	}
+
+	.licni:hover, .obrazovanje:hover  {
+		z-index:-2;
 	}
 	
 	.licni {
