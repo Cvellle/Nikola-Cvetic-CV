@@ -113,14 +113,14 @@
 	
 	.obrazovanje {
 		position:absolute;
-		top:101%;
+		top:100%;
 		left:7.5%;
 		width:85%;
-		height:19%;
+		height:20%;
 		background:/*#0066E0;*/linear-gradient(aqua, skyblue);
 		background:#080911;
 		color:white;
-	       
+		z-index:-2;	       
 	}
 	
 	.jez {
