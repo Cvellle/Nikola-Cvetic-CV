@@ -22,9 +22,9 @@
 		transition:0.5s;
 		-webkit-transition:0.5s;
 		border-radius:0px;
-		transform:scale(1.02,1.02);
-		-ms-transform:scale(1.02,1.02);
-		-webkit-transform:scale(1.02,1.02);
+		-webkit-transform:translateY(-0.8rem);
+		-moz-transform:translateY(-0.8rem);
+		-ms-transform:translateY(-0.8rem);
 	}
 	
 	h2 {
