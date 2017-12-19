@@ -68,17 +68,13 @@
      	        filter:brightness(108%);
 	}
 
-	.licni:hover, .obrazovanje:hover  {
-		z-index:-2;
-	}
-	
 	.licni {
 		position:absolute;
 		width:92.5%;
 		top:10%;
 		left:7.5%;
 		height:30%;
-		background:#050007/*#FFE972*//*E0912A*/;
+		background:transparent/*#FFE972*//*E0912A*/;
 		border-top:0.8rem solid #FFD644;
 		border-left:0.8rem solid #FFD644;
 		border-radius:3.5rem 0px 0px 0px;
