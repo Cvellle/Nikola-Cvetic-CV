@@ -4,7 +4,7 @@
  
         .img {
 	        position:absolute;
-		bottom:7.5%;
+		bottom:2.14em;
 		right:15%;
 		height:75%;
 		width:12%;
@@ -12,9 +12,6 @@
 		border-radius:30px;
 		transition:0.5s;
 		-webkit-transition:0.5s;
-		-webkit-transform:translateY(-0.8rem);
-		-moz-transform:translateY(-0.8rem);
-		-ms-transform:translateY(-0.8rem);
 	}
 	
 	.img:hover {
@@ -22,9 +19,6 @@
 		transition:0.5s;
 		-webkit-transition:0.5s;
 		border-radius:0px;
-		-webkit-transform:translateY(-0.8rem);
-		-moz-transform:translateY(-0.8rem);
-		-ms-transform:translateY(-0.8rem);
 	}
 	
 	h2 {
