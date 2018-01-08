@@ -7,7 +7,7 @@
 		bottom:2.14em;
 		right:15%;
 		height:75%;
-		width:12%;
+		
 		border-radius:30px;
 		transition:0.5s;
 		-webkit-transition:0.5s;
@@ -86,7 +86,7 @@
 		top:40%;
 		left:7.5%;
 		width:85%;
-		height:58.8%;
+		height:60%;
 		background:/*#0a74f5*/#07070F;
 		color:white;
 		border-radius:0px 3.5rem 0px 0px;
@@ -113,6 +113,11 @@
 		color:white;
 		z-index:-2;	       
 	}
+
+	.obrazovanje:hover {
+		z-index:-2;	       
+	}
+	
 	
 	.jez {
 		position:absolute;
@@ -155,7 +160,7 @@
 		background:#07070F;
 		color:white;
 		margin-bottom:10%;
-		border-radius:0px 0px 0px 40px;
+		border-radius:0px 0px 0px 3.5rem;
 	}	
 	
 	.licni>h2:nth-child(1) {
@@ -374,3 +379,128 @@
 		-webkit-text-stroke: 0px black;
 		text-decoration: none;
 	}
+
+	@media only screen and (max-width: 414px) {
+
+	.img {
+	    position:absolute;
+		top:1rem;
+		right:0.8rem;
+		height:40%;
+		border-radius:10px;
+		transition:0.5s;
+		-webkit-transition:0.5s;
+	}
+
+	 p {
+		line-height:150%;
+		font-size: 0.5rem;
+	 }
+
+	 h2 {
+		position:absolute;
+		top:5.5%;
+		font-size: 0.5rem;
+	}
+	
+	div {
+		border-right:0.3rem solid #FFD644/*#FFF37A*/;
+	}
+	    
+	.licni {
+		border-top:0.3rem solid #FFD644;
+		border-left:0.3rem solid #FFD644;
+		border-radius:1.5rem 0px 0px 0px;
+		border-right:none;
+	}   
+
+	.iskustvo {
+		border-radius:0px 1.5rem 0px 0px;
+		border-top:0.3rem solid #FFD644 /*#F4E8A1*/;
+	}
+
+	.licni, .iskustvo, .obrazovanje, .jez, .kursevi, .racunarske, .ostale {
+		left:2.5%;
+		width:95%;
+}
+
+	.ostale {
+		border-radius:0px 0px 0px 1.5rem;
+}	
+
+}
+
+	@media only screen and (max-width: 320px) {
+
+		h2 {
+			position:absolute;
+			top:5.5%;
+			left:-0.5rem;
+			font-size: 0.5rem;
+		}
+
+	}
+
+	@media only screen and (min-width: 415px) and (max-width: 1024px) {
+
+		.img {
+			position:absolute;
+			top:1.7rem;
+			right:1.7rem;
+			height:40%;
+			border-radius:10px;
+			transition:0.5s;
+			-webkit-transition:0.5s;
+		}
+	
+		 p {
+			line-height:150%;
+			font-size: 1rem;
+		 }
+	
+		 h2 {
+			position:absolute;
+			top:5.5%;
+			font-size: 1.05rem;
+		}
+
+		.iskustvo> h2 {
+			top:3%;
+		}
+
+		.jez> h2 {
+			top:7%;
+		}
+		
+		
+		div {
+			border-right:0.5rem solid #FFD644/*#FFF37A*/;
+		}
+			
+		.licni {
+			border-top:0.5rem solid #FFD644;
+			border-left:0.5rem solid #FFD644;
+			border-radius:2rem 0px 0px 0px;
+			border-right:none;
+		}   
+
+		.licni>p:nth-child(n) {
+			left:27%;
+		}   
+	
+		.iskustvo {
+			border-radius:0px 2rem 0px 0px;
+			border-top:0.5rem solid #FFD644 /*#F4E8A1*/;
+		}
+	
+		.licni, .iskustvo, .obrazovanje, .jez, .kursevi, .racunarske, .ostale {
+			left:2.5%;
+			width:95%;
+	}
+	
+		.ostale {
+			border-radius:0px 0px 0px 2rem;
+	}	
+	
+
+}
