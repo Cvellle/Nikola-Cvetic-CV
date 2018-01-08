@@ -7,6 +7,7 @@
 		bottom:2.14em;
 		right:15%;
 		height:75%;
+		
 		border-radius:30px;
 		transition:0.5s;
 		-webkit-transition:0.5s;
@@ -91,7 +92,16 @@
 		border-radius:0px 3.5rem 0px 0px;
 		border-top:0.8rem solid #FFD644 /*#F4E8A1*/;
 	}
-			
+		
+	.iskustvo>p:nth-child(2) {
+		position:absolute;
+		top:1%;
+		text-align:left;
+		left:27%;
+		line-height:1.97rem;
+	}
+	
+	
 	.obrazovanje {
 		position:absolute;
 		top:100%;
@@ -370,7 +380,6 @@
 		text-decoration: none;
 	}
 
-
 	@media only screen and (max-width: 414px) {
 
 	.img {
@@ -493,14 +502,5 @@
 			border-radius:0px 0px 0px 2rem;
 	}	
 	
-
-}
-
-	@media only screen and (max-width: 768px) {
-
-	 p {
-		line-height:150%;
-		font-size: 1.5rem;
-	 }
 
 }
