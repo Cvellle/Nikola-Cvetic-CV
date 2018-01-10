@@ -399,7 +399,6 @@
 
 	 h2 {
 		position:absolute;
-		top:5.5%;
 		font-size: 0.5rem;
 	}
 	
@@ -417,6 +416,18 @@
 	.iskustvo {
 		border-radius:0px 1.5rem 0px 0px;
 		border-top:0.3rem solid #FFD644 /*#F4E8A1*/;
+	}
+
+	.licni>h2 {
+		top:5%;
+	}   
+
+	.iskustvo>h2 {
+		top:5%;
+	}
+
+	.obrazovanje>h2, .jez>h2, .kursevi>h2, .racunarske>h2, .ostale>h2 {
+		top:6.5%;
 	}
 
 	.licni, .iskustvo, .obrazovanje, .jez, .kursevi, .racunarske, .ostale {
