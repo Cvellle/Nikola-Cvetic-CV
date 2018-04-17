@@ -1,7 +1,7 @@
         body {
 		background: #050007/*#000005*/ /*#0059DE*/;
 		background: rgb(255, 255, 255);
-		background: #ffe46b/*#000005*/ /*#0059DE*/;
+		background: rgb(223, 202, 245)/*#000005*/ /*#0059DE*/;
 	}  
  
         .img {
@@ -56,7 +56,9 @@
 		-webkit-transition:all 0.7, border 0.01s;
 		/*border:10px solid black;*/
 		filter: blur(0px);
-		border-right:0.8rem solid #FFD644/*#FFF37A*/;
+		/* border-left:0.8rem solid #3A2449; */
+		border-right:0.8rem solid rgb(98, 78, 107);
+		/* border-right:0.8rem solid #FFD644; */
 	}
 	
 	div:hover {
@@ -67,7 +69,8 @@
 		-webkit-transition: 0.3s;
 		/*border:5px solid black;*/
 		border:0px solid black\9;
-		z-index:2;
+		z-index:0;
+		background: rgb(223, 202, 245)/*#000005*/ /*#0059DE*/;
      	        /* filter:brightness(108%); */
 	}
 
@@ -78,10 +81,11 @@
 		left:7.5%;
 		height:30%;
 		background:transparent/*#FFE972*//*E0912A*/;
-		border-top:0.8rem solid #FFD644;
-		border-left:0.8rem solid #FFD644;
+		border-top:0.8rem solid rgb(98, 78, 107);;
+		border-left:0.8rem solid rgb(98, 78, 107);;
 		border-radius:3.5rem 0px 0px 0px;
 		border-right:none;
+		z-index:0;
 	}
 	
 	.iskustvo {
@@ -94,7 +98,7 @@
 		background: white;
 		color:white;
 		border-radius:0px 3.5rem 0px 0px;
-		border-top:0.8rem solid #FFD644 /*#F4E8A1*/;
+		border-top:0.8rem solid rgb(98, 78, 107); /*#F4E8A1*/;
 	}
 		
 	.iskustvo>p:nth-child(2) {
@@ -169,6 +173,7 @@
 		background: white;
 		color:white;
 		margin-bottom:10%;
+		/* border-bottom:0.8rem solid #3A2449; */
 		border-radius:0px 0px 0px 3.5rem;
 	}	
 	
@@ -384,7 +389,7 @@
 	
 	.iskustvo>p>a {
 		color:#FFD644/*#FFE868*//*#e69900*/;
-		color:rgb(223, 127, 3)/*#FFE868*//*#e69900*/;
+		color:rgb(148, 56, 156);
 		opacity:1;
 		-webkit-text-stroke: 0px black;
 		text-decoration: none;
