@@ -285,22 +285,27 @@
 		left:27%;
 	}
 	
+	.obrazovanje>h2:nth-child(1) {
+		position:absolute;
+		top:12%;
+	}
+
 	.obrazovanje>p:nth-child(2) {
 		position:absolute;
-		top:5%;
+		top:12%;
 		left:27%;
 	}
 	
 	.obrazovanje>p:nth-child(3) {
 		position:absolute;
-		top:30%;
+		top:37%;
 		left:27%;
 	}
 	
 	.obrazovanje>p:nth-child(4) {
 		position:absolute;
-		top:5%;
-		left:94%;
+		top:62%;
+		left:27%;
 	}
 	
 	.obrazovanje>p:nth-child(5) {
