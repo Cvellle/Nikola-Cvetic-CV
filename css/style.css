@@ -1,7 +1,7 @@
         body {
 		background: #050007/*#000005*/ /*#0059DE*/;
 		background: rgb(255, 255, 255);
-		background: rgb(223, 202, 245)/*#000005*/ /*#0059DE*/;
+		background: rgb(200, 180, 221)/*#000005*/ /*#0059DE*/;
 	}  
  
         .img {
@@ -70,7 +70,7 @@
 		/*border:5px solid black;*/
 		border:0px solid black\9;
 		z-index:0;
-		background: rgb(223, 202, 245)/*#000005*/ /*#0059DE*/;
+		background: rgb(200, 180, 221)/*#000005*/ /*#0059DE*/;
      	        /* filter:brightness(108%); */
 	}
 
