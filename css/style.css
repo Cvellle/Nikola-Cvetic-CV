@@ -6,9 +6,9 @@
  
         .img {
 	        position:absolute;
-		bottom:2.14em;
+		bottom:2.70em;
 		right:10%;
-		height:75%;
+		height:68%;
 		
 		border-radius:30px;
 		transition:0.5s;
@@ -101,14 +101,14 @@
 		border-top:0.8rem solid rgb(98, 78, 107); /*#F4E8A1*/;
 	}
 		
-	.iskustvo>p:nth-child(2) {
+	/* .iskustvo>p:nth-child(2) {
 		position:absolute;
 		top:1%;
 		text-align:left;
 		left:27%;
-		/* line-height:1.97rem; */
+		line-height:1.97rem;
 	}
-	
+	 */
 	
 	.obrazovanje {
 		position:absolute;
