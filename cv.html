@@ -1,155 +1,131 @@
 
-<html>
+<html lang="en">
 
-<head>
-
-    	 <meta http-equiv="X-UA-Compatible" content="IE=9">
-    	 <title>Kulturforum</title>
-         <meta charset="utf-8" />
-   	 <meta name="viewport" content="width=device-width, initial-scale=1" />
-   	 <link rel="stylesheet" href="css/style.css" media="screen" />
-   	 <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-	 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-	 <link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
-   	 <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-   	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   	 <script src="/temp/scripts/Vendor.js"></script>	
-
-</head>
-
-<body>
-
-    <div class="black">                   
-	</div>
-    <div class="header">
-		<p class="title fl col-sm-4" style="color:white;">Kulturforum</p>                                   
-     
-		<div class="abs">
-		<div class="nav fl">             
-            <div class="dropdown">
-              <button id="toggle" class="dropbtn">Projekti</button>
-              <div class="dropdowncont">
-                <div class="slider closed">
-                  <a href="#">Aktuelni</a>
-                  <a href="#">Prošli</a>  
-                  <a href="#">Saradnja</a>  
-                </div>
-              </div>  
-            </div>
-         		 
-            <div class="dropdown">
-             <button id="togglee" class="dropbtn" onclick="toggleSlider(2);">O nama</button>
-              <div class="dropdowncont">
-               <div class="slider closed">
-                <a href="#">Rad</a>
-                <a href="#">Članovi</a>                    
-                <a href="#">Ideja</a> 
-                </div>   
-              </div> 
-           </div> 
-           
-		   
-		    <div class="dropdown">
-              <button id="toggle" class="dropbtn dropbtnn">Kalendar</button>
-              <div class="dropdowncont d3">
-                <div class="slider closed s3">
-                  <a href="#">Izložbe</a>
-                  <a href="#">Radionice</a>
-                </div>
-              </div>  
-            </div>
-		   
-            <div class="dropdown">      
-               <button  class = "dropbtn" onclick="window.scrollBy(0, 2000);">Kontakt</button>
-               <div class="dropdowncont">
-					<div class="slider closed">
-					</div>
-			   </div>           
-            </div> 
-        </div> 
-			
-      </div>
-    </div>
-
-    <div class="centdiv rowm jumbotron">                               
-		<ul id="slides">
-			<li class="slide showing"></li>
-			<li class="slide"></li>
-			<li class="slide"></li>
-			<li class="slide"></li>
-		</ul>
-	    <div class="container">
-            <div class="row text-center">
-				<div class="t1">Ideje</div>
-				<div class="t2">na</div>
-				<div class="t3">izložbi</div>
-			</div>
-		</div>  
-     </div>
-       
-     <div id="canvas" class="overlay">
-       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-         <iframe class="youtube" width="" height="" src="https://www.youtube.com/embed/WiEXFjJOevo" frameborder="0" allowfullscreen></iframe> 
-        </div>
-     </div>
-     
-     <div class="vidplayer">
-       <button class="float-r videobutton" onclick="openNav()" style="background-color:black;"><img style="width:80%; height:100%;" src="images/mov1.jpg"/></button>   
-       <p class="float-r videotext";">Video</p>
-     </div>   
+  <head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+      <title>Nikola Cvtić - CV</title>
+      <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <link rel="stylesheet" href="css/style.css" media="screen" />
+       <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
+       <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="/temp/scripts/Vendor.js"></script>	
+    
+  </head>
+    
   
- 	<div class="footer">
-	 
-        <div class="links"> 
-            <ul style="left:5px;" class="social inl">
-                <li style="margin:5px;" class="link inl"><a href="https://www.facebook.com/kulturforum.odkr" target="_blank"><img src="http://www.negaantiqueauto.com/Images/facebook_logo.png?ver08032015"  height="30px" width="30px"></a></li>
-                <li style="margin:5px;" class="link inl"><a href="https://www.instagram.com/kulturforum/" target="_blank"><img src="http://mexicaliburrito.com/images/MexiCali/instagram.png" height="30px" width="30px"></a></li>
-			</ul>
-	    </div>	   
-	 	 
-        <div class="fl contact">   
-            <iframe class="inl map" src="https://wego.here.com/directions/mix//Kulturforum,-Mihizova-11,-11000-Belgrade,-Serbia:e-eyJuYW1lIjoiS3VsdHVyZm9ydW0iLCJhZGRyZXNzIjoiTWloaXpvdmEgMTEsIDExMDAwIEJlbGdyYWRlLCBTZXJiaWEiLCJsYXRpdHVkZSI6NDQuODIxNDE0MjgwMjUxLCJsb25naXR1ZGUiOjIwLjQ3MDY0MzU5Mzk3OSwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjo0OTc2NjI0ODM3MDYzOTd9?map=44.82141,20.47064,15,normal&fb_locale=en_US" width="100%" 
-                height="100%" scrolling:"yes">
-            </iframe>
-			
-			<div class="pitanje">
-				<p><b>Postavi pitanje:</b></p>
-				<div><input type="text" class="rect"></div>
-				<input class="subm" type="submit"/>
-			</div>
-			
-			
-			<div>
-				<img src="images/Miki.jpg" class="miki"/>
-				<img src="images/Mina.jpg" class="mina"/>
-				<img src="images/mail-icon.png" class="mail"/>
-				<p class="c1"><b>Generalni direktor</b></p>
-				<p class="c2">Miodrag Ninić -  tel: 0613215020</p>
-				<p class="c3"><b>Kreativni direktor</b></p>
-				<p class="c4">Mina Piščević - tel: 0642673310</p>
-				<p class="c5"><b>E-mail adresa:</b> kulturforum.odkr@gmail.com</p>
-				<p class="c6"><b>Adresa:</b> Mihizova 15</p>
-				<p class="c7"><b>Radno vreme:</b></p>
-				<p class="c8">Radnim danima:10-18h;</p>
-				<p class="c9">Subotom 12-16h;</p>
-				<img class="clock" src="images/clock-icon.png" class="kf2"/>				
-
-			</div>
-        </div>
-       
-    </div>
-	
-											  
-<script src="js/script.js"></script>
-			    
-</body>
-            
-
+  <script>
   
-
-
-
-</html>
-
-
+    document.getElementById("audio1").volume = 0.2;
+    
+  </script>
+  
+  <body>
+  
+    
+    <div class="licni" onmouseenter="audio1.play();">
+      <h2>PERSONAL</h2>
+      <p>Nikola Cvetić</p>
+      <p>Birth date: 30.3.1986.</p>
+      <p>Adress: Ivankovačka 27, Belgrade</p>
+      <p>E-mail: cuekisa@yahoo.com</p>
+      <p>Phone number: +381642743527</p>
+      <img class="img" src="images/git.jpg">
+    </div>
+  
+    
+    <div class="iskustvo" onmouseenter="audio2.play();">
+      <h2>EXPERIENCE</h2>
+      <p>Knowledge: JS, React, Ajax, SASS, JQuery, Webpack, npm, Yarn, PHP basic, SQL, Github, SVG</p>
+      <p>Apps: 1. <a href="https://github.com/Cvellle/Air-Traffic">Air traffic</a>, 2. <a href="https://cvellle.github.io/Kafemat/">Coffee machine</a>, 3. <a href="https://cvellle.github.io/Drag/">Drag</a>; Sites: 1. <a href="https://cvellle.github.io/Kulturforum/">"Kulturforum"</a>, 2. <a href="https://cvellle.github.io/Diwanee/">Diwanee</a></p>
+      <p>React: 1.<a href="https://codepen.io/Cvele/full/WzBKXV/">Programming quotes</a> (Chart), 2.App <a href="https://codepen.io/Cvele/full/MroGKO/">Zoo Words</a></p>
+      <p>Wordpress: 1.<a href="https://raum.co.rs/news/">"Raum"</a> 2.<a href="http://blatobran.com/">"Blatobran"</a>, 3.<a href="http://adam.rakicevic.eu">"Adam Rakicevic"</a></p>
+      <p>Courses:</p>
+      <p>1. <a href="https://skolakoda.org/">"School of Code"</a>, Belgrade (React, Advanced frontend).</p>
+      <p>2. Udemy: a) <a href="https://www.udemy.com/git-a-web-developer-job-mastering-the-modern-workflow/learn/v4/">Git a Developer Job</a>, b) <a href="https://www.udemy.com/understand-javascript/learn/v4/overview">The Weird Parts</a>, c) <a href="https://www.udemy.com/javascript-es6-tutorial/learn/v4/overview">Developer's Guide</a>, d) <a href="https://www.udemy.com/webpack-2-the-complete-developers-guide/learn/v4/t/lecture/6296178?start=264">Webpack 2</a></p>
+      <p>(Command line, Github, ES6, SASS, Gulp)</p>
+      <p>3. a) <a href="https://reactforbeginners.com/">React.js – Wess Bos;</a>  b) <a href="http://www.reactnativeexpress.com/">React Native Express</a></p>
+      <p>4. Code Academy (RactI, ReactII, SASS)</p>
+      <p>5. <a href="https://javascript30.com/">Java Script 30</a> (Vanila Java Script)</p>
+      <p><a href="https://github.com/Cvellle">GitHub profile</a>, <a href="https://www.linkedin.com/in/nikola-cvetic-65ba81a6/">LinkedIn profile</a>, <a href="https://stackoverflow.com/users/9563239/cvele?tab=profile">Stackowerflow</a></p>
+    </div>
+    
+    <div class="obrazovanje" onmouseenter="audio3.play();">
+      <h2>SKILLS</h2>
+      <p>- JS, React, HTML, CSS, SASS, ES6, JQuery, Webpack, Ajax, Github, npm, Yarn, SVG </p>
+      <p>- PHP basics, SQL, Flexbox, React Native basics</p>                                                                                     
+      <p>- Adobe Photoshop, MS Office; Audio-video editing: Nuendo, Cuebase</p>
+    
+    </div>
+    
+    <div class="jez" onmouseenter="audio4.play();">
+      <h2>EDUCATION</h2>
+      <p>School of Code, Belgrade</p>
+      <p>Media Communication, Faculty of Medias and Communications, Singidunum University, Belgrade</p>		
+      <p>III Belgrade High School, Belgrade</p>
+    </div>
+  
+    <div class="kursevi" onmouseenter="audio5.play();">
+  
+      <h2>COURSES</h2>
+      <p>Attending lectures and meetings - JS Belgrade, StartIT, Silicon Drink About...</p>
+      <p>Finished course for Copywriting,  Obuke i kursevi, Belgrade.</p>
+      <p>Finished course for Writing projects for EU fundings, Obuke i kursevi, Belgrade.</p>
+    </div>
+    
+    <div class="racunarske" onmouseenter="audio6.play();">
+      <h2>LANGUAGES</h2>
+      <p>English, Advanced. CAE course - Cambridge Advanced Exam (Owen Owen School, Belgrade)</p>
+      <p>French, middle level.</p>
+      <p>Italaian and russian - beginner level.</p>
+    </div>
+    
+    <div class="ostale" onmouseenter="audio7.play();">
+      <h2>OTHER</h2>
+      <p>Driving license. Playing guitar.</p>
+      <p>Active recreative sport. Trained basketball.</p>
+    </div>
+    
+  
+  
+  
+  
+    <!-- <p>Wordpress: 1.<a href="https://raum.co.rs/news/">"Raum"</a> 2.<a href="http://blatobran.com/">"Blatobran"</a>, 3.<a href="http://adam.rakicevic.eu">"Adam Rakicevic"</a>, 4.<a href="http://meritus.rs/wp1/">"Meritus"</a>.</p> -->
+  
+    <audio controls preload="auto" id="audio1" style="color:transparent;" onmouseenter="this.play();" type="*file extension (.mp3 .ogg etc.)*">	
+      <source src="audio/C.mp3" controls></source>		
+    </audio>
+    <audio controls preload="auto" id="audio1" style="color:transparent;" onmouseenter="this.play();" type="*file extension (.mp3 .ogg etc.)*">	
+      <source src="audio/C.mp3" controls></source>		
+    </audio>
+    <audio controls preload="auto" id="audio2" style="color:transparent;" onmouseenter="this.play();">	
+      <source src="audio/D.mp3" controls></source>		
+    </audio>
+    <audio controls preload="auto" id="audio3" style="color:transparent;" onmouseenter="this.play();">	
+      <source src="audio/E.mp3" controls></source>		
+    </audio>
+    <audio controls preload="auto" id="audio4" style="color:transparent;" onmouseenter="this.play();">	
+      <source src="audio/F.mp3" controls></source>		
+    </audio>
+    <audio controls preload="auto" id="audio5" style="color:transparent;" onmouseenter="this.play();">	
+      <source src="audio/G.mp3" controls></source>		
+    </audio>
+    <audio controls preload="auto" id="audio6" style="color:transparent;" onmouseenter="this.play();">	
+      <source src="audio/A.mp3" controls></source>		
+    </audio>
+    <audio controls preload="auto" id="audio7" style="color:transparent;" onmouseenter="this.play();">	
+      <source src="audio/C.mp3" controls></source>		
+    </audio>
+  
+  
+  </body>
+  
+  
+  
+  
+  </html>
+  
