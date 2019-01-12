@@ -1,22 +1,21 @@
-        body {
+    body {
 		background: #050007/*#000005*/ /*#0059DE*/;
 		background: rgb(255, 255, 255);
 		background: rgb(200, 180, 221)/*#000005*/ /*#0059DE*/;
 	}  
  
-        .img {
-	        position:absolute;
+    .img {
+	    position:absolute;
 		top:1.90em;
 		right:10%;
-		height:67%;
-		
+		height:67%;		
 		border-radius:30px;
 		transition:0.5s;
 		-webkit-transition:0.5s;
 	}
 	
 	.img:hover {
-	        position:absolute;
+	    position:absolute;
 		transition:0.5s;
 		-webkit-transition:0.5s;
 		border-radius:0px;
@@ -24,7 +23,7 @@
 	
 	h2 {
 		position:relative;
-	        font-size:140%;
+	    font-size:140%;
 		margin-left:3%;
 		font-family: Trebuchet MS, sans-serif/*Arial Black, "Helvetica Neue", Helvetica, sans-serif*/;
 		font-weight:900;
