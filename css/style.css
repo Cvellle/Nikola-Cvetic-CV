@@ -57,7 +57,7 @@
 		filter: blur(0px);
 		/* border-left:0.8rem solid #3A2449; */
 		border-right:0.8rem solid rgb(98, 78, 107);
-		/* border-right:0.8rem solid #FFD644; */
+		/* border-right:0.8rem solid rgb(98, 78, 107); */
 	}
 	
 	div:hover {
@@ -422,19 +422,19 @@
 	}
 	
 	div {
-		border-right:0.3rem solid #FFD644/*#FFF37A*/;
+		border-right:0.3rem solid rgb(98, 78, 107)/*#FFF37A*/;
 	}
 	    
 	.licni {
-		border-top:0.3rem solid #FFD644;
-		border-left:0.3rem solid #FFD644;
+		border-top:0.3rem solid rgb(98, 78, 107);
+		border-left:0.3rem solid rgb(98, 78, 107);
 		border-radius:1.5rem 0px 0px 0px;
 		border-right:none;
 	}   
 
 	.iskustvo {
 		border-radius:0px 1.5rem 0px 0px;
-		border-top:0.3rem solid #FFD644 /*#F4E8A1*/;
+		border-top:0.3rem solid rgb(98, 78, 107) /*#F4E8A1*/;
 	}
 
 	.licni>h2 {
@@ -504,12 +504,12 @@
 		
 		
 		div {
-			border-right:0.5rem solid #FFD644/*#FFF37A*/;
+			border-right:0.5rem solid rgb(98, 78, 107)/*#FFF37A*/;
 		}
 			
 		.licni {
-			border-top:0.5rem solid #FFD644;
-			border-left:0.5rem solid #FFD644;
+			border-top:0.5rem solid rgb(98, 78, 107);
+			border-left:0.5rem solid rgb(98, 78, 107);
 			border-radius:2rem 0px 0px 0px;
 			border-right:none;
 		}   
@@ -520,7 +520,7 @@
 	
 		.iskustvo {
 			border-radius:0px 2rem 0px 0px;
-			border-top:0.5rem solid #FFD644 /*#F4E8A1*/;
+			border-top:0.5rem solid rgb(98, 78, 107) /*#F4E8A1*/;
 		}
 	
 		.licni, .iskustvo, .obrazovanje, .jez, .kursevi, .racunarske, .ostale {
