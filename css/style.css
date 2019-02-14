@@ -210,6 +210,21 @@
 		top:64%;
 		left:24%;
 	}
+
+	.licni>p>input {
+		position:absolute;
+		top:64%;
+		left:24%;
+		font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+		color:black;
+		background:rgb(200, 180, 221);
+		font-size: 1.035rem;
+		border:none;
+		font-weight: 600;
+		display: inline;
+		width:25rem;
+		cursor:select;
+	}
 	
 	
 	.iskustvo>p:nth-child(2) {
