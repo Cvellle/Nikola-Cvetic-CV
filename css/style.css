@@ -1,10 +1,10 @@
-    body {
+       body {
 		background: #050007/*#000005*/ /*#0059DE*/;
 		background: rgb(255, 255, 255);
 		background: rgb(200, 180, 221)/*#000005*/ /*#0059DE*/;
-	}  
+       }  
  
-    .img {
+       .img {
 	        position:absolute;
 		top:1.90em;
 		right:10%;
@@ -119,7 +119,8 @@
 		background:#080911;
 		background: white;
 		color:white;
-		z-index:-2;	       
+		z-index:-2;
+		border-right:0.8rem solid rgb(98, 78, 107);
 	}
 
 	.obrazovanje:hover {
