@@ -5,7 +5,7 @@
 	}  
  
     .img {
-	    position:absolute;
+	        position:absolute;
 		top:1.90em;
 		right:10%;
 		height:67%;		
@@ -15,7 +15,7 @@
 	}
 	
 	.img:hover {
-	    position:absolute;
+	        position:absolute;
 		transition:0.5s;
 		-webkit-transition:0.5s;
 		border-radius:0px;
@@ -23,7 +23,7 @@
 	
 	h2 {
 		position:relative;
-	    font-size:140%;
+	        font-size:140%;
 		margin-left:3%;
 		font-family: Trebuchet MS, sans-serif/*Arial Black, "Helvetica Neue", Helvetica, sans-serif*/;
 		font-weight:900;
