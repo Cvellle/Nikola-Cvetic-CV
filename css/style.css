@@ -74,7 +74,6 @@
 	}
 
 	.licni {
-		position:absolute;
 		width:92.5%;
 		top:10%;
 		left:7.5%;
@@ -98,6 +97,7 @@
 		color:white;
 		border-radius:0px 3.5rem 0px 0px;
 		border-top:0.8rem solid rgb(98, 78, 107); /*#F4E8A1*/;
+        border-right:0.8rem solid rgb(98, 78, 107);
 	}
 		
 	/* .iskustvo>p:nth-child(2) {
@@ -123,7 +123,7 @@
 	}
 
 	.obrazovanje:hover {
-		z-index:-2;	       
+		z-index:-2;	     
 	}
 	
 	
@@ -138,6 +138,7 @@
 		background:#05060C;
 		background: white;
 		color:white;
+        border-right:0.8rem solid rgb(98, 78, 107);
 	}
 	
 	.kursevi {
@@ -149,6 +150,7 @@
 		background:#07070F;
 		background: white;
 		color:white;
+        border-right:0.8rem solid rgb(98, 78, 107);
 	}
 	
 	.racunarske{
@@ -160,6 +162,7 @@
 		background:#080911;
 		background: white;
 		color:white;
+        border-right:0.8rem solid rgb(98, 78, 107);
 	}
 	
 	.ostale {
@@ -174,6 +177,7 @@
 		margin-bottom:10%;
 		/* border-bottom:0.8rem solid #3A2449; */
 		border-radius:0px 0px 0px 3.5rem;
+        border-right:0.8rem solid rgb(98, 78, 107);
 	}	
 	
 	.licni>h2:nth-child(1) {
