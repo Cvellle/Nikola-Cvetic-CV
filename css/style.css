@@ -49,15 +49,10 @@
 	}
 	
 	div {
-		position:absolute;
-		/*border-radius:0px 40px 40px 0px;*/
 		transition:0.5s all;
 		-webkit-transition:all 0.7, border 0.01s;
-		/*border:10px solid black;*/
 		filter: blur(0px);
-		/* border-left:0.8rem solid #3A2449; */
-		border-right:0.8rem solid rgb(98, 78, 107);
-		/* border-right:0.8rem solid rgb(98, 78, 107); */
+
 	}
 	
 	div:hover {
@@ -69,11 +64,11 @@
 		/*border:5px solid black;*/
 		border:0px solid black\9;
 		z-index:0;
-		background: rgb(200, 180, 221)/*#000005*/ /*#0059DE*/;
-     	        /* filter:brightness(108%); */
+		background: rgb(200, 180, 221);
 	}
 
 	.licni {
+		position:absolute;		
 		width:92.5%;
 		top:10%;
 		left:7.5%;
@@ -97,7 +92,7 @@
 		color:white;
 		border-radius:0px 3.5rem 0px 0px;
 		border-top:0.8rem solid rgb(98, 78, 107); /*#F4E8A1*/;
-        border-right:0.8rem solid rgb(98, 78, 107);
+                border-right:0.8rem solid rgb(98, 78, 107);
 	}
 		
 	/* .iskustvo>p:nth-child(2) {
@@ -178,7 +173,7 @@
 		margin-bottom:10%;
 		/* border-bottom:0.8rem solid #3A2449; */
 		border-radius:0px 0px 0px 3.5rem;
-        border-right:0.8rem solid rgb(98, 78, 107);
+                border-right:0.8rem solid rgb(98, 78, 107);
 	}	
 	
 	.licni>h2:nth-child(1) {
