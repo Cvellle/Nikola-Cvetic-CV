@@ -55,7 +55,7 @@
 
 	}
 	
-	div:hover {
+	div.licni:hover, div.iskustvo:hover, div.obrazovanje:hover, div.jez:hover, div.racunarske:hover, div.ostale:hover,  {
 		transform:translateX(0.02%) translateY(0%) scale(1.00,1);
 		-ms-transform:translateX(0.02%) translateY(0%) scale(1.00,1);
 		-webkit-transform:translateX(0.003%) translateY(0%) scale(1.00,1);
