@@ -473,7 +473,7 @@
 }	
 		
 	.iskustvo,.jez,.ostale,.obrazovanje.,.kursevi {
-		border-right: 0.3rem solid rgb(98, 78, 107) v;
+		border-right: 0.3rem solid rgb(98, 78, 107) !important;
 	}
 	
 }
