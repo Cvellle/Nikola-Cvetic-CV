@@ -471,8 +471,17 @@
 	.ostale {
 		border-radius:0px 0px 0px 1.5rem;
 }	
-
+		
+	.iskustvo,.jez,.ostale,.obrazovanje.,.kursevi {
+			border-right:0.3rem solid rgb(98, 78, 107);
+	}
+	
 }
+
+
+
+
+
 
 @media only screen and (max-width: 320px) {
 
@@ -484,6 +493,9 @@
 	}
 
 }
+
+
+
 
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
 
@@ -541,7 +553,7 @@
 			border-radius:0px 0px 0px 2rem;
 	}	
 	
-		.licni,.iskustvo,.jez,.ostale,.obrazovanje.,.kursevi {
+		.iskustvo,.jez,.ostale,.obrazovanje.,.kursevi {
 			border-right:0.5rem solid rgb(98, 78, 107);
 	}
 	
