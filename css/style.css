@@ -515,11 +515,6 @@
 		.jez> h2 {
 			top:7%;
 		}
-		
-		
-		div {
-			border-right:0.5rem solid rgb(98, 78, 107)/*#FFF37A*/;
-		}
 			
 		.licni {
 			border-top:0.5rem solid rgb(98, 78, 107);
@@ -545,6 +540,10 @@
 		.ostale {
 			border-radius:0px 0px 0px 2rem;
 	}	
+	
+		.licni,.iskustvo,.jez,.ostale,.obrazovanje.,.kursevi {
+			border-right:0.5rem solid rgb(98, 78, 107);
+	}
 	
 
 }
