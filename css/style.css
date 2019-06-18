@@ -411,7 +411,7 @@
 	@media only screen and (max-width: 414px) {
 
 	.img {
-	    position:absolute;
+	        position:absolute;
 		top:1rem;
 		right:0.8rem;
 		height:40%;
@@ -473,7 +473,7 @@
 }	
 		
 	.iskustvo,.jez,.ostale,.obrazovanje.,.kursevi {
-			border-right:0.3rem solid rgb(98, 78, 107);
+		border-right:0.3rem solid rgb(98, 78, 107);
 	}
 	
 }
