@@ -567,6 +567,6 @@
 
 @media only screen and (min-width: 715px) and (max-width: 1500px) {
 		p, input {
-			font-size:0.7rem;	
+			font-size:0.7rem !important;	
 	}
 }
