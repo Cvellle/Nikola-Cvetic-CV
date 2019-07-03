@@ -409,6 +409,15 @@
 		text-decoration: none;
 	}
 
+
+
+
+
+
+
+
+
+
 	@media only screen and (max-width: 414px) {
 
 	.img {
@@ -484,6 +493,8 @@
 
 
 
+
+
 @media only screen and (max-width: 320px) {
 
 	h2 {
@@ -494,6 +505,10 @@
 	}
 
 }
+
+
+
+
 
 
 
@@ -566,7 +581,10 @@
 
 
 @media only screen and (min-width: 715px) and (max-width: 1500px) {
+		h2 {
+			font-size:1.5rem !important;	
+	}
 		p, input {
-			font-size:0.7rem !important;	
+			font-size:0.9rem !important;	
 	}
 }
