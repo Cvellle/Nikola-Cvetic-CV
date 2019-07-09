@@ -86,7 +86,7 @@
 		color:white;
 		border-radius:0px 3.5rem 0px 0px;
 		border-top:0.8rem solid rgb(98, 78, 107); /*#F4E8A1*/;
-                border-right:0.8rem solid rgb(98, 78, 107);
+        border-right:0.8rem solid rgb(98, 78, 107);
 		z-index:10;
 	}
 		
@@ -476,15 +476,15 @@
 	.licni, .iskustvo, .obrazovanje, .jez, .kursevi, .racunarske, .ostale {
 		left: 2.5%;
 		width: 95%;
-}
+    }
 
 	.ostale {
 		border-radius:0px 0px 0px 1.5rem;
-}	
+    }	
 		
-	.iskustvo,.jez,.ostale,.obrazovanje.,.kursevi {
-		
-	}
+	.iskustvo,.jez,.ostale,.obrazovanje,.kursevi {
+		border-right:0.3rem solid rgb(98, 78, 107) !important;
+    }
 	
 }
 
@@ -569,13 +569,12 @@
 			border-radius:0px 0px 0px 2rem;
 	}	
 	
-		.iskustvo,.jez,.ostale,.obrazovanje.,.kursevi {
+		.iskustvo,.jez,.ostale,.obrazovanje,.kursevi {
 			border-right:0.5rem solid rgb(98, 78, 107) !important;
 	}
 	
 
 }
-
 
 
 
