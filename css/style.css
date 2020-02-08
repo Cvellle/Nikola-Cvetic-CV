@@ -1,11 +1,11 @@
-       body {
+    body {
 		background: #050007/*#000005*/ /*#0059DE*/;
 		background: rgb(255, 255, 255);
 		background: rgb(200, 180, 221)/*#000005*/ /*#0059DE*/;
-       }  
+    }  
  
-       .img {
-	        position:absolute;
+    .img {
+	    position:absolute;
 		top:1.90em;
 		right:10%;
 		height:67%;		
@@ -68,8 +68,8 @@
 		left:7.5%;
 		height:30%;
 		background:transparent/*#FFE972*//*E0912A*/;
-		border-top:0.8rem solid rgb(98, 78, 107);;
-		border-left:0.8rem solid rgb(98, 78, 107);;
+		border-top:0.8rem solid rgb(98, 78, 107);
+		border-left:0.8rem solid rgb(98, 78, 107);
 		border-radius:3.5rem 0px 0px 0px;
 		border-right:none;
 		z-index:10;
@@ -168,7 +168,7 @@
 		margin-bottom:10%;
 		/* border-bottom:0.8rem solid #3A2449; */
 		border-radius:0px 0px 0px 3.5rem;
-                border-right:0.8rem solid rgb(98, 78, 107);
+        border-right:0.8rem solid rgb(98, 78, 107);
 	}	
 	
 	.licni>h2:nth-child(1) {
@@ -179,13 +179,13 @@
 	.licni>p:nth-child(2) {
 		position:absolute;
 		top:4%;
-		left:24%;
+		left:24% !important;
 	}
 	
 	.licni>p:nth-child(3) {
 		position:absolute;
 		top:19%;
-		left:24%;
+		left:24% !important;
 	}
 	
 	.licni>p:nth-child(4) {
