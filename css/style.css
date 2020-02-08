@@ -191,7 +191,7 @@
 	
 	.licni>h2:nth-child(1) {
 		position:absolute;
-		left:-1%;
+		left:-1vw;
 	}
 	
 	.licni>p:nth-child(2) {
