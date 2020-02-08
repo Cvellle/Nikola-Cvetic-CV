@@ -70,7 +70,10 @@
 		background:transparent/*#FFE972*//*E0912A*/;
 		border-top:0.8rem solid rgb(98, 78, 107);
 		border-left:0.8rem solid rgb(98, 78, 107);
+		border-top:0.8vw solid rgb(98, 78, 107);
+		border-left:0.8vw solid rgb(98, 78, 107);
 		border-radius:3.5rem 0px 0px 0px;
+		border-radius:3.5vw 0px 0px 0px;
 		border-right:none;
 		z-index:10;
 	}
@@ -86,7 +89,11 @@
 		color:white;
 		border-radius:0px 3.5rem 0px 0px;
 		border-top:0.8rem solid rgb(98, 78, 107); /*#F4E8A1*/;
-        border-right:0.8rem solid rgb(98, 78, 107);
+		border-right:0.8rem solid rgb(98, 78, 107);
+		/* */
+		border-radius:0px 3.5vw 0px 0px;
+		border-top:0.8vw solid rgb(98, 78, 107); /*#F4E8A1*/;
+        border-right:0.8vw solid rgb(98, 78, 107);
 		z-index:10;
 	}
 		
@@ -111,6 +118,8 @@
 		color:white;
 		z-index:-2;
 		border-right:0.8rem solid rgb(98, 78, 107);
+		/**/
+		border-right:0.8vw solid rgb(98, 78, 107);
 	}
 
 	.obrazovanje:hover {
@@ -129,7 +138,9 @@
 		background:#05060C;
 		background: white;
 		color:white;
-        border-right:0.8rem solid rgb(98, 78, 107);
+		border-right:0.8rem solid rgb(98, 78, 107);
+		/**/
+		border-right:0.8vw solid rgb(98, 78, 107);
 	}
 	
 	.kursevi {
@@ -141,7 +152,9 @@
 		background:#07070F;
 		background: white;
 		color:white;
-        border-right:0.8rem solid rgb(98, 78, 107);
+		border-right:0.8rem solid rgb(98, 78, 107);
+		/**/
+		border-right:0.8vw solid rgb(98, 78, 107);
 	}
 	
 	.racunarske{
@@ -153,7 +166,9 @@
 		background:#080911;
 		background: white;
 		color:white;
-        border-right:0.8rem solid rgb(98, 78, 107);
+		border-right:0.8rem solid rgb(98, 78, 107);
+		/**/
+		border-right:0.8vw solid rgb(98, 78, 107);
 	}
 	
 	.ostale {
@@ -168,7 +183,10 @@
 		margin-bottom:10%;
 		/* border-bottom:0.8rem solid #3A2449; */
 		border-radius:0px 0px 0px 3.5rem;
-        border-right:0.8rem solid rgb(98, 78, 107);
+		border-right:0.8rem solid rgb(98, 78, 107);
+		/**/
+		border-right:0.8vw solid rgb(98, 78, 107);
+		border-radius:0px 0px 0px 3.5vw;
 	}	
 	
 	.licni>h2:nth-child(1) {
@@ -180,30 +198,35 @@
 		position:absolute;
 		top:4%;
 		left:24% !important;
+		left:22vw !important;
 	}
 	
 	.licni>p:nth-child(3) {
 		position:absolute;
 		top:19%;
 		left:24% !important;
+		left:22vw !important;
 	}
 	
 	.licni>p:nth-child(4) {
 		position:absolute;
 		top:34%;
 		left:24%;
+		left:22vw !important;
 	}
 	
 	.licni>p:nth-child(5) {
 		position:absolute;
 		top:49%;
 		left:24%;
+		left:22vw !important;
 	}
 	
 	.licni>p:nth-child(6) {
 		position:absolute;
 		top:64%;
 		left:24%;
+		left:22vw !important;
 	}
 
 	.licni>p>input {
