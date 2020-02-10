@@ -197,36 +197,35 @@
 	.licni>p:nth-child(2) {
 		position:absolute;
 		top:4%;
-		left:24% !important;
-		left:22vw !important;
+		left:24%;
+		left:22vw;
 	}
 	
 	.licni>p:nth-child(3) {
 		position:absolute;
 		top:19%;
-		left:24% !important;
-		left:22vw !important;
+		left:24%;
+		left:22vw;
 	}
 	
 	.licni>p:nth-child(4) {
 		position:absolute;
 		top:34%;
 		left:24%;
-		left:22vw !important;
+		left:22vw;
 	}
 	
 	.licni>p:nth-child(5) {
 		position:absolute;
 		top:49%;
 		left:24%;
-		left:22vw !important;
 	}
 	
 	.licni>p:nth-child(6) {
 		position:absolute;
 		top:64%;
 		left:24%;
-		left:22vw !important;
+		left:22vw;
 	}
 
 	.licni>p>input {
