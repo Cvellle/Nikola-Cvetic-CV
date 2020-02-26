@@ -7,7 +7,7 @@
     .img {
 	    position:absolute;
 		top:1.90em;
-		right:10%;
+		right:15%;
 		height:67%;		
 		border-radius:30px;
 		transition:0.5s;
@@ -63,11 +63,11 @@
 
 	.licni {
 		position:absolute;		
-		width:92.5%;
+		width:92.5vw;
 		top:10%;
-		left:7.5%;
+		left:7.4vw;
 		height:30%;
-		background:transparent/*#FFE972*//*E0912A*/;
+		background:transparent;
 		border-top:0.8rem solid rgb(98, 78, 107);
 		border-left:0.8rem solid rgb(98, 78, 107);
 		border-top:0.8vw solid rgb(98, 78, 107);
@@ -75,7 +75,6 @@
 		border-radius:3.5rem 0px 0px 0px;
 		border-radius:3.5vw 0px 0px 0px;
 		border-right:none;
-		z-index:10;
 	}
 	
 	.iskustvo {
@@ -197,35 +196,35 @@
 	.licni>p:nth-child(2) {
 		position:absolute;
 		top:4%;
-		left:24%;
-		left:22vw;
+		margin-left:17vw;
+		/* left:22vw; */
 	}
 	
 	.licni>p:nth-child(3) {
 		position:absolute;
 		top:19%;
-		left:24%;
-		left:22vw;
+		margin-left:17vw;
+		/* left:22vw; */
 	}
 	
 	.licni>p:nth-child(4) {
 		position:absolute;
 		top:34%;
-		left:24%;
-		left:22vw;
+		margin-left:17vw;
+		/* left:22vw; */
 	}
 	
 	.licni>p:nth-child(5) {
 		position:absolute;
 		top:49%;
-		left:24%;
+		margin-left:17vw;
 	}
 	
 	.licni>p:nth-child(6) {
 		position:absolute;
 		top:64%;
-		left:24%;
-		left:22vw;
+		margin-left:17vw;
+		/* left:22vw; */
 	}
 
 	.licni>p>input {
@@ -247,73 +246,73 @@
 	.iskustvo>p:nth-child(2) {
 		position:absolute;
 		top:2%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(3) {
 		position:absolute;
 		top:10%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(4) {
 		position:absolute;
 		top:18%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(5) {
 		position:absolute;
 		top:26%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(6) {
 		position:absolute;
 		top:34%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(7) {
 		position:absolute;
 		top:42%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(8) {
 		position:absolute;
 		top:50%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(9) {
 		position:absolute;
 		top:58%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(10) {
 		position:absolute;
 		top:66%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(11) {
 		position:absolute;
 		top:74%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(12) {
 		position:absolute;
 		top:82%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.iskustvo>p:nth-child(13) {
 		position:absolute;
 		top:90%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.obrazovanje>h2:nth-child(1) {
@@ -324,19 +323,19 @@
 	.obrazovanje>p:nth-child(2) {
 		position:absolute;
 		top:12%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.obrazovanje>p:nth-child(3) {
 		position:absolute;
 		top:37%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.obrazovanje>p:nth-child(4) {
 		position:absolute;
 		top:62%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.obrazovanje>p:nth-child(5) {
@@ -349,73 +348,73 @@
 	.jez>p:nth-child(2) {
 		position:absolute;
 		top:5%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.jez>p:nth-child(3) {
 		position:absolute;
 		top:30%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.jez>p:nth-child(4) {
 		position:absolute;
 		top:55%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.kursevi>p:nth-child(2) {
 		position:absolute;
 		top:5%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.kursevi>p:nth-child(3) {
 		position:absolute;
 		top:30%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.kursevi>p:nth-child(4) {
 		position:absolute;
 		top:55%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.racunarske>p:nth-child(2) {
 		position:absolute;
 		top:5%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.racunarske>p:nth-child(3) {
 		position:absolute;
 		top:30%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.racunarske>p:nth-child(4) {
 		position:absolute;
 		top:55%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.ostale>p:nth-child(2) {
 		position:absolute;
 		top:5%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.ostale>p:nth-child(3) {
 		position:absolute;
 		top:30%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	.ostale>p:nth-child(4) {
 		position:absolute;
 		top:55%;
-		left:27%;
+		margin-left:17.8vw;
 	}
 	
 	audio {
@@ -440,10 +439,10 @@
 
 
 
-	@media only screen and (max-width: 414px) {
+	@media only screen and (max-width: 768px) {
 
 	.img {
-	        position:absolute;
+	    position:absolute;
 		top:1rem;
 		right:0.8rem;
 		height:40%;
@@ -535,14 +534,14 @@
 
 
 
-@media only screen and (min-width: 415px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
 
 		.img {
 			position:absolute;
-			top:1.7rem;
-			right:1.7rem;
-			height:40%;
-			border-radius:10px;
+			top:12%;
+			right:2vw;
+			height:70%;
+			border-radius:2vw;
 			transition:0.5s;
 			-webkit-transition:0.5s;
 		}
@@ -574,7 +573,7 @@
 		}   
 
 		.licni>p:nth-child(n) {
-			left:27%;
+			/* left:27%; */
 		}   
 	
 		.iskustvo {
@@ -601,11 +600,11 @@
 
 
 
-@media only screen and (min-width: 715px) and (max-width: 1500px) {
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
 		h2 {
-			font-size:1.5rem !important;	
+			font-size:1.8vw !important;	
 	}
 		p, input {
-			font-size:0.9rem !important;	
+			font-size:1.2vw !important;	
 	}
 }
