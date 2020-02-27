@@ -6,16 +6,16 @@
  
     .img {
 	    position:absolute;
-		top:1.90em;
+		top:13%;
 		right:15%;
 		height:67%;		
-		border-radius:30px;
+		border-radius:1.5vw;
 		transition:0.5s;
 		-webkit-transition:0.5s;
 	}
 	
 	.img:hover {
-	        position:absolute;
+	    position:absolute;
 		transition:0.5s;
 		-webkit-transition:0.5s;
 		border-radius:0px;
@@ -23,8 +23,8 @@
 	
 	h2 {
 		position:relative;
-	        font-size:140%;
-		margin-left:3%;
+	    font-size:140%;
+		margin-left: 2.8vw;
 		font-family: Trebuchet MS, sans-serif/*Arial Black, "Helvetica Neue", Helvetica, sans-serif*/;
 		font-weight:900;
 		top:0.5%;
@@ -190,7 +190,8 @@
 	
 	.licni>h2:nth-child(1) {
 		position:absolute;
-		left:-1vw;
+		margin-left: 2vw;
+		/* left:-1vw; */
 	}
 	
 	.licni>p:nth-child(2) {
