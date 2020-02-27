@@ -6,7 +6,7 @@
  
     .img {
 	    position:absolute;
-		top:13%;
+		margin-top:4vh;
 		right:15%;
 		height:67%;		
 		border-radius:1.5vw;
@@ -27,7 +27,7 @@
 		margin-left: 2.8vw;
 		font-family: Trebuchet MS, sans-serif/*Arial Black, "Helvetica Neue", Helvetica, sans-serif*/;
 		font-weight:900;
-		top:0.5%;
+		margin-top:2.5vh;
 		color: #3A2449/*#ffbb33*/ /*#ffcc66/* /*#ffdb4d*/;
 	}
 	
@@ -190,7 +190,7 @@
 	
 	.licni>h2:nth-child(1) {
 		position:absolute;
-		margin-left: 2vw;
+		/* margin-left: 2vw; */
 		/* left:-1vw; */
 	}
 	
@@ -222,6 +222,13 @@
 	}
 	
 	.licni>p:nth-child(6) {
+		position:absolute;
+		top:66%;
+		margin-left:17vw;
+		/* left:22vw; */
+	}
+
+	.licni>p:nth-child(7) {
 		position:absolute;
 		top:64%;
 		margin-left:17vw;
@@ -444,8 +451,8 @@
 
 	.img {
 	    position:absolute;
-		top:1rem;
-		right:0.8rem;
+		margin-top:5%;
+		right:2vw;
 		height:40%;
 		border-radius:10px;
 		transition:0.5s;
@@ -453,13 +460,20 @@
 	}
 
 	 p {
-		line-height:150%;
+		/* line-height:150%; */
 		font-size: 0.5rem;
 	 }
 
 	 h2 {
+		margin-top:2%;
+		margin-left: 1vw;
 		position:absolute;
 		font-size: 0.5rem;
+	}
+
+	.iskustvo h2 {
+		margin-top:0%;
+		margin-left: 1vw;
 	}
 	
 	div {
@@ -536,16 +550,16 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1500px) {
 
-		.img {
+		/* .img {
 			position:absolute;
-			top:12%;
+			margin-top:2%;
 			right:2vw;
 			height:70%;
 			border-radius:2vw;
 			transition:0.5s;
 			-webkit-transition:0.5s;
 		}
-	
+	 */
 		 p {
 			line-height:150%;
 			font-size: 1rem;
