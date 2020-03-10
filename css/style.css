@@ -1,7 +1,10 @@
     body {
-		background: #050007/*#000005*/ /*#0059DE*/;
+		background: #050007;
 		background: rgb(255, 255, 255);
-		background: rgb(200, 180, 221)/*#000005*/ /*#0059DE*/;
+		background: rgb(200, 180, 221);
+		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
 	}  
 	
 	* {
@@ -76,7 +79,11 @@
 
 	.licni {
 		position:relative;	
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		width:93.5%;
+		height:28vh;
 		margin-top:6.5vw;
 		margin-left:7.5%;
 		line-height:2vw;
@@ -95,6 +102,10 @@
 		position: relative;
 		margin-left:7.5%;
 		line-height:2.25vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height:60vh;
 		width:85%;
 		padding: 1.5vw 0 1.5vw 16.5vw;
 		background:#07070F;
@@ -115,6 +126,10 @@
 		margin-left:7.5%;
 		line-height:2.25vw;
 		width:85%;
+		height:20vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		padding: 1.5vw 0 1.5vw 16.5vw;
 		background:linear-gradient(aqua, skyblue);
 		background:#080911;
@@ -130,6 +145,10 @@
 		margin-left:7.5%;
 		line-height:2.25vw;
 		width:85%;
+		height:20vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		padding: 1.5vw 0 1.5vw 16.5vw;
 		background:#050007;
 		background:linear-gradient(aqua, skyblue);
@@ -146,6 +165,10 @@
 		margin-left:7.5%;
 		line-height:2.25vw;
 		width:85%;
+		height:20vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		padding: 1.5vw 0 1.5vw 16.5vw;
 		background:#07070F;
 		background: white;
@@ -160,6 +183,10 @@
 		margin-left:7.5%;
 		line-height:2.25vw;
 		width:85%;
+		height:20vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		padding: 1.5vw 0 1.5vw 16.5vw;
 		background:#080911;
 		background: white;
@@ -174,6 +201,10 @@
 		margin-left:7.5%;
 		line-height:2.25vw;
 		width:85%;
+		height:20vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		padding: 1.5vw 0 1.5vw 16.5vw;
 		background:#07070F;
 		background: white;
@@ -255,6 +286,8 @@
 	}
 	    
 	.licni {
+		display: block;
+		height: auto;
 		width:99% !important;
 		border-top:0.3rem solid rgb(98, 78, 107);
 		border-left:0.3rem solid rgb(98, 78, 107);
@@ -268,6 +301,8 @@
 	}
 
 	.licni, .iskustvo, .skills, .jez, .kursevi, .racunarske, .ostale {
+		display: block;
+		height: auto;
 		left: 2.5%;
 		width: 95%;
     }
@@ -290,16 +325,23 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1500px) {
 
+	html {
+		overflow-x: hidden;
+	}  
 
 	.licni, .iskustvo, .skills, .jez, .kursevi, .racunarske, .ostale {
 		left:2.5%;
-		width:95%;
-}
+		width:85%;
+	}
 
-		 p, input {
-			line-height:150%;
-			font-size: 1rem !important;
-		 }
+	.licni {
+		width:95%;
+	}
+
+	p, input {
+		line-height:150%;
+		font-size: 1rem !important;
+	}
 	/* 
 		 h2 {
 			position:absolute;
