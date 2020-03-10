@@ -47,9 +47,9 @@
 		font-size:140%;
 		top:1.4vw;
 		left:2.8vw;
-		font-family: Trebuchet MS, sans-serif/*Arial Black, "Helvetica Neue", Helvetica, sans-serif*/;
+		font-family: Trebuchet MS, sans-serif;
 		font-weight:900;
-		color: #3A2449/*#ffbb33*/ /*#ffcc66/* /*#ffdb4d*/;
+		color: #3A2449;
 	}
 
 	.licni h2 {
@@ -60,6 +60,7 @@
 	p, input {
 		font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 		font-size: 1.02vw;
+		line-height: 1vw;
 		font-weight:600;
 		color:#8E66A8;
 		color:rgba(0, 0, 0, 0.671);
@@ -267,6 +268,7 @@
 
 	 p, input {
 		font-size: 0.5rem !important;
+		line-height:5vw;
 	 }
 
 	 h2 {
