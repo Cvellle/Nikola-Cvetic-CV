@@ -57,13 +57,12 @@
 		left: 2.3vw;
 	}
 	
-	p {
+	p, input {
 		font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 		font-size: 1.02vw;
 		font-weight:600;
 		color:#8E66A8;
-		color:black;
-		opacity:0.67;
+		color:rgba(0, 0, 0, 0.671);
 	}
 
 	.iskustvo, .skills, .kursevi, .jez, .racunarske, .ostale {
@@ -217,13 +216,10 @@
 	}	
 	
 	.licni>p>input {
-		font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-		color:black;
 		background:rgb(200, 180, 221);
-		font-size: 1.035rem;
 		border:none;
 		font-weight: 600;
-		display: inline;
+		display: inline-block;
 		width: 15em;
 		cursor:text;
 	}
