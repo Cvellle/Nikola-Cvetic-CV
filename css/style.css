@@ -310,7 +310,7 @@ audio {
 	}
 	h2 {
 		position: absolute;
-		font-size: 2vw;
+		font-size: 1.6vw;
 	}
 	p, input {
 		line-height: 2vw;
@@ -333,5 +333,13 @@ audio {
 		top: 3vw;
 		right: 6vw;
 		height: 50%;
+	}
+}
+
+@media print {
+	* {
+		-webkit-print-color-adjust: exact !important;
+		color-adjust: exact !important;
+		/*Firefox*/
 	}
 }
