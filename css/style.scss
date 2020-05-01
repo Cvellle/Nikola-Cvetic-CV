@@ -1,5 +1,10 @@
+// sass --watch css/style.scss css/style.css
+$bgColor: rgb(206, 180, 221);
+$centuryGothic: Century Gothic, sans-serif;
+$Trebuchet: MS, sans-serif;
+
 body {
-  background: #ceb4dd;
+  background: $bgColor;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -7,7 +12,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: Century Gothic, sans-serif;
+  font-family: $centuryGothic;
 }
 
 p,
@@ -88,7 +93,7 @@ div.ostale:hover {
   transition: 0.2s;
   -webkit-transition: 0.3s;
   /* background: rgb(200, 180, 221); */
-  background: #e9ddf5;
+  background: rgb(233, 221, 245);
 }
 
 .licni {
@@ -103,10 +108,10 @@ div.ostale:hover {
   line-height: 2vw;
   padding: 1.6vw 0 1.6vw 15.7vw;
   background: transparent;
-  border-top: 0.8rem solid #624e6b;
-  border-left: 0.8rem solid #624e6b;
-  border-top: 0.8vw solid #624e6b;
-  border-left: 0.8vw solid #624e6b;
+  border-top: 0.8rem solid rgb(98, 78, 107);
+  border-left: 0.8rem solid rgb(98, 78, 107);
+  border-top: 0.8vw solid rgb(98, 78, 107);
+  border-left: 0.8vw solid rgb(98, 78, 107);
   border-radius: 3.5rem 0px 0px 0px;
   border-radius: 3.5vw 0px 0px 0px;
   border-right: none;
@@ -126,11 +131,11 @@ div.ostale:hover {
   background: white;
   color: white;
   border-radius: 0px 3.5rem 0px 0px;
-  border-top: 0.8rem solid #624e6b;
-  border-right: 0.8rem solid #624e6b;
+  border-top: 0.8rem solid rgb(98, 78, 107);
+  border-right: 0.8rem solid rgb(98, 78, 107);
   border-radius: 0px 3.5vw 0px 0px;
-  border-top: 0.8vw solid #624e6b;
-  border-right: 0.8vw solid #624e6b;
+  border-top: 0.8vw solid rgb(98, 78, 107);
+  border-right: 0.8vw solid rgb(98, 78, 107);
   z-index: 10;
   overflow: hidden;
 }
@@ -149,19 +154,20 @@ div.ostale:hover {
   flex: 1 1 10%;
   background-color: rgba(194, 151, 211, 0.19);
   overflow-y: visible;
-}
-.iskustvo div:nth-child(2) .rotated {
-  position: absolute;
-  overflow: visible;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 206%;
-  transform: skewX(-60deg) rotate(-60deg);
-  transform-origin: 100% 0%;
-  background-color: rgba(194, 151, 211, 0.2);
-  z-index: 2;
+
+  & .rotated {
+    position: absolute;
+    overflow: visible;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 206%;
+    transform: skewX(-60deg) rotate(-60deg);
+    transform-origin: 100% 0%;
+    background-color: rgba(194, 151, 211, 0.2);
+    z-index: 2;
+  }
 }
 
 .iskustvo div:nth-child(3) {
@@ -169,31 +175,34 @@ div.ostale:hover {
   flex: 1 1 30%;
   background-color: rgba(221, 160, 221, 0.184);
   overflow-y: visible;
-}
-.iskustvo div:nth-child(3) .rotated:nth-child(1) {
-  position: absolute;
-  overflow: visible;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 105%;
-  transform: skewX(17deg) rotate(17deg);
-  transform-origin: 100% 15%;
-  background-color: #ffe1f5;
-  z-index: 1;
-}
-.iskustvo div:nth-child(3) .rotated:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 105%;
-  background-color: #ffe1f5;
-  transform: skewX(-17deg) rotate(-17deg);
-  transform-origin: 100% 15%;
-  background-color: rgba(194, 151, 211, 0.2);
-  z-index: 2;
-  padding-right: -2vw;
+
+  & .rotated {
+    &:nth-child(1) {
+      position: absolute;
+      overflow: visible;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 105%;
+      transform: skewX(17deg) rotate(17deg);
+      transform-origin: 100% 15%;
+      background-color: rgb(255, 225, 245);
+      z-index: 1;
+    }
+    &:nth-child(2) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 105%;
+      background-color: rgb(255, 225, 245);
+      transform: skewX(-17deg) rotate(-17deg);
+      transform-origin: 100% 15%;
+      background-color: rgba(194, 151, 211, 0.2);
+      z-index: 2;
+      padding-right: -2vw;
+    }
+  }
 }
 
 .iskustvo div:nth-child(4) {
@@ -201,38 +210,40 @@ div.ostale:hover {
   overflow: visible;
   flex: 1 1 50%;
   background-color: rgba(236, 125, 199, 0.109);
-}
-.iskustvo div:nth-child(4) .rotated {
-  position: absolute;
-  overflow: visible;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 105%;
-  transform: skewX(-17deg) rotate(-17deg);
-  transform-origin: 100% 15%;
-  background-color: #f1d5f0;
-  z-index: 3;
-  padding-right: -2vw;
+  & .rotated {
+    position: absolute;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    transform: skewX(-17deg) rotate(-17deg);
+    transform-origin: 100% 15%;
+    background-color: rgb(241, 213, 240);
+    z-index: 3;
+    padding-right: -2vw;
+  }
 }
 
 .iskustvo div:nth-child(5) {
   position: relative;
   overflow: visible;
   flex: 1 1 30%;
-  background-color: rgba(247, 191, 247, 0.18);
-}
-.iskustvo div:nth-child(5) .rotated:nth-child(1) {
-  position: absolute;
-  overflow: visible;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 105%;
-  transform: skewX(17deg) rotate(17deg);
-  transform-origin: 100% 15%;
-  background-color: rgba(231, 164, 209, 0.2);
-  z-index: 4;
+  background-color: rgb(247, 191, 247, 0.18);
+  & .rotated {
+    &:nth-child(1) {
+      position: absolute;
+      overflow: visible;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 105%;
+      transform: skewX(17deg) rotate(17deg);
+      transform-origin: 100% 15%;
+      background-color: rgba(231, 164, 209, 0.2);
+      z-index: 4;
+    }
+  }
 }
 
 .iskustvo > div {
@@ -264,8 +275,8 @@ div.ostale:hover {
   background: #080911;
   background: white;
   color: white;
-  border-right: 0.8rem solid #624e6b;
-  border-right: 0.8vw solid #624e6b;
+  border-right: 0.8rem solid rgb(98, 78, 107);
+  border-right: 0.8vw solid rgb(98, 78, 107);
 }
 
 .jez {
@@ -284,8 +295,8 @@ div.ostale:hover {
   background: #05060c;
   background: white;
   color: white;
-  border-right: 0.8rem solid #624e6b;
-  border-right: 0.8vw solid #624e6b;
+  border-right: 0.8rem solid rgb(98, 78, 107);
+  border-right: 0.8vw solid rgb(98, 78, 107);
 }
 
 .kursevi {
@@ -302,8 +313,8 @@ div.ostale:hover {
   background: #07070f;
   background: white;
   color: white;
-  border-right: 0.8rem solid #624e6b;
-  border-right: 0.8vw solid #624e6b;
+  border-right: 0.8rem solid rgb(98, 78, 107);
+  border-right: 0.8vw solid rgb(98, 78, 107);
 }
 
 .obrazovanje {
@@ -320,8 +331,8 @@ div.ostale:hover {
   background: #080911;
   background: white;
   color: white;
-  border-right: 0.8rem solid #624e6b;
-  border-right: 0.8vw solid #624e6b;
+  border-right: 0.8rem solid rgb(98, 78, 107);
+  border-right: 0.8vw solid rgb(98, 78, 107);
 }
 
 .ostale {
@@ -340,19 +351,19 @@ div.ostale:hover {
   color: white;
   margin-bottom: 10%;
   border-radius: 0px 0px 0px 3.5rem;
-  border-right: 0.8rem solid #624e6b;
-  border-right: 0.8vw solid #624e6b;
+  border-right: 0.8rem solid rgb(98, 78, 107);
+  border-right: 0.8vw solid rgb(98, 78, 107);
   border-radius: 0px 0px 0px 3.5vw;
 }
 
 .licni > p > input {
-  background: #ceb4dd;
+  background: $bgColor;
   border: none;
   font-weight: 600;
   display: inline-block;
   width: 15em;
   cursor: text;
-  font-family: Century Gothic, sans-serif;
+  font-family: $centuryGothic;
 }
 
 audio {
@@ -361,7 +372,7 @@ audio {
 }
 
 .iskustvo p a {
-  color: #94389c;
+  color: rgb(148, 56, 156);
   opacity: 1;
   -webkit-text-stroke: 0px black;
   text-decoration: none;
@@ -369,12 +380,12 @@ audio {
 
 @media only screen and (max-width: 1023px) {
   .licni,
-.iskustvo,
-.skills,
-.jez,
-.kursevi,
-.obrazovanje,
-.ostale {
+  .iskustvo,
+  .skills,
+  .jez,
+  .kursevi,
+  .obrazovanje,
+  .ostale {
     margin-left: 0;
     left: 2.5%;
     line-height: 5vw;
@@ -382,7 +393,6 @@ audio {
     display: block;
     height: auto;
   }
-
   .img {
     position: absolute;
     top: 10%;
@@ -392,13 +402,11 @@ audio {
     transition: 0.5s;
     -webkit-transition: 0.5s;
   }
-
   p,
-input {
+  input {
     font-size: 0.5rem !important;
     line-height: 5vw;
   }
-
   h2 {
     margin-top: 2%;
     margin-top: 0 !important;
@@ -406,98 +414,93 @@ input {
     position: absolute;
     font-size: 1.9vw;
   }
-
   .licni {
     display: block;
     height: auto;
     width: 97.5% !important;
-    border-top: 0.3rem solid #624e6b;
-    border-left: 0.3rem solid #624e6b;
+    border-top: 0.3rem solid rgb(98, 78, 107);
+    border-left: 0.3rem solid rgb(98, 78, 107);
     transform: translateY(0.3vh);
     border-radius: 1.5rem 0px 0px 0px;
     border-right: none;
   }
-
   .licni p {
     max-width: 70%;
     margin-right: 0;
   }
-
   .iskustvo {
     border-radius: 0px 1.5rem 0px 0px;
-    border-top: 0.3rem solid #624e6b;
+    border-top: 0.3rem solid rgb(98, 78, 107);
   }
-
+  .licni,
+  .iskustvo,
+  .skills,
+  .jez,
+  .kursevi,
+  .obrazovanje,
+  .ostale {
+  }
   .ostale {
     border-radius: 0px 0px 0px 1.5rem;
   }
-
   .iskustvo,
-.jez,
-.ostale,
-.skills,
-.kursevi,
-.obrazovanje {
-    border-right: 0.3rem solid #624e6b !important;
+  .jez,
+  .ostale,
+  .skills,
+  .kursevi,
+  .obrazovanje {
+    border-right: 0.3rem solid rgb(98, 78, 107) !important;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1500px) {
   body {
     overflow-x: hidden;
   }
-
   .licni,
-.iskustvo,
-.skills,
-.jez,
-.kursevi,
-.obrazovanje,
-.ostale {
+  .iskustvo,
+  .skills,
+  .jez,
+  .kursevi,
+  .obrazovanje,
+  .ostale {
     width: 95%;
     margin-left: 2.5%;
   }
-
   .licni {
     width: 100%;
   }
-
   img {
     height: 30%;
   }
-
   h2 {
     position: absolute;
     font-size: 1.6vw;
   }
-
   p,
-input {
+  input {
     line-height: 2vw;
     font-size: 1.3vw !important;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body,
-html,
-div {
+  html,
+  div {
     overflow-x: hidden;
   }
-
   h2 {
     margin-top: 1.5vh;
     font-size: 80% !important;
   }
-
   p,
-input {
+  input {
     font-size: 1.4vw !important;
   }
-
   .img {
     top: 3vw;
     right: 6vw;
     height: 50%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
