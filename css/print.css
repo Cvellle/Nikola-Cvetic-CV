@@ -1,7 +1,7 @@
 @media only print {
     body, html {
         background: #050007;
-        background: rgb(200, 180, 221) !important;
+        background: rgb(200, 180, 221);
         overflow-x: hidden;
         margin: 0;
         padding: 0;
@@ -95,7 +95,7 @@
         margin-left: 7.5%;
         line-height: 2vw;
         padding: 1.6vw 0 1.6vw 15.7vw;
-        background: rgb(200, 180, 221) !important;
+        background: rgb(200, 180, 221);
         border-top: 1.5rem solid rgb(98, 78, 107);
         border-left: 1.5rem solid rgb(98, 78, 107);
         border-top: 1.5vw solid rgb(98, 78, 107);
@@ -107,7 +107,7 @@
     .iskustvo {
         position: relative;
         margin-left: 7.5%;
-        line-height: 5vw !important;
+        line-height: 5vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -151,8 +151,8 @@
         top: 100%;
         margin-left: 7.5%;
         line-height: 2.25vw;
-        width: 85.5% !important;
-        height: 18.5vh !important;
+        width: 85.5%;
+        height: 18.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -170,7 +170,7 @@
         margin-left: 7.5%;
         line-height: 2.25vw;
         width: 85.5%;
-        height: 18.5vh !important;
+        height: 18.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -189,7 +189,7 @@
         margin-left: 7.5%;
         line-height: 2.25vw;
         width: 85.5%;
-        height: 18.5vh !important;
+        height: 18.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -206,7 +206,7 @@
         margin-left: 7.5%;
         line-height: 2.25vw;
         width: 85.5%;
-        height: 18.5vh !important;
+        height: 18.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -222,8 +222,8 @@
         top: 179.9%;
         margin-left: 7.17%;
         line-height: 2.25vw;
-        width: 85.9% !important;
-        height: 18.5vh !important;
+        width: 85.9%;
+        height: 18.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -232,7 +232,7 @@
         margin-bottom: 10%;
         border-radius: 0px 0px 0px 7rem;
         border-right: 1.65rem solid rgb(98, 78, 107);
-        border-right: 1.65vw solid rgb(98, 78, 107) !important;
+        border-right: 1.65vw solid rgb(98, 78, 107);
         border-radius: 0px 0px 0px 7vw;
     }
     .licni>p>input {
@@ -254,10 +254,10 @@
         text-decoration: none;
     }
     .all>div:not(.iskustvo):not( .licni) {
-        height: 18.55vh !important;
+        height: 18.55vh;
     }
     * {
-        -webkit-print-color-adjust: exact !important;
-        color-adjust: exact !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
     }
 }
