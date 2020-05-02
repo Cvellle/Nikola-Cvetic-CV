@@ -477,12 +477,6 @@ input {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  body,
-html,
-div {
-    overflow-x: hidden;
-  }
-
   h2 {
     margin-top: 1.5vh;
     font-size: 80% !important;
