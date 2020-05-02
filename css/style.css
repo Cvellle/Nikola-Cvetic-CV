@@ -25,6 +25,10 @@ h4 {
   padding-inline-end: 0;
 }
 
+.all {
+  overflow: hidden;
+}
+
 .img {
   position: absolute;
   display: flex;
@@ -87,8 +91,9 @@ div.obrazovanje:hover,
 div.ostale:hover {
   transition: 0.2s;
   -webkit-transition: 0.3s;
-  /* background: rgb(200, 180, 221); */
+  /* background: rgb(200, 180, 221); 2nd option */
   background: #e9ddf5;
+  background: #dfccf1;
 }
 
 .licni {
@@ -98,7 +103,8 @@ div.ostale:hover {
   justify-content: space-around;
   width: 93.5%;
   height: 28vh;
-  margin-top: 6.5vw;
+  margin-top: 7vh;
+  margin-top: 6vw;
   margin-left: 7.5%;
   line-height: 2vw;
   padding: 1.6vw 0 1.6vw 15.7vw;
@@ -120,7 +126,7 @@ div.ostale:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60vh;
+  height: 65vh;
   width: 85%;
   background: #07070f;
   background: white;
@@ -144,11 +150,36 @@ div.ostale:hover {
   background-color: rgba(245, 212, 245, 0.473) !important;
 }
 
+.iskustvo > div {
+  padding: 1.5vh 0 1.5vh 16.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.3s;
+  opacity: 1;
+}
+@media only screen and (max-width: 1023px) {
+  .iskustvo > div {
+    padding: 0.5vh 0 0.5vh 16.5vw;
+  }
+}
+.iskustvo > div:hover {
+  transition: 0.3s;
+  opacity: 1;
+}
+
 .iskustvo div:nth-child(2) {
   position: relative;
+  padding-top: 3.5vh;
   flex: 1 1 10%;
   background-color: rgba(194, 151, 211, 0.19);
+  background-color: rgba(197, 151, 211, 0.12);
   overflow-y: visible;
+}
+@media only screen and (max-width: 1023px) {
+  .iskustvo div:nth-child(2) {
+    padding-top: 1.5vw;
+  }
 }
 .iskustvo div:nth-child(2) .rotated {
   position: absolute;
@@ -168,6 +199,7 @@ div.ostale:hover {
   position: relative;
   flex: 1 1 30%;
   background-color: rgba(221, 160, 221, 0.184);
+  background-color: rgba(232, 188, 241, 0.178);
   overflow-y: visible;
 }
 .iskustvo div:nth-child(3) .rotated:nth-child(1) {
@@ -178,7 +210,7 @@ div.ostale:hover {
   width: 100%;
   height: 105%;
   transform: skewX(17deg) rotate(17deg);
-  transform-origin: 100% 15%;
+  transform-origin: 100% 0%;
   background-color: #ffe1f5;
   z-index: 1;
 }
@@ -187,13 +219,12 @@ div.ostale:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 105%;
+  height: 104.5%;
   background-color: #ffe1f5;
   transform: skewX(-17deg) rotate(-17deg);
-  transform-origin: 100% 15%;
-  background-color: rgba(194, 151, 211, 0.2);
+  transform-origin: 100% 0%;
+  background-color: rgba(194, 151, 211, 0.25);
   z-index: 2;
-  padding-right: -2vw;
 }
 
 .iskustvo div:nth-child(4) {
@@ -201,6 +232,7 @@ div.ostale:hover {
   overflow: visible;
   flex: 1 1 50%;
   background-color: rgba(236, 125, 199, 0.109);
+  background-color: rgba(236, 125, 199, 0.065);
 }
 .iskustvo div:nth-child(4) .rotated {
   position: absolute;
@@ -208,12 +240,11 @@ div.ostale:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 105%;
+  height: 104.5%;
   transform: skewX(-17deg) rotate(-17deg);
-  transform-origin: 100% 15%;
+  transform-origin: 100% 0%;
   background-color: #f1d5f0;
   z-index: 3;
-  padding-right: -2vw;
 }
 
 .iskustvo div:nth-child(5) {
@@ -221,6 +252,7 @@ div.ostale:hover {
   overflow: visible;
   flex: 1 1 30%;
   background-color: rgba(247, 191, 247, 0.18);
+  background-color: rgba(247, 191, 247, 0.1);
 }
 .iskustvo div:nth-child(5) .rotated:nth-child(1) {
   position: absolute;
@@ -228,25 +260,11 @@ div.ostale:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 105%;
+  height: 104.5%;
   transform: skewX(17deg) rotate(17deg);
-  transform-origin: 100% 15%;
+  transform-origin: 100% 0%;
   background-color: rgba(231, 164, 209, 0.2);
   z-index: 4;
-}
-
-.iskustvo > div {
-  padding: 1vh 0 1vh 16.5vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  transition: 0.3s;
-  opacity: 1;
-}
-
-.iskustvo > div:hover {
-  transition: 0.3s;
-  opacity: 1;
 }
 
 .skills {
@@ -266,6 +284,102 @@ div.ostale:hover {
   color: white;
   border-right: 0.8rem solid #624e6b;
   border-right: 0.8vw solid #624e6b;
+}
+.skills .rotated {
+  position: absolute;
+  top: 0;
+  left: 4.3%;
+  width: 95.7%;
+  height: 104.5%;
+  background-color: #ffe1f5;
+  transform: skewX(-17deg) rotate(-17deg);
+  transform-origin: 100% 0%;
+  background-color: rgba(194, 151, 211, 0.2);
+  z-index: 2;
+}
+
+.obrazovanje {
+  position: relative;
+  top: 160%;
+  margin-left: 7.5%;
+  line-height: 2.25vw;
+  width: 85%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5vw 0 1.5vw 16.5vw;
+  background: #080911;
+  background: white;
+  color: white;
+  border-right: 0.8rem solid #624e6b;
+  border-right: 0.8vw solid #624e6b;
+}
+.obrazovanje .rotated {
+  position: absolute;
+  overflow: visible;
+  top: 0;
+  left: 4.3%;
+  width: 95.7%;
+  height: 104.5%;
+  transform: skewX(17deg) rotate(17deg);
+  transform-origin: 100% 0%;
+  background-color: rgba(255, 225, 245, 0.3);
+  z-index: 3;
+}
+.obrazovanje .rotated:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 4.3%;
+  width: 95.7%;
+  height: 105%;
+  background-color: #ffe1f5;
+  transform: skewX(-17deg) rotate(-17deg);
+  transform-origin: 100% 0%;
+  background-color: rgba(194, 151, 211, 0.2);
+  z-index: 2;
+}
+
+.kursevi {
+  position: relative;
+  top: 140%;
+  margin-left: 7.5%;
+  line-height: 2.25vw;
+  width: 85%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5vw 0 1.5vw 16.5vw;
+  background: #07070f;
+  background: white;
+  color: white;
+  border-right: 0.8rem solid #624e6b;
+  border-right: 0.8vw solid #624e6b;
+}
+.kursevi .rotated {
+  position: absolute;
+  overflow: visible;
+  top: 0;
+  left: 4.3%;
+  width: 95.7%;
+  height: 104.5%;
+  transform: skewX(17deg) rotate(17deg);
+  transform-origin: 100% 0%;
+  background-color: #ffe1f5;
+  z-index: 1;
+}
+.kursevi .rotated:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 4.3%;
+  width: 95.7%;
+  height: 104.5%;
+  background-color: #ffe1f5;
+  transform: skewX(-17deg) rotate(-17deg);
+  transform-origin: 100% 0%;
+  background-color: rgba(194, 151, 211, 0.4);
+  z-index: 2;
 }
 
 .jez {
@@ -287,41 +401,29 @@ div.ostale:hover {
   border-right: 0.8rem solid #624e6b;
   border-right: 0.8vw solid #624e6b;
 }
-
-.kursevi {
-  position: relative;
-  top: 140%;
-  margin-left: 7.5%;
-  line-height: 2.25vw;
-  width: 85%;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
-  background: #07070f;
-  background: white;
-  color: white;
-  border-right: 0.8rem solid #624e6b;
-  border-right: 0.8vw solid #624e6b;
+.jez .rotated {
+  position: absolute;
+  overflow: visible;
+  top: 0;
+  left: 4.3%;
+  width: 95.7%;
+  height: 104.5%;
+  transform: skewX(17deg) rotate(17deg);
+  transform-origin: 100% 0%;
+  background-color: rgba(255, 225, 245, 0.3);
+  z-index: 3;
 }
-
-.obrazovanje {
-  position: relative;
-  top: 160%;
-  margin-left: 7.5%;
-  line-height: 2.25vw;
-  width: 85%;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
-  background: #080911;
-  background: white;
-  color: white;
-  border-right: 0.8rem solid #624e6b;
-  border-right: 0.8vw solid #624e6b;
+.jez .rotated:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 4.3%;
+  width: 95.7%;
+  height: 104.5%;
+  background-color: #ffe1f5;
+  transform: skewX(-17deg) rotate(-17deg);
+  transform-origin: 100% 0%;
+  background-color: rgba(194, 151, 211, 0.2);
+  z-index: 2;
 }
 
 .ostale {
@@ -344,6 +446,27 @@ div.ostale:hover {
   border-right: 0.8vw solid #624e6b;
   border-radius: 0px 0px 0px 3.5vw;
 }
+@media only screen and (max-width: 1023px) {
+  .ostale {
+    border-radius: 0px 0px 0px 1.5rem;
+  }
+}
+.ostale .leftDiv {
+  border-radius: 0px 0px 0px 3.5vw;
+}
+@media only screen and (max-width: 1023px) {
+  .ostale .leftDiv {
+    border-radius: 0px 0px 0px 1.5rem;
+  }
+}
+
+.rotated:hover {
+  transition: 1s;
+}
+
+.rotated:hover {
+  transition: 1s;
+}
 
 .licni > p > input {
   background: #ceb4dd;
@@ -360,7 +483,7 @@ audio {
   top: -50%;
 }
 
-.iskustvo p a {
+p a {
   color: #94389c;
   opacity: 1;
   -webkit-text-stroke: 0px black;
@@ -428,10 +551,6 @@ input {
     border-top: 0.3rem solid #624e6b;
   }
 
-  .ostale {
-    border-radius: 0px 0px 0px 1.5rem;
-  }
-
   .iskustvo,
 .jez,
 .ostale,
@@ -458,6 +577,7 @@ input {
   }
 
   .licni {
+    margin-top: 2.5vw;
     width: 100%;
   }
 
