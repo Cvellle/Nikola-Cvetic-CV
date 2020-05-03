@@ -29,7 +29,44 @@ h4 {
   overflow: hidden;
 }
 
-.img {
+.print {
+  display: block;
+  position: fixed;
+  bottom: 1.5vw;
+  right: 1.5vw;
+  width: 5vw;
+  height: auto;
+  z-index: 15;
+  opacity: 0.1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 767px) {
+  .print {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .print {
+    bottom: 1.5vw;
+    right: 5vw;
+    width: 5vw;
+  }
+}
+.print:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.print::after {
+  content: " - Remember this";
+  position: fixed;
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+  z-index: 15;
+}
+
+.me {
   position: absolute;
   display: flex;
   margin-right: auto;
@@ -41,8 +78,7 @@ h4 {
   transition: 0.5s;
   -webkit-transition: 0.5s;
 }
-
-.img:hover {
+.me:hover {
   position: absolute;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -69,7 +105,6 @@ input {
   font-size: 1.02vw;
   line-height: 1vw;
   font-weight: 600;
-  color: #8e66a8;
   color: rgba(0, 0, 0, 0.671);
 }
 
@@ -91,9 +126,7 @@ div.obrazovanje:hover,
 div.ostale:hover {
   transition: 0.2s;
   -webkit-transition: 0.3s;
-  /* background: rgb(200, 180, 221); 2nd option */
-  background: #e9ddf5;
-  background: #dfccf1;
+  background: #ceb4dd;
 }
 
 .licni {
@@ -278,9 +311,7 @@ div.ostale:hover {
   flex-direction: column;
   justify-content: space-around;
   padding: 1.5vw 0 1.5vw 16.5vw;
-  background: linear-gradient(aqua, skyblue);
-  background: #080911;
-  background: white;
+  background: #fdf4fd;
   color: white;
   border-right: 0.8rem solid #624e6b;
   border-right: 0.8vw solid #624e6b;
@@ -309,8 +340,7 @@ div.ostale:hover {
   flex-direction: column;
   justify-content: space-around;
   padding: 1.5vw 0 1.5vw 16.5vw;
-  background: #080911;
-  background: white;
+  background: #fdf6fd;
   color: white;
   border-right: 0.8rem solid #624e6b;
   border-right: 0.8vw solid #624e6b;
@@ -351,8 +381,7 @@ div.ostale:hover {
   flex-direction: column;
   justify-content: space-around;
   padding: 1.5vw 0 1.5vw 16.5vw;
-  background: #07070f;
-  background: white;
+  background: #fdf4fd;
   color: white;
   border-right: 0.8rem solid #624e6b;
   border-right: 0.8vw solid #624e6b;
@@ -393,10 +422,7 @@ div.ostale:hover {
   flex-direction: column;
   justify-content: space-around;
   padding: 1.5vw 0 1.5vw 16.5vw;
-  background: #050007;
-  background: linear-gradient(aqua, skyblue);
-  background: #05060c;
-  background: white;
+  background: #fdf6fd;
   color: white;
   border-right: 0.8rem solid #624e6b;
   border-right: 0.8vw solid #624e6b;
@@ -437,8 +463,7 @@ div.ostale:hover {
   flex-direction: column;
   justify-content: space-around;
   padding: 1.5vw 0 1.5vw 16.5vw;
-  background: #07070f;
-  background: white;
+  background: #fdf4fd;
   color: white;
   margin-bottom: 10%;
   border-radius: 0px 0px 0px 3.5rem;
@@ -506,7 +531,7 @@ p a {
     height: auto;
   }
 
-  .img {
+  .me {
     position: absolute;
     top: 10%;
     right: 6vw;
@@ -607,7 +632,7 @@ input {
     font-size: 1.4vw !important;
   }
 
-  .img {
+  .me {
     top: 3vw;
     right: 6vw;
     height: 50%;
