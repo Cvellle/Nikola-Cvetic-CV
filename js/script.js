@@ -12,7 +12,10 @@ document.querySelectorAll("audio").forEach(element => {
 });
 
 // on load
-// const all = document.querySelector(".all");
-// window.addEventListener("load", () => {
-//     all.style.opacity = 1;
-// });
+// if (window.location.href == "https://cvellle.github.io/Nikola-Cvetic-CV/") {
+// }
+
+const all = document.querySelector(".all");
+window.addEventListener("load", () => {
+    all.style.opacity = 1;
+}); window.opacity = 0;
