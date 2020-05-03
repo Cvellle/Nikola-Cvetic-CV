@@ -12,7 +12,7 @@ document.querySelectorAll("audio").forEach(element => {
 });
 
 // on load
-const all = document.querySelector(".all");
-window.addEventListener("load", () => {
-    all.style.opacity = 1;
-});
+// const all = document.querySelector(".all");
+// window.addEventListener("load", () => {
+//     all.style.opacity = 1;
+// });
