@@ -27,6 +27,8 @@ h4 {
 
 .all {
   overflow: hidden;
+  opacity: 0;
+  transition: 1s;
 }
 
 .print {
