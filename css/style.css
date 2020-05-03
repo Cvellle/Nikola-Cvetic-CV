@@ -48,6 +48,13 @@ h4 {
     display: none;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .print {
+    bottom: 1.5vw;
+    right: 7vw;
+    width: 5vw;
+  }
+}
 @media only screen and (min-width: 1024px) and (max-width: 1500px) {
   .print {
     bottom: 1.5vw;
@@ -79,6 +86,25 @@ h4 {
   border-radius: 1.5vw;
   transition: 0.5s;
   -webkit-transition: 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  .me {
+    top: 10%;
+    right: 6vw;
+    height: 80%;
+    border-radius: 10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    border-radius: 3vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .me {
+    top: 15%;
+    right: 10%;
+    height: 70%;
+    border-radius: 3vw;
+  }
 }
 .me:hover {
   position: absolute;
@@ -152,6 +178,13 @@ div.ostale:hover {
   border-radius: 3.5vw 0px 0px 0px;
   border-right: none;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .licni {
+    border-left: 1.3vw solid #624e6b;
+    border-top: 1.3vw solid #624e6b !important;
+    border-radius: 7vw 0px 0px 0px !important;
+  }
+}
 
 .iskustvo {
   position: relative;
@@ -174,6 +207,13 @@ div.ostale:hover {
   border-right: 0.8vw solid #624e6b;
   z-index: 10;
   overflow: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .iskustvo {
+    border-right: 1.3vw solid #624e6b;
+    border-top: 1.3vw solid #624e6b !important;
+    border-radius: 0 7vw 0px 0px !important;
+  }
 }
 
 .leftDiv {
@@ -478,12 +518,22 @@ div.ostale:hover {
     border-radius: 0px 0px 0px 1.5rem;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .ostale {
+    border-radius: 0px 0px 0px 7vw;
+  }
+}
 .ostale .leftDiv {
   border-radius: 0px 0px 0px 3.5vw;
 }
 @media only screen and (max-width: 1023px) {
   .ostale .leftDiv {
     border-radius: 0px 0px 0px 1.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .ostale .leftDiv {
+    border-radius: 0px 0px 0px 7vw;
   }
 }
 
@@ -531,16 +581,6 @@ p a {
     width: 95%;
     display: block;
     height: auto;
-  }
-
-  .me {
-    position: absolute;
-    top: 10%;
-    right: 6vw;
-    height: 80%;
-    border-radius: 10px;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
   }
 
   p,
@@ -631,13 +671,26 @@ input {
 
   p,
 input {
-    font-size: 1.4vw !important;
+    font-size: 1.38vw !important;
+    line-height: 5vw;
   }
 
-  .me {
-    top: 3vw;
-    right: 6vw;
-    height: 50%;
+  .licni {
+    border-left: 1.3vw solid #624e6b;
+    border-top: 1.3vw solid #624e6b !important;
+  }
+
+  .iskustvo {
+    border-top: 1.3vw solid #624e6b;
+  }
+
+  .iskustvo,
+.jez,
+.ostale,
+.skills,
+.kursevi,
+.obrazovanje {
+    border-right: 1.3vw solid #624e6b !important;
   }
 }
 
