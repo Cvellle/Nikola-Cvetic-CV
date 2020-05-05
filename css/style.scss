@@ -224,6 +224,12 @@ div.ostale:hover {
     border-radius: 0 7vw 0px 0px !important;
   }
 
+  &:hover img {
+    transition: filter 1s, transform 0.3s;
+    filter: brightness(1);
+    opacity: 1;
+  }
+
   .icons {
     display: flex;
     align-items: center;
@@ -270,7 +276,6 @@ div.ostale:hover {
     &.next {
       position: relative;
       border-radius: 50%;
-      // border: 0.2rem solid rgb(78, 78, 78);
     }
   }
 }
@@ -334,12 +339,6 @@ div.ostale:hover {
   background-color: rgba(221, 160, 221, 0.184);
   background-color: rgba(232, 188, 241, 0.178);
   overflow-y: visible;
-
-  &:hover img {
-    transition: filter 1s, transform 0.3s;
-    filter: brightness(1);
-    opacity: 1;
-  }
 
   & .rotated {
     &:nth-child(1) {

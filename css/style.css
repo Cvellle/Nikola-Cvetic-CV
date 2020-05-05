@@ -220,6 +220,11 @@ div.ostale:hover {
     border-radius: 0 7vw 0px 0px !important;
   }
 }
+.iskustvo:hover img {
+  transition: filter 1s, transform 0.3s;
+  filter: brightness(1);
+  opacity: 1;
+}
 .iskustvo .icons {
   display: flex;
   align-items: center;
@@ -324,11 +329,6 @@ div.ostale:hover {
   background-color: rgba(221, 160, 221, 0.184);
   background-color: rgba(232, 188, 241, 0.178);
   overflow-y: visible;
-}
-.iskustvo div:nth-child(3):hover img {
-  transition: filter 1s, transform 0.3s;
-  filter: brightness(1);
-  opacity: 1;
 }
 .iskustvo div:nth-child(3) .rotated:nth-child(1) {
   position: absolute;
