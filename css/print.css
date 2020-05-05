@@ -132,6 +132,9 @@
     .iskustvo div:nth-child(3) {
         flex: 1 1 23%;
     }
+    .iskustvo div:nth-child(3) img {
+        display: none;
+    }
     .iskustvo div:nth-child(4) {
         flex: 1 1 39%;
     }
