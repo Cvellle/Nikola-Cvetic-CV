@@ -63,10 +63,10 @@
         display: none;
     }
     .words {
-        display: inline-block;
+        display: inline-block !important;
     }
     .icons {
-        display: none;
+        display: none !important;
     }
     h2 {
         position: absolute;

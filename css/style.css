@@ -65,14 +65,6 @@ h4 {
   opacity: 1;
   transition: 0.5s;
 }
-.print::after {
-  content: " - Remember this";
-  position: fixed;
-  background-color: yellow;
-  color: red;
-  font-weight: bold;
-  z-index: 15;
-}
 
 .me {
   position: absolute;
@@ -86,7 +78,7 @@ h4 {
   transition: 0.5s;
   -webkit-transition: 0.5s;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .me {
     top: 10%;
     right: 6vw;
@@ -114,18 +106,65 @@ h4 {
 
 h2 {
   position: absolute;
-  font-size: 140%;
+  font-size: 1.6vw;
   top: 0;
-  margin-top: 1.4vw;
+  margin-top: 1.7vw;
   left: 2.8vw;
   font-weight: 900;
   color: #3a2449;
   z-index: 6;
 }
+@media only screen and (min-width: 768px) {
+  h2 {
+    margin-top: 2.8vw;
+    font-size: 1.6vw;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  h2 {
+    font-size: 1.6vw;
+    margin-top: 1.4vw;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  h2 {
+    margin-top: 1.3vw;
+    font-size: 1.5vw;
+  }
+}
 
 .licni h2 {
   top: 0vw;
+  margin-top: 1.4vw;
   left: 2.3vw;
+}
+@media only screen and (min-width: 768px) {
+  .licni h2 {
+    margin-top: 2.8vw;
+    font-size: 1.6vw;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .licni h2 {
+    margin-top: 1.5vw;
+  }
+}
+
+.iskustvo h2 {
+  top: 0vw;
+  margin-top: 1.4vw;
+  left: 2.3vw;
+}
+@media only screen and (min-width: 768px) {
+  .iskustvo h2 {
+    margin-top: 2.4vw;
+    font-size: 1.6vw;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .iskustvo h2 {
+    margin-top: 1.2vw;
+  }
 }
 
 p,
@@ -167,29 +206,46 @@ div.ostale:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 93.5%;
-  height: 15vw;
+  height: 30vw;
   margin-top: 7vh;
   margin-top: 6vw;
   margin-left: 7.5%;
   padding: 1.6vw 0 1.6vw 15.7vw;
   background: transparent;
-  border-top: 0.8rem solid #624e6b;
-  border-left: 0.8rem solid #624e6b;
-  border-top: 0.8vw solid #624e6b;
-  border-left: 0.8vw solid #624e6b;
-  border-radius: 3.5rem 0px 0px 0px;
-  border-radius: 3.5vw 0px 0px 0px;
+  border-top: 1.3rem solid #624e6b;
+  border-left: 1.3rem solid #624e6b;
+  border-top: 1.3vw solid #624e6b;
+  border-left: 1.3vw solid #624e6b;
+  border-radius: 7rem 0px 0px 0px;
+  border-radius: 7vw 0px 0px 0px;
   border-right: none;
 }
 .licni p, .licni input {
-  line-height: 3vh;
+  line-height: 2vw;
+  height: 2vw;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .licni {
     border-left: 1.3vw solid #624e6b;
-    border-top: 1.3vw solid #624e6b !important;
-    border-radius: 7vw 0px 0px 0px !important;
+    border-top: 1.3vw solid #624e6b;
+    border-radius: 7vw 0px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .licni {
+    height: 15vw;
+    width: 93.5%;
+    border-top: 0.8rem solid #624e6b;
+    border-left: 0.8rem solid #624e6b;
+    border-top: 0.8vw solid #624e6b;
+    border-left: 0.8vw solid #624e6b;
+    border-radius: 3.5vw 0px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .licni {
+    margin-top: 7.5vw;
+    font-size: 1.5vw;
   }
 }
 
@@ -213,6 +269,12 @@ div.ostale:hover {
   border-right: 0.8vw solid #624e6b;
   z-index: 10;
   overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .iskustvo {
+    border-radius: 0px 1.5rem 0px 0px;
+    border-top: 0.3rem solid #624e6b;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .iskustvo {
@@ -248,14 +310,19 @@ div.ostale:hover {
   filter: brightness(0.6) opacity(0.5);
   transition: filter 1s, transform 0.1s;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
   .iskustvo img {
-    width: 5.5vw;
+    width: 3vw;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .iskustvo img {
     width: 2.5vw;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .iskustvo img {
+    width: 2vw;
   }
 }
 .iskustvo img:hover {
@@ -286,13 +353,13 @@ div.ostale:hover {
 }
 
 .iskustvo > div {
-  padding: 1.5vh 0 1.5vh 16.5vw;
+  padding: 0.5vw 0 0.5vw 16.5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   transition: 0.3s;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   .iskustvo > div {
     padding: 0.5vh 0 0.5vh 16.5vw;
   }
@@ -624,7 +691,7 @@ p a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 767px) {
   .licni,
 .iskustvo,
 .skills,
@@ -635,9 +702,15 @@ p a {
     margin-left: 0;
     left: 2.5%;
     line-height: 5vw;
+  }
+
+  .iskustvo,
+.skills,
+.jez,
+.kursevi,
+.obrazovanje,
+.ostale {
     width: 95%;
-    display: block;
-    height: auto;
   }
 
   p,
@@ -646,33 +719,9 @@ input {
     line-height: 5vw;
   }
 
-  h2 {
-    margin-top: 2%;
-    margin-top: 0 !important;
-    margin-left: 0vw;
-    position: absolute;
-    font-size: 1.9vw;
-  }
-
-  .licni {
-    display: block;
-    height: auto;
-    width: 97.5% !important;
-    border-top: 0.3rem solid #624e6b;
-    border-left: 0.3rem solid #624e6b;
-    transform: translateY(0.3vh);
-    border-radius: 1.5rem 0px 0px 0px;
-    border-right: none;
-  }
-
   .licni p {
     max-width: 70%;
     margin-right: 0;
-  }
-
-  .iskustvo {
-    border-radius: 0px 1.5rem 0px 0px;
-    border-top: 0.3rem solid #624e6b;
   }
 
   .iskustvo,
@@ -708,18 +757,8 @@ input {
   img {
     height: 30%;
   }
-
-  h2 {
-    position: absolute;
-    font-size: 1.6vw;
-  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  h2 {
-    margin-top: 1.5vh;
-    font-size: 80% !important;
-  }
-
   p,
 input {
     font-size: 1.38vw !important;
