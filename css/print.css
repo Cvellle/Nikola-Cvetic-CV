@@ -43,6 +43,15 @@
         -webkit-transition: 0.5s;
         border-radius: 0px;
     }
+    .leftDiv {
+        display: none;
+    }
+    .words {
+        display: inline-block;
+    }
+    .icons {
+        display: none;
+    }
     h2 {
         position: absolute;
         top: 0;
@@ -128,19 +137,23 @@
     .iskustvo div:nth-child(2) {
         flex: 1 1 5%;
         padding-top: 1vh;
+        background-color: #ffF;
     }
     .iskustvo div:nth-child(3) {
         flex: 1 1 23%;
+        background-color: #ffF;
     }
     .iskustvo div:nth-child(3) img {
-        display: none;
+        background-color: #ffF;
     }
     .iskustvo div:nth-child(4) {
         flex: 1 1 39%;
+        background-color: #ffF;
     }
     .iskustvo div:nth-child(5) {
         flex: 1 1 23%;
         position: relative;
+        background-color: #ffF;
     }
     .iskustvo>div {
         display: flex;
@@ -148,9 +161,7 @@
         justify-content: space-around;
         transition: 0.3s;
         opacity: 0.9;
-    }
-    .iskustvo .leftDiv {
-        display: none;
+        padding-left: 0 !important;
     }
     .skills {
         position: relative;
