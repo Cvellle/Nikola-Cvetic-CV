@@ -19,6 +19,22 @@
         padding-inline-start: 0;
         padding-inline-end: 0;
     }
+    p, input {
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-size: 1.95vw;
+        line-height: 2vh;
+        font-weight: 600;
+        color: #8E66A8;
+        color: rgba(0, 0, 0, 0.671);
+    }
+    .licni>p>input {
+        background: rgb(200, 180, 221);
+        border: none;
+        font-weight: 600;
+        display: inline-block;
+        width: 15em;
+        cursor: text;
+    }
     .all>div {
         padding-right: 3vw;
     }
@@ -68,19 +84,19 @@
         margin-top: 2.5%;
     }
     .skills h2 {
-        margin-top: 3%;
+        margin-top: 5%;
     }
     .obrazovanje h2 {
-        margin-top: 5.3%;
+        margin-top: 5.45%;
     }
     .kursevi h2 {
-        margin-top: 4.1%;
+        margin-top: 5.4%;
     }
     .jez h2 {
-        margin-top: 5.2%;
+        margin-top: 5.3%;
     }
     .ostale h2 {
-        margin-top: 4.3%;
+        margin-top: 5.2%;
     }
     .iskustvo, .skills, .kursevi, .jez, .obrazovanje, .ostale {
         transition: 0.5s all;
@@ -172,7 +188,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1vh 0 4vh 16.5vw;
+        padding: 3vh 0 3vh 16.5vw;
         background: linear-gradient(aqua, skyblue);
         background: #080911;
         background: white;
@@ -189,7 +205,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1vh 0 4vh 16.5vw;
+        padding: 3vh 0 3vh 16.5vw;
         background: #050007;
         background: linear-gradient(aqua, skyblue);
         background: #05060C;
@@ -207,7 +223,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1vh 0 4vh 16.5vw;
+        padding: 3vh 0 3vh 16.5vw;
         background: #07070F;
         background: white;
         color: white;
@@ -223,7 +239,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1vh 0 4vh 16.5vw;
+        padding: 3vh 0 3vh 16.5vw;
         background: #080911;
         background: white;
         color: white;
@@ -238,29 +254,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1vh 0 4vh 16.5vw;
+        padding: 3vh 0 3vh 16.5vw;
         background: white;
         margin-bottom: 10%;
         border-radius: 0px 0px 0px 7rem;
         border-right: 1.5rem solid rgb(98, 78, 107);
         border-right: 1.5vw solid rgb(98, 78, 107);
         border-radius: 0px 0px 0px 7vw;
-    }
-    p, input {
-        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-        font-size: 2vw;
-        line-height: 2vh;
-        font-weight: 600;
-        color: #8E66A8;
-        color: rgba(0, 0, 0, 0.671);
-    }
-    .licni>p>input {
-        background: rgb(200, 180, 221);
-        border: none;
-        font-weight: 600;
-        display: inline-block;
-        width: 15em;
-        cursor: text;
     }
     audio {
         position: absolute;
