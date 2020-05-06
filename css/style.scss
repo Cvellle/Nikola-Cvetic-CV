@@ -61,7 +61,7 @@ h4 {
     width: 5vw;
   }
 
-  @media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  @media only screen and (min-width: 1025px) and (max-width: 1500px) {
     bottom: 1.5vw;
     right: 5vw;
     width: 5vw;
@@ -114,7 +114,7 @@ h2 {
   position: absolute;
   font-size: 1.6vw;
   top: 0;
-  margin-top: 1.7vw;
+  margin-top: 3vw;
   left: 2.8vw;
   font-weight: 900;
   color: #3a2449;
@@ -131,19 +131,18 @@ h2 {
   }
 
   @media only screen and (min-width: 1500px) {
-    margin-top: 1.3vw;
+    margin-top: 1.4vw;
     font-size: 1.5vw;
   }
 }
 
 .licni h2 {
-  top: 0vw;
-  margin-top: 1.4vw;
-  left: 2.3vw;
-
   @media only screen and (min-width: 768px) {
     margin-top: 2.8vw;
     font-size: 1.6vw;
+  }
+  @media only screen and (min-width: 1025px) {
+    margin-top: 1.4vw;
   }
 
   @media only screen and (min-width: 1500px) {
@@ -152,13 +151,12 @@ h2 {
 }
 
 .iskustvo h2 {
-  top: 0vw;
-  margin-top: 1.4vw;
-  left: 2.3vw;
-
   @media only screen and (min-width: 768px) {
     margin-top: 2.4vw;
     font-size: 1.6vw;
+  }
+  @media only screen and (min-width: 1025px) {
+    margin-top: 1.4vw;
   }
 
   @media only screen and (min-width: 1500px) {
@@ -171,31 +169,23 @@ input {
   font-size: 1.02vw;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.671);
+  font-size: 2.5vw;
+  line-height: 5vw;
 
-  @media only screen and (min-width: 1024px) and (max-width: 1500px) {
-    font-size: 1.3vw !important;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 2vw;
+    line-height: 5vw;
   }
-}
 
-.iskustvo,
-.skills,
-.kursevi,
-.jez,
-.obrazovanje,
-.ostale {
-  transition: 0.5s all;
-  -webkit-transition: all 0.7, border 0.01s;
-}
+  @media only screen and (min-width: 1025px) {
+    font-size: 1.3vw;
+    line-height: 2.5vw;
+  }
 
-div.iskustvo:hover,
-div.skills:hover,
-div.kursevi:hover,
-div.jez:hover,
-div.obrazovanje:hover,
-div.ostale:hover {
-  transition: 0.2s;
-  -webkit-transition: 0.3s;
-  background: $hoverColor;
+  @media only screen and (min-width: 1500px) {
+    font-size: 1.38vw;
+    line-height: 2.5vw;
+  }
 }
 
 .licni {
@@ -204,9 +194,10 @@ div.ostale:hover {
   flex-direction: column;
   justify-content: space-around;
   height: 30vw;
+  width: 97.5%;
   margin-top: 7vh;
   margin-top: 6vw;
-  margin-left: 7.5%;
+  margin-left: 2.5%;
   padding: 1.6vw 0 1.6vw 15.7vw;
   background: transparent;
   border-top: 1.3rem solid rgb(98, 78, 107);
@@ -223,6 +214,16 @@ div.ostale:hover {
     height: 2vw;
   }
 
+  & p > input {
+    background: $bgColor;
+    border: none;
+    font-weight: 600;
+    display: inline-block;
+    width: 15em;
+    cursor: text;
+    font-family: $centuryGothic;
+  }
+
   @media only screen and (min-width: 768px) {
     border-left: 1.3vw solid rgb(98, 78, 107);
     border-top: 1.3vw solid rgb(98, 78, 107);
@@ -231,7 +232,9 @@ div.ostale:hover {
 
   @media only screen and (min-width: 1025px) {
     height: 15vw;
-    width: 93.5%;
+    margin-top: 2.5vw;
+    width: 97.5%;
+    margin-left: 2.5%;
     border-top: 0.8rem solid rgb(98, 78, 107);
     border-left: 0.8rem solid rgb(98, 78, 107);
     border-top: 0.8vw solid rgb(98, 78, 107);
@@ -242,37 +245,53 @@ div.ostale:hover {
   @media only screen and (min-width: 1500px) {
     margin-top: 7.5vw;
     font-size: 1.5vw;
+    min-width: 85.5%;
+    width: 92.5%;
+    margin-left: 7.5%;
   }
 }
 .iskustvo {
   position: relative;
   padding: 0vw 0 0vw 0vw;
-  margin-left: 7.5%;
+  margin-left: 2.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 85%;
+  width: 95%;
   line-height: 2.5vw;
   background: #07070f;
   background: white;
   color: white;
-  border-radius: 0px 3.5rem 0px 0px;
-  border-top: 0.8rem solid rgb(98, 78, 107);
-  border-right: 0.8rem solid rgb(98, 78, 107);
-  border-radius: 0px 3.5vw 0px 0px;
-  border-top: 0.8vw solid rgb(98, 78, 107);
-  border-right: 0.8vw solid rgb(98, 78, 107);
+  border-radius: 0px 7rem 0px 0px;
+  border-top: 1.3rem solid rgb(98, 78, 107);
+  border-right: 1.3rem solid rgb(98, 78, 107);
+  border-radius: 0px 7vw 0px 0px;
+  border-top: 1.3vw solid rgb(98, 78, 107);
+  border-right: 1.3vw solid rgb(98, 78, 107);
   z-index: 10;
   overflow: hidden;
 
+  @media only screen and (min-width: 1025px) {
+    width: 95%;
+    margin-left: 2.5%;
+    border-top: 0.8rem solid rgb(98, 78, 107);
+    border-right: 0.8rem solid rgb(98, 78, 107);
+    border-radius: 0px 3.5vw 0px 0px;
+    border-top: 0.8vw solid rgb(98, 78, 107);
+    border-right: 0.8vw solid rgb(98, 78, 107);
+  }
+
+  @media only screen and (min-width: 1500px) {
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
   @media screen and (max-width: 767px) {
-    border-radius: 0px 1.5rem 0px 0px;
-    border-top: 0.3rem solid rgb(98, 78, 107);
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     border-right: 1.3vw solid rgb(98, 78, 107);
-    border-top: 1.3vw solid rgb(98, 78, 107) !important;
+    border-top: 1.3vw solid rgb(98, 78, 107);
     border-radius: 0 7vw 0px 0px !important;
   }
 
@@ -309,7 +328,7 @@ div.ostale:hover {
       width: 2.5vw * 1.2;
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1025px) {
       width: 2.5vw;
     }
 
@@ -476,18 +495,32 @@ div.ostale:hover {
 
 .skills {
   position: relative;
-  top: 100%;
-  margin-left: 7.5%;
+  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 85%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1.5vw 0 1.5vw 16.5vw;
   background: rgb(253, 244, 253);
   color: white;
-  border-right: 0.8rem solid rgb(98, 78, 107);
-  border-right: 0.8vw solid rgb(98, 78, 107);
+  border-right: 1.3rem solid rgb(98, 78, 107);
+  border-right: 1.3vw solid rgb(98, 78, 107);
+
+  @media only screen and (min-width: 768px) {
+    border-right: 1.3vw solid rgb(98, 78, 107);
+  }
+
+  @media only screen and (min-width: 1025px) {
+    border-right: 0.8vw solid rgb(98, 78, 107);
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    width: 85%;
+    margin-left: 7.5%;
+  }
 
   & .rotated {
     position: absolute;
@@ -506,17 +539,32 @@ div.ostale:hover {
 .obrazovanje {
   position: relative;
   top: 160%;
-  margin-left: 7.5%;
+  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 85%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1.5vw 0 1.5vw 16.5vw;
   background: lighten(rgb(253, 244, 253), 0.4%);
   color: white;
-  border-right: 0.8rem solid rgb(98, 78, 107);
-  border-right: 0.8vw solid rgb(98, 78, 107);
+  border-right: 1.3rem solid rgb(98, 78, 107);
+  border-right: 1.3vw solid rgb(98, 78, 107);
+
+  @media only screen and (min-width: 768px) {
+    border-right: 1.3vw solid rgb(98, 78, 107);
+  }
+
+  @media only screen and (min-width: 1025px) {
+    border-right: 0.8vw solid rgb(98, 78, 107);
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    width: 85%;
+    margin-left: 7.5%;
+  }
 
   & .rotated {
     position: absolute;
@@ -547,17 +595,32 @@ div.ostale:hover {
 .kursevi {
   position: relative;
   top: 140%;
-  margin-left: 7.5%;
+  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 85%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1.5vw 0 1.5vw 16.5vw;
   background: lighten(rgb(253, 244, 253), 0%);
   color: white;
-  border-right: 0.8rem solid rgb(98, 78, 107);
-  border-right: 0.8vw solid rgb(98, 78, 107);
+  border-right: 1.3rem solid rgb(98, 78, 107);
+  border-right: 1.3vw solid rgb(98, 78, 107);
+
+  @media only screen and (min-width: 768px) {
+    border-right: 1.3vw solid rgb(98, 78, 107);
+  }
+
+  @media only screen and (min-width: 1025px) {
+    border-right: 0.8vw solid rgb(98, 78, 107);
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    width: 85%;
+    margin-left: 7.5%;
+  }
 
   & .rotated {
     position: absolute;
@@ -588,17 +651,32 @@ div.ostale:hover {
 .jez {
   position: relative;
   top: 120%;
-  margin-left: 7.5%;
+  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 85%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1.5vw 0 1.5vw 16.5vw;
   background: lighten(rgb(253, 244, 253), 0.4%);
   color: white;
-  border-right: 0.8rem solid rgb(98, 78, 107);
-  border-right: 0.8vw solid rgb(98, 78, 107);
+  border-right: 1.3rem solid rgb(98, 78, 107);
+  border-right: 1.3vw solid rgb(98, 78, 107);
+
+  @media only screen and (min-width: 768px) {
+    border-right: 1.3vw solid rgb(98, 78, 107);
+  }
+
+  @media only screen and (min-width: 1025px) {
+    border-right: 0.8vw solid rgb(98, 78, 107);
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    width: 85%;
+    margin-left: 7.5%;
+  }
 
   & .rotated {
     position: absolute;
@@ -629,9 +707,9 @@ div.ostale:hover {
 .ostale {
   position: relative;
   top: 179.9%;
-  margin-left: 7.5%;
+  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 85%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -640,9 +718,24 @@ div.ostale:hover {
   color: white;
   margin-bottom: 10%;
   border-radius: 0px 0px 0px 3.5rem;
-  border-right: 0.8rem solid rgb(98, 78, 107);
-  border-right: 0.8vw solid rgb(98, 78, 107);
+  border-right: 1.3rem solid rgb(98, 78, 107);
+  border-right: 1.3vw solid rgb(98, 78, 107);
   border-radius: 0px 0px 0px 3.5vw;
+
+  @media only screen and (min-width: 768px) {
+    border-right: 1.3vw solid rgb(98, 78, 107);
+  }
+
+  @media only screen and (min-width: 1025px) {
+    border-right: 0.8vw solid rgb(98, 78, 107);
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    width: 85%;
+    margin-left: 7.5%;
+  }
 
   @media only screen and (max-width: 1023px) {
     border-radius: 0px 0px 0px 1.5rem;
@@ -672,16 +765,6 @@ div.ostale:hover {
   transition: 1s;
 }
 
-.licni > p > input {
-  background: $bgColor;
-  border: none;
-  font-weight: 600;
-  display: inline-block;
-  width: 15em;
-  cursor: text;
-  font-family: $centuryGothic;
-}
-
 audio {
   position: absolute;
   top: -50%;
@@ -694,90 +777,23 @@ p a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 767px) {
-  .licni,
-  .iskustvo,
-  .skills,
-  .jez,
-  .kursevi,
-  .obrazovanje,
-  .ostale {
-    margin-left: 0;
-    left: 2.5%;
-    line-height: 5vw;
-  }
-  .iskustvo,
-  .skills,
-  .jez,
-  .kursevi,
-  .obrazovanje,
-  .ostale {
-    width: 95%;
-  }
-  p,
-  input {
-    font-size: 0.5rem !important;
-    line-height: 5vw;
-  }
-  .licni p {
-    max-width: 70%;
-    margin-right: 0;
-  }
-  .iskustvo {
-  }
-  .iskustvo,
-  .jez,
-  .ostale,
-  .skills,
-  .kursevi,
-  .obrazovanje {
-    border-right: 0.3rem solid rgb(98, 78, 107) !important;
-  }
+.iskustvo,
+.skills,
+.kursevi,
+.jez,
+.obrazovanje,
+.ostale {
+  transition: 0.5s all;
+  -webkit-transition: all 0.7, border 0.01s;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1500px) {
-  body {
-    overflow-x: hidden;
-  }
-  .licni,
-  .iskustvo,
-  .skills,
-  .jez,
-  .kursevi,
-  .obrazovanje,
-  .ostale {
-    width: 95%;
-    margin-left: 2.5%;
-  }
-  .licni {
-    margin-top: 2.5vw;
-    width: 100%;
-  }
-  img {
-    height: 30%;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  p,
-  input {
-    font-size: 1.38vw !important;
-    line-height: 5vw;
-  }
-
-  .licni {
-    border-left: 1.3vw solid rgb(98, 78, 107);
-    border-top: 1.3vw solid rgb(98, 78, 107) !important;
-  }
-  .iskustvo {
-    border-top: 1.3vw solid rgb(98, 78, 107);
-  }
-  .iskustvo,
-  .jez,
-  .ostale,
-  .skills,
-  .kursevi,
-  .obrazovanje {
-    border-right: 1.3vw solid rgb(98, 78, 107) !important;
-  }
+div.iskustvo:hover,
+div.skills:hover,
+div.kursevi:hover,
+div.jez:hover,
+div.obrazovanje:hover,
+div.ostale:hover {
+  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  background: $hoverColor;
 }
