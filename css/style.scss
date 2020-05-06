@@ -248,7 +248,7 @@ div.ostale:hover {
 
   img {
     margin: 0.7vw 1.5vw 0 0;
-    width: 2.5vw;
+    width: 2.5vw * 0.8;
     height: auto;
     opacity: 1;
     filter: brightness(0.6) opacity(0.5);
@@ -256,6 +256,10 @@ div.ostale:hover {
 
     @media only screen and (max-width: 1023px) {
       width: 2.5vw * 2.2;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      width: 2.5vw;
     }
 
     &:hover {

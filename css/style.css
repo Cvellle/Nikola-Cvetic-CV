@@ -242,7 +242,7 @@ div.ostale:hover {
 }
 .iskustvo img {
   margin: 0.7vw 1.5vw 0 0;
-  width: 2.5vw;
+  width: 2vw;
   height: auto;
   opacity: 1;
   filter: brightness(0.6) opacity(0.5);
@@ -251,6 +251,11 @@ div.ostale:hover {
 @media only screen and (max-width: 1023px) {
   .iskustvo img {
     width: 5.5vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .iskustvo img {
+    width: 2.5vw;
   }
 }
 .iskustvo img:hover {
