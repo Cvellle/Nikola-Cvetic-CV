@@ -115,7 +115,8 @@ h4 {
 h2 {
   position: absolute;
   font-size: 140%;
-  top: 1.4vw;
+  top: 0;
+  margin-top: 1.4vw;
   left: 2.8vw;
   font-weight: 900;
   color: #3a2449;
@@ -123,7 +124,7 @@ h2 {
 }
 
 .licni h2 {
-  top: 1.5vw;
+  top: 0vw;
   left: 2.3vw;
 }
 
@@ -167,7 +168,7 @@ div.ostale:hover {
   flex-direction: column;
   justify-content: space-around;
   width: 93.5%;
-  height: 28vh;
+  height: 15vw;
   margin-top: 7vh;
   margin-top: 6vw;
   margin-left: 7.5%;
@@ -298,7 +299,7 @@ div.ostale:hover {
 
 .iskustvo div:nth-child(2) {
   position: relative;
-  padding-top: 3.5vh;
+  padding-top: 1.4vw;
   flex: 1 1 1;
   background-color: rgba(194, 151, 211, 0.19);
   background-color: rgba(197, 151, 211, 0.12);
