@@ -1,5 +1,3 @@
-// sass --watch css/style.scss css/style.css
-
 $bgColor: rgb(206, 180, 221);
 $bgColor2: rgb(235, 212, 245);
 $bgColor1: rgb(223, 204, 241);
@@ -32,6 +30,21 @@ h4 {
   padding-block-end: 0;
   padding-inline-start: 0;
   padding-inline-end: 0;
+}
+
+.all-wrapper {
+  padding: 0 2.5%;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0 2.5%;
+  }
+
+  @media only screen and (min-width: 1025px) {
+    padding: 0 2.5%;
+  }
+  @media only screen and (min-width: 1500px) {
+    padding: 0 7.5%;
+  }
 }
 
 .all {
@@ -171,19 +184,19 @@ input {
   color: rgba(0, 0, 0, 0.671);
   font-size: 2.5vw;
   line-height: 5vw;
-
+  word-break: keep-all;
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     font-size: 2vw;
     line-height: 5vw;
   }
 
   @media only screen and (min-width: 1025px) {
-    font-size: 1.3vw;
+    font-size: 1.25vw;
     line-height: 2.5vw;
   }
 
   @media only screen and (min-width: 1500px) {
-    font-size: 1.38vw;
+    font-size: 1.33vw;
     line-height: 2.5vw;
   }
 }
@@ -308,7 +321,7 @@ input {
     padding-right: 0%;
 
     @media only screen and (min-width: 1023px) {
-      padding-right: 30%;
+      padding-right: 25%;
     }
   }
 
@@ -352,9 +365,10 @@ input {
       border-radius: 50%;
     }
 
-    &.next {
+    &.prototype {
       position: relative;
-      border-radius: 50%;
+      border-radius: 0.7vw;
+      box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.726);
     }
   }
 }
@@ -437,7 +451,7 @@ input {
       top: 0;
       left: 0;
       width: 100%;
-      height: 104.5%;
+      height: 105%;
       background-color: rgb(255, 225, 245);
       transform: skewX(-17deg) rotate(-17deg);
       transform-origin: 100% 0%;
@@ -526,7 +540,7 @@ input {
     position: absolute;
     top: 0;
     left: 4.3%;
-    width: 95.7%;
+    width: 95.72%;
     height: 104.5%;
     background-color: rgb(255, 225, 245);
     transform: skewX(-17deg) rotate(-17deg);
@@ -571,7 +585,7 @@ input {
     overflow: visible;
     top: 0;
     left: 4.3%;
-    width: 95.7%;
+    width: 95.72%;
     height: 104.5%;
     transform: skewX(17deg) rotate(17deg);
     transform-origin: 100% 0%;
@@ -582,7 +596,7 @@ input {
     position: absolute;
     top: 0;
     left: 4.3%;
-    width: 95.7%;
+    width: 95.72%;
     height: 105%;
     background-color: rgb(255, 225, 245);
     transform: skewX(-17deg) rotate(-17deg);
@@ -627,7 +641,7 @@ input {
     overflow: visible;
     top: 0;
     left: 4.3%;
-    width: 95.7%;
+    width: 95.72%;
     height: 104.5%;
     transform: skewX(17deg) rotate(17deg);
     transform-origin: 100% 0%;
@@ -638,7 +652,7 @@ input {
     position: absolute;
     top: 0;
     left: 4.3%;
-    width: 95.7%;
+    width: 95.72%;
     height: 104.5%;
     background-color: rgb(255, 225, 245);
     transform: skewX(-17deg) rotate(-17deg);
@@ -683,7 +697,7 @@ input {
     overflow: visible;
     top: 0;
     left: 4.3%;
-    width: 95.7%;
+    width: 95.72%;
     height: 104.5%;
     transform: skewX(17deg) rotate(17deg);
     transform-origin: 100% 0%;
@@ -694,7 +708,7 @@ input {
     position: absolute;
     top: 0;
     left: 4.3%;
-    width: 95.7%;
+    width: 95.72%;
     height: 104.5%;
     background-color: rgb(255, 225, 245);
     transform: skewX(-17deg) rotate(-17deg);
@@ -797,3 +811,5 @@ div.ostale:hover {
   -webkit-transition: 0.3s;
   background: $hoverColor;
 }
+
+// sass --watch css/style.scss css/style.css
