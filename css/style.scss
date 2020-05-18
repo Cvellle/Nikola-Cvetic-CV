@@ -117,6 +117,8 @@ h4 {
 
   @media only screen and (min-width: 1500px) {
     right: 15%;
+    top: 13%;
+    height: 74%;
   }
 
   &:hover {
@@ -234,7 +236,7 @@ input {
   }
 
   @media only screen and (min-width: 1025px) {
-    height: 15vw;
+    height: 15.5vw;
     margin-top: 2.5vw;
     width: 100%;
     border-top: 0.8rem solid rgb(98, 78, 107);
@@ -248,12 +250,12 @@ input {
     margin-top: 7.5vw;
     font-size: 1.5vw;
     min-width: 85.5%;
+    height: 16.5vw;
     width: 100%;
     border-radius: 5vw 0px 0px 0px;
   }
 
-  & p,
-  & input {
+  & p {
     line-height: 3vw;
     height: 3vw;
     padding: 0;
@@ -264,7 +266,8 @@ input {
     }
 
     @media only screen and (min-width: 1025px) {
-      line-height: 2.2vw;
+      line-height: unset;
+      margin: 0.2vw 0;
       height: 2.2vw;
     }
 
@@ -275,6 +278,9 @@ input {
   }
 
   & p > input {
+    height: 100%;
+    margin: 0 0 0vw 0;
+    padding: 0;
     background: $bgColor;
     border: none;
     font-weight: 600;

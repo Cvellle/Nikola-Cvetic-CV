@@ -119,6 +119,8 @@ h4 {
 @media only screen and (min-width: 1500px) {
   .me {
     right: 15%;
+    top: 13%;
+    height: 74%;
   }
 }
 .me:hover {
@@ -256,7 +258,7 @@ input {
 }
 @media only screen and (min-width: 1025px) {
   .licni {
-    height: 15vw;
+    height: 15.5vw;
     margin-top: 2.5vw;
     width: 100%;
     border-top: 0.8rem solid #624e6b;
@@ -271,34 +273,39 @@ input {
     margin-top: 7.5vw;
     font-size: 1.5vw;
     min-width: 85.5%;
+    height: 16.5vw;
     width: 100%;
     border-radius: 5vw 0px 0px 0px;
   }
 }
-.licni p, .licni input {
+.licni p {
   line-height: 3vw;
   height: 3vw;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  .licni p, .licni input {
+  .licni p {
     line-height: 3vw;
     height: 3vw;
   }
 }
 @media only screen and (min-width: 1025px) {
-  .licni p, .licni input {
-    line-height: 2.2vw;
+  .licni p {
+    line-height: unset;
+    margin: 0.2vw 0;
     height: 2.2vw;
   }
 }
 @media only screen and (min-width: 1500px) {
-  .licni p, .licni input {
+  .licni p {
     line-height: 2vw;
     height: 2vw;
   }
 }
 .licni p > input {
+  height: 100%;
+  margin: 0 0 0vw 0;
+  padding: 0;
   background: #ceb4dd;
   border: none;
   font-weight: 600;
