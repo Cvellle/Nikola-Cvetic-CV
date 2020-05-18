@@ -419,7 +419,7 @@ input {
 
 .iskustvo > div:nth-child(2) {
   position: relative;
-  padding-top: 4.5vw;
+  padding-top: 1.5vw;
   flex: 1 1 1;
   background-color: rgba(194, 151, 211, 0.19);
   background-color: rgba(197, 151, 211, 0.12);
