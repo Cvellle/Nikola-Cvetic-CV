@@ -325,7 +325,7 @@ input {
     border-radius: 0 7vw 0px 0px !important;
   }
 }
-.iskustvo:hover img {
+.iskustvo:hover .skill {
   transition: filter 1s, transform 0.3s;
   filter: brightness(1);
   opacity: 1;
@@ -686,6 +686,12 @@ input {
   background-repeat: no-repeat;
 }
 .iskustvo > div:nth-child(3) .skill:nth-child(28) {
+  background: url("../images/skills/hooks.png");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.iskustvo > div:nth-child(3) .skill:nth-child(29) {
   background: url("../images/skills/ubuntu.png");
   background-size: 100% auto;
   background-position: center;

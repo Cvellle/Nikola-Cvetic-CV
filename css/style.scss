@@ -305,7 +305,7 @@ input {
     border-radius: 0 7vw 0px 0px !important;
   }
 
-  &:hover img {
+  &:hover .skill {
     transition: filter 1s, transform 0.3s;
     filter: brightness(1);
     opacity: 1;
@@ -710,6 +710,13 @@ input {
     }
 
     &:nth-child(28) {
+      background: url("../images/skills/hooks.png");
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(29) {
       background: url("../images/skills/ubuntu.png");
       background-size: 100% auto;
       background-position: center;
