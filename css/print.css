@@ -35,6 +35,9 @@
         width: 15em;
         cursor: text;
     }
+    .all-wrapper {
+        padding: 0;
+    }
     .all>div {
         padding-right: 3vw;
     }

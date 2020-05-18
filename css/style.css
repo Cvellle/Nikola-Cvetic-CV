@@ -26,21 +26,21 @@ h4 {
 }
 
 .all-wrapper {
-  padding: 0 2.5%;
+  padding: 0 0 0 2.5%;
 }
 @media only screen and (min-width: 768px) {
   .all-wrapper {
-    padding: 0 2.5%;
+    padding: 0 0 0 2.5%;
   }
 }
 @media only screen and (min-width: 1025px) {
   .all-wrapper {
-    padding: 0 2.5%;
+    padding: 0 0 0 2.5%;
   }
 }
 @media only screen and (min-width: 1500px) {
   .all-wrapper {
-    padding: 0 7.5%;
+    padding: 0 0 0 7.5%;
   }
 }
 
@@ -223,10 +223,9 @@ input {
   flex-direction: column;
   justify-content: space-around;
   height: 30vw;
-  width: 97.5%;
+  width: 100%;
   margin-top: 7vh;
   margin-top: 6vw;
-  margin-left: 2.5%;
   padding: 1.6vw 0 1.6vw 15.7vw;
   background: transparent;
   border-top: 1.3rem solid #624e6b;
@@ -236,6 +235,33 @@ input {
   border-radius: 7rem 0px 0px 0px;
   border-radius: 7vw 0px 0px 0px;
   border-right: none;
+}
+@media only screen and (min-width: 768px) {
+  .licni {
+    border-left: 1.3vw solid #624e6b;
+    border-top: 1.3vw solid #624e6b;
+    border-radius: 7vw 0px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .licni {
+    height: 15vw;
+    margin-top: 2.5vw;
+    width: 100%;
+    border-top: 0.8rem solid #624e6b;
+    border-left: 0.8rem solid #624e6b;
+    border-top: 0.8vw solid #624e6b;
+    border-left: 0.8vw solid #624e6b;
+    border-radius: 3.5vw 0px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .licni {
+    margin-top: 7.5vw;
+    font-size: 1.5vw;
+    min-width: 85.5%;
+    width: 100%;
+  }
 }
 .licni p, .licni input {
   line-height: 2vw;
@@ -250,44 +276,14 @@ input {
   cursor: text;
   font-family: Century Gothic, sans-serif;
 }
-@media only screen and (min-width: 768px) {
-  .licni {
-    border-left: 1.3vw solid #624e6b;
-    border-top: 1.3vw solid #624e6b;
-    border-radius: 7vw 0px 0px 0px;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .licni {
-    height: 15vw;
-    margin-top: 2.5vw;
-    width: 97.5%;
-    margin-left: 2.5%;
-    border-top: 0.8rem solid #624e6b;
-    border-left: 0.8rem solid #624e6b;
-    border-top: 0.8vw solid #624e6b;
-    border-left: 0.8vw solid #624e6b;
-    border-radius: 3.5vw 0px 0px 0px;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .licni {
-    margin-top: 7.5vw;
-    font-size: 1.5vw;
-    min-width: 85.5%;
-    width: 92.5%;
-    margin-left: 7.5%;
-  }
-}
 
 .iskustvo {
   position: relative;
   padding: 0vw 0 0vw 0vw;
-  margin-left: 2.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 95%;
+  width: 97.5%;
   line-height: 2.5vw;
   background: #07070f;
   background: white;
@@ -303,19 +299,12 @@ input {
 }
 @media only screen and (min-width: 1025px) {
   .iskustvo {
-    width: 95%;
-    margin-left: 2.5%;
+    width: 97.5%;
     border-top: 0.8rem solid #624e6b;
     border-right: 0.8rem solid #624e6b;
     border-radius: 0px 3.5vw 0px 0px;
     border-top: 0.8vw solid #624e6b;
     border-right: 0.8vw solid #624e6b;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .iskustvo {
-    width: 85%;
-    margin-left: 7.5%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -325,9 +314,13 @@ input {
     border-radius: 0 7vw 0px 0px !important;
   }
 }
-.iskustvo:hover .skill {
-  transition: filter 1s, transform 0.3s;
-  filter: brightness(1);
+@media only screen and (min-width: 1500px) {
+  .iskustvo {
+    width: 92.5%;
+  }
+}
+.iskustvo:hover div.mainSkills {
+  transition: opacity 0.3s;
   opacity: 1;
 }
 .iskustvo img {
@@ -780,9 +773,8 @@ input {
 
 .skills {
   position: relative;
-  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 95%;
+  width: 97.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -800,14 +792,12 @@ input {
 @media only screen and (min-width: 1025px) {
   .skills {
     border-right: 0.8vw solid #624e6b;
-    width: 95%;
-    margin-left: 2.5%;
+    width: 97.5%;
   }
 }
 @media only screen and (min-width: 1500px) {
   .skills {
-    width: 85%;
-    margin-left: 7.5%;
+    width: 92.5%;
   }
 }
 .skills .rotated {
@@ -826,9 +816,8 @@ input {
 .obrazovanje {
   position: relative;
   top: 160%;
-  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 95%;
+  width: 97.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -846,14 +835,11 @@ input {
 @media only screen and (min-width: 1025px) {
   .obrazovanje {
     border-right: 0.8vw solid #624e6b;
-    width: 95%;
-    margin-left: 2.5%;
   }
 }
 @media only screen and (min-width: 1500px) {
   .obrazovanje {
-    width: 85%;
-    margin-left: 7.5%;
+    width: 92.5%;
   }
 }
 .obrazovanje .rotated {
@@ -884,9 +870,8 @@ input {
 .kursevi {
   position: relative;
   top: 140%;
-  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 95%;
+  width: 97.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -904,14 +889,11 @@ input {
 @media only screen and (min-width: 1025px) {
   .kursevi {
     border-right: 0.8vw solid #624e6b;
-    width: 95%;
-    margin-left: 2.5%;
   }
 }
 @media only screen and (min-width: 1500px) {
   .kursevi {
-    width: 85%;
-    margin-left: 7.5%;
+    width: 92.5%;
   }
 }
 .kursevi .rotated {
@@ -942,9 +924,8 @@ input {
 .jez {
   position: relative;
   top: 120%;
-  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 95%;
+  width: 97.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -962,14 +943,11 @@ input {
 @media only screen and (min-width: 1025px) {
   .jez {
     border-right: 0.8vw solid #624e6b;
-    width: 95%;
-    margin-left: 2.5%;
   }
 }
 @media only screen and (min-width: 1500px) {
   .jez {
-    width: 85%;
-    margin-left: 7.5%;
+    width: 92.5%;
   }
 }
 .jez .rotated {
@@ -1000,9 +978,8 @@ input {
 .ostale {
   position: relative;
   top: 179.9%;
-  margin-left: 2.5%;
   line-height: 2.5vw;
-  width: 95%;
+  width: 97.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1023,14 +1000,11 @@ input {
 @media only screen and (min-width: 1025px) {
   .ostale {
     border-right: 0.8vw solid #624e6b;
-    width: 95%;
-    margin-left: 2.5%;
   }
 }
 @media only screen and (min-width: 1500px) {
   .ostale {
-    width: 85%;
-    margin-left: 7.5%;
+    width: 92.5%;
   }
 }
 @media only screen and (max-width: 1023px) {
