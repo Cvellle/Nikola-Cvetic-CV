@@ -674,7 +674,7 @@ input {
   background-repeat: no-repeat;
 }
 .iskustvo > div:nth-child(3) .skill:nth-child(26) {
-  background: url("../images/skills/prototype.jpg");
+  background: url("../images/skills/prototype.png");
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -684,6 +684,10 @@ input {
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
+}
+.iskustvo > div:nth-child(3) .skill.saga {
+  background: rgba(41, 41, 41, 0.747);
+  border-radius: 0.6vw;
 }
 .iskustvo > div:nth-child(3) .skill:hover {
   transition: 0.3s transform;

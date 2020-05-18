@@ -696,7 +696,7 @@ input {
     }
 
     &:nth-child(26) {
-      background: url("../images/skills/prototype.jpg");
+      background: url("../images/skills/prototype.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
@@ -707,6 +707,11 @@ input {
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    &.saga {
+      background: rgba(41, 41, 41, 0.747);
+      border-radius: 0.6vw;
     }
 
     &:hover {
