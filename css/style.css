@@ -91,7 +91,7 @@ h4 {
   margin-right: auto;
   align-self: center;
   top: 15%;
-  right: 15%;
+  right: 10%;
   height: 70%;
   border-radius: 1.5vw;
   transition: 0.5s;
@@ -114,6 +114,11 @@ h4 {
     right: 10%;
     height: 70%;
     border-radius: 3vw;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .me {
+    right: 15%;
   }
 }
 .me:hover {
@@ -273,6 +278,7 @@ input {
 .licni p, .licni input {
   line-height: 3vw;
   height: 3vw;
+  padding: 0;
 }
 @media only screen and (min-width: 768px) {
   .licni p, .licni input {
