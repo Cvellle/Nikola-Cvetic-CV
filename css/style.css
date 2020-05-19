@@ -293,7 +293,9 @@ input {
   .licni p {
     line-height: unset;
     margin: 0.2vw 0;
-    height: 2.2vw;
+    max-height: 2vw;
+    height: 2vw;
+    line-height: 2vw;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -303,7 +305,7 @@ input {
   }
 }
 .licni p > input {
-  height: 100%;
+  height: 97%;
   margin: 0 0 0vw 0;
   padding: 0;
   background: #ceb4dd;
@@ -313,6 +315,8 @@ input {
   width: 15em;
   cursor: text;
   font-family: Century Gothic, sans-serif;
+  max-height: 2vw;
+  line-height: 2vw;
 }
 
 .iskustvo {
