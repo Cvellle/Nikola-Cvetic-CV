@@ -1,3 +1,6 @@
+// sass --watch css/style.scss:css/style.css
+// sass --watch css/style.scss css/style.css
+
 $bgColor: rgb(206, 180, 221);
 $bgColor2: rgb(235, 212, 245);
 $bgColor1: rgb(223, 204, 241);
@@ -117,8 +120,8 @@ h4 {
 
   @media only screen and (min-width: 1500px) {
     right: 15%;
-    top: 13%;
-    height: 74%;
+    top: 16%;
+    height: 68%;
   }
 
   &:hover {
@@ -152,6 +155,7 @@ h2 {
   @media only screen and (min-width: 1500px) {
     margin-top: 1.4vw;
     font-size: 1.5vw;
+    left: 2.5;
   }
 }
 
@@ -167,7 +171,8 @@ h2 {
   }
 
   @media only screen and (min-width: 1500px) {
-    margin-top: 1.7vw;
+    font-size: 1.5vw;
+    margin-top: 1.6vw;
   }
 }
 
@@ -183,6 +188,7 @@ h2 {
 
   @media only screen and (min-width: 1500px) {
     margin-top: 1.2vw;
+    font-size: 1.5vw;
   }
 }
 
@@ -205,8 +211,8 @@ input {
   }
 
   @media only screen and (min-width: 1500px) {
-    font-size: 1.33vw;
-    line-height: 2.5vw;
+    font-size: 1.05vw;
+    line-height: 2.3vw;
   }
 }
 
@@ -250,7 +256,7 @@ input {
     margin-top: 7.5vw;
     font-size: 1.5vw;
     min-width: 85.5%;
-    height: 16.5vw;
+    height: 15vw;
     width: 100%;
     border-radius: 5vw 0px 0px 0px;
   }
@@ -274,8 +280,8 @@ input {
     }
 
     @media only screen and (min-width: 1500px) {
-      line-height: 2vw;
-      height: 2vw;
+      line-height: 1.7vw;
+      height: 1.7vw;
     }
   }
 
@@ -831,8 +837,8 @@ input {
   position: relative;
   overflow: visible;
   flex: 1 1 1;
-  background-color: rgb(247, 191, 247, 0.18);
-  background-color: rgb(247, 191, 247, 0.1);
+  background-color: rgba(247, 191, 247, 0.18);
+  background-color: rgba(247, 191, 247, 0.1);
   & .rotated {
     &:nth-child(1) {
       position: absolute;
@@ -924,7 +930,7 @@ input {
     height: 104.5%;
     transform: skewX(17deg) rotate(17deg);
     transform-origin: 100% 0%;
-    background-color: rgb(255, 225, 245, 0.3);
+    background-color: rgba(255, 225, 245, 0.3);
     z-index: 3;
   }
   & .rotated:nth-child(2) {
@@ -1028,7 +1034,7 @@ input {
     height: 104.5%;
     transform: skewX(17deg) rotate(17deg);
     transform-origin: 100% 0%;
-    background-color: rgb(255, 225, 245, 0.3);
+    background-color: rgba(255, 225, 245, 0.3);
     z-index: 3;
   }
   & .rotated:nth-child(2) {
