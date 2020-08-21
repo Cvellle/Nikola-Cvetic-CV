@@ -1,23 +1,24 @@
 // sass --watch css/style.scss:css/style.css
 // sass --watch css/style.scss css/style.css
-
-$bgColor: rgb(206, 180, 221);
-$bgColor2: rgb(235, 212, 245);
-$bgColor1: rgb(223, 204, 241);
-$hoverColor: $bgColor;
-$centuryGothic: Century Gothic, sans-serif;
-$Trebuchet: MS, sans-serif;
-
+// $bgColor: rgb(206, 180, 221);
+// $bgColor: rgb(204, 115, 255);
+// $bgColor: rgb(166, 122, 248);
+$bgColor: rgb(191, 197, 250);
+$hoverColor:rgb(212, 229, 243);
+$centuryGothic: Century Gothic,
+sans-serif;
+$Trebuchet: MS,
+sans-serif;
 body {
-  background: $bgColor;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+    background: $bgColor;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 * {
-  box-sizing: border-box;
-  font-family: $centuryGothic;
+    box-sizing: border-box;
+    font-family: $centuryGothic;
 }
 
 p,
@@ -25,1097 +26,962 @@ h1,
 h2,
 h3,
 h4 {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
-  padding-inline-start: 0;
-  padding-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
 }
 
 .all-wrapper {
-  padding: 0 0 0 2.5%;
-
-  @media only screen and (min-width: 768px) {
     padding: 0 0 0 2.5%;
-  }
-
-  @media only screen and (min-width: 1025px) {
-    padding: 0 0 0 2.5%;
-  }
-  @media only screen and (min-width: 1500px) {
-    padding: 0 0 0 7.5%;
-  }
+    @media only screen and (min-width: 768px) {
+        padding: 0 0 0 2.5%;
+    }
+    @media only screen and (min-width: 1025px) {
+        padding: 0 0 0 2.5%;
+    }
+    @media only screen and (min-width: 1500px) {
+        padding: 0 0 0 7.5%;
+    }
 }
 
 .all {
-  overflow: hidden;
-  transition: 1s;
+    overflow: hidden;
+    transition: 1s;
 }
 
 .print {
-  display: block;
-  position: fixed;
-  bottom: 1.5vw;
-  right: 1.1vw;
-  width: 5vw;
-  height: auto;
-  z-index: 15;
-  opacity: 0.1;
-  cursor: pointer;
-  transition: 0.5s;
-
-  @media only screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    display: block;
+    position: fixed;
     bottom: 1.5vw;
-    right: 7vw;
+    right: 1.1vw;
     width: 5vw;
-  }
-
-  @media only screen and (min-width: 1025px) and (max-width: 1500px) {
-    bottom: 1.5vw;
-    right: 5vw;
-    width: 5vw;
-  }
-
-  &:hover {
-    opacity: 1;
+    height: auto;
+    z-index: 15;
+    opacity: 0.1;
+    cursor: pointer;
     transition: 0.5s;
-  }
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        bottom: 1.5vw;
+        right: 7vw;
+        width: 5vw;
+    }
+    @media only screen and (min-width: 1025px) and (max-width: 1500px) {
+        bottom: 1.5vw;
+        right: 5vw;
+        width: 5vw;
+    }
+    &:hover {
+        opacity: 1;
+        transition: 0.5s;
+    }
 }
 
 .me {
-  position: absolute;
-  display: flex;
-  margin-right: auto;
-  align-self: center;
-  top: 15%;
-  right: 10%;
-  height: 70%;
-  border-radius: 1.5vw;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-
-  @media only screen and (max-width: 767px) {
-    top: 15%;
-    right: 6vw;
-    height: 70%;
-    border-radius: 10px;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    border-radius: 3vw;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    position: absolute;
+    display: flex;
+    margin-right: auto;
+    align-self: center;
     top: 15%;
     right: 10%;
     height: 70%;
-    border-radius: 3vw;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    right: 15%;
-    top: 16%;
-    height: 68%;
-  }
-
-  &:hover {
-    position: absolute;
+    border-radius: 1.5vw;
     transition: 0.5s;
     -webkit-transition: 0.5s;
-    border-radius: 0px;
-  }
+    @media only screen and (max-width: 767px) {
+        top: 15%;
+        right: 6vw;
+        height: 70%;
+        border-radius: 10px;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        border-radius: 3vw;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        top: 15%;
+        right: 10%;
+        height: 70%;
+        border-radius: 3vw;
+    }
+    @media only screen and (min-width: 1500px) {
+        right: 15%;
+        top: 16%;
+        height: 68%;
+    }
+    &:hover {
+        position: absolute;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        border-radius: 0px;
+    }
 }
 
 h2 {
-  position: absolute;
-  font-size: 2vw;
-  top: 0;
-  margin-top: 3vw;
-  left: 2vw;
-  font-weight: 900;
-  color: #3a2449;
-  z-index: 6;
-
-  @media only screen and (min-width: 768px) {
-    margin-top: 2.8vw;
-    font-size: 1.6vw;
-  }
-
-  @media only screen and (min-width: 1025px) {
-    font-size: 1.6vw;
-    margin-top: 1.4vw;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    margin-top: 1.4vw;
-    font-size: 1.5vw;
-    left: 2.5;
-  }
+    position: absolute;
+    font-size: 2vw;
+    top: 0;
+    margin-top: 3vw;
+    left: 2vw;
+    font-weight: 900;
+    color: #3a2449;
+    z-index: 6;
+    @media only screen and (min-width: 768px) {
+        margin-top: 2.8vw;
+        font-size: 1.6vw;
+    }
+    @media only screen and (min-width: 1025px) {
+        font-size: 1.6vw;
+        margin-top: 1.4vw;
+    }
+    @media only screen and (min-width: 1500px) {
+        margin-top: 1.4vw;
+        font-size: 1.5vw;
+        left: 2.5;
+    }
 }
 
 .licni h2 {
-  margin-top: 6.4vw;
-
-  @media only screen and (min-width: 768px) {
-    margin-top: 6.3vw;
-    font-size: 1.6vw;
-  }
-  @media only screen and (min-width: 1025px) {
-    margin-top: 1.4vw;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    font-size: 1.5vw;
-    margin-top: 1.6vw;
-  }
+    margin-top: 6.4vw;
+    @media only screen and (min-width: 768px) {
+        margin-top: 6.3vw;
+        font-size: 1.6vw;
+    }
+    @media only screen and (min-width: 1025px) {
+        margin-top: 1.4vw;
+    }
+    @media only screen and (min-width: 1500px) {
+        font-size: 1.5vw;
+        margin-top: 1.6vw;
+    }
 }
 
 .iskustvo h2 {
-  margin-top: 6vw;
-  @media only screen and (min-width: 768px) {
-    margin-top: 5.8vw;
-    font-size: 1.6vw;
-  }
-  @media only screen and (min-width: 1025px) {
-    margin-top: 1.4vw;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    margin-top: 1.2vw;
-    font-size: 1.5vw;
-  }
+    margin-top: 6vw;
+    @media only screen and (min-width: 768px) {
+        margin-top: 5.8vw;
+        font-size: 1.6vw;
+    }
+    @media only screen and (min-width: 1025px) {
+        margin-top: 1.4vw;
+    }
+    @media only screen and (min-width: 1500px) {
+        margin-top: 1.2vw;
+        font-size: 1.5vw;
+    }
 }
 
 p,
 input {
-  font-size: 1.02vw;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.671);
-  font-size: 2.5vw;
-  line-height: 5vw;
-  word-break: keep-all;
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    font-size: 2vw;
+    font-size: 1.02vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 2.5vw;
     line-height: 5vw;
-  }
-
-  @media only screen and (min-width: 1025px) {
-    font-size: 1.25vw;
-    line-height: 2.5vw;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    font-size: 1.05vw;
-    line-height: 2.3vw;
-  }
+    word-break: keep-all;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 2vw;
+        line-height: 5vw;
+    }
+    @media only screen and (min-width: 1025px) {
+        font-size: 1.25vw;
+        line-height: 2.5vw;
+    }
+    @media only screen and (min-width: 1500px) {
+        font-size: 1.05vw;
+        line-height: 2.3vw;
+    }
 }
 
 .licni {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 40vw;
-  width: 100%;
-  margin-top: 7vh;
-  margin-top: 6vw;
-  padding: 4.6vw 0 4.6vw 15.7vw;
-  background: transparent;
-  border-top: 1.3rem solid rgb(98, 78, 107);
-  border-left: 1.3rem solid rgb(98, 78, 107);
-  border-top: 1.5vw solid rgb(98, 78, 107);
-  border-left: 1.5vw solid rgb(98, 78, 107);
-  border-radius: 10rem 0px 0px 0px;
-  border-radius: 10vw 0px 0px 0px;
-  border-right: none;
-
-  @media only screen and (min-width: 768px) {
-    border-left: 1.3vw solid rgb(98, 78, 107);
-    border-top: 1.3vw solid rgb(98, 78, 107);
-    border-radius: 7vw 0px 0px 0px;
-  }
-
-  @media only screen and (min-width: 1025px) {
-    height: 15.5vw;
-    margin-top: 2.5vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vw;
     width: 100%;
-    border-top: 0.8rem solid rgb(98, 78, 107);
-    border-left: 0.8rem solid rgb(98, 78, 107);
-    border-top: 0.8vw solid rgb(98, 78, 107);
-    border-left: 0.8vw solid rgb(98, 78, 107);
-    border-radius: 3.5vw 0px 0px 0px;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    margin-top: 7.5vw;
-    font-size: 1.5vw;
-    min-width: 85.5%;
-    height: 15vw;
-    width: 100%;
-    border-radius: 5vw 0px 0px 0px;
-  }
-
-  & p {
-    line-height: 3vw;
-    height: 3vw;
-    padding: 0;
-
+    margin-top: 7vh;
+    margin-top: 6vw;
+    padding: 4.6vw 0 4.6vw 15.7vw;
+    background: transparent;
+    border-top: 1.3rem solid rgb(98, 78, 107);
+    border-left: 1.3rem solid rgb(98, 78, 107);
+    border-top: 1.5vw solid rgb(98, 78, 107);
+    border-left: 1.5vw solid rgb(98, 78, 107);
+    border-radius: 10rem 0px 0px 0px;
+    border-radius: 10vw 0px 0px 0px;
+    border-right: none;
     @media only screen and (min-width: 768px) {
-      line-height: 3vw;
-      height: 3vw;
+        border-left: 1.3vw solid rgb(98, 78, 107);
+        border-top: 1.3vw solid rgb(98, 78, 107);
+        border-radius: 7vw 0px 0px 0px;
     }
-
     @media only screen and (min-width: 1025px) {
-      line-height: unset;
-      margin: 0.2vw 0;
-      max-height: 2vw;
-      height: 2vw;
-      line-height: 2vw;
+        height: 15.5vw;
+        margin-top: 2.5vw;
+        width: 100%;
+        border-top: 0.8rem solid rgb(98, 78, 107);
+        border-left: 0.8rem solid rgb(98, 78, 107);
+        border-top: 0.8vw solid rgb(98, 78, 107);
+        border-left: 0.8vw solid rgb(98, 78, 107);
+        border-radius: 3.5vw 0px 0px 0px;
     }
-
     @media only screen and (min-width: 1500px) {
-      line-height: 1.7vw;
-      height: 1.7vw;
+        margin-top: 7.5vw;
+        font-size: 1.5vw;
+        min-width: 85.5%;
+        height: 15vw;
+        width: 100%;
+        border-radius: 5vw 0px 0px 0px;
     }
-  }
-
-  & p > input {
-    height: 100%;
-    margin: 0 0 0vw 0;
-    padding: 0;
-    background: $bgColor;
-    border: none;
-    font-weight: 600;
-    display: inline-block;
-    width: 15rem;
-    width: 45vw;
-    cursor: text;
-    font-family: $centuryGothic;
-    line-height: 2.3vw;
-
-    @media only screen and (min-width: 768px) {
-      height: 97%;
-      width: 25rem;
-      width: 25vw;
+    & p {
+        line-height: 3vw;
+        height: 3vw;
+        padding: 0;
+        @media only screen and (min-width: 768px) {
+            line-height: 3vw;
+            height: 3vw;
+        }
+        @media only screen and (min-width: 1025px) {
+            line-height: unset;
+            margin: 0.2vw 0;
+            max-height: 2vw;
+            height: 2vw;
+            line-height: 2vw;
+        }
+        @media only screen and (min-width: 1500px) {
+            line-height: 1.7vw;
+            height: 1.7vw;
+        }
     }
-  }
+    & p>input {
+        height: 100%;
+        margin: 0 0 0vw 0;
+        padding: 0;
+        background: $bgColor;
+        border: none;
+        font-weight: 600;
+        display: inline-block;
+        width: 15rem;
+        width: 45vw;
+        cursor: text;
+        font-family: $centuryGothic;
+        line-height: 2.3vw;
+        @media only screen and (min-width: 768px) {
+            height: 97%;
+            width: 25rem;
+            width: 25vw;
+        }
+    }
 }
+
 .iskustvo {
-  position: relative;
-  padding: 0vw 0 0vw 0vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 97.5%;
-  line-height: 2.5vw;
-  background: #07070f;
-  background: white;
-  color: white;
-  border-radius: 0px 10rem 0px 0px;
-  border-top: 2rem solid rgb(98, 78, 107);
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-radius: 0px 10vw 0px 0px;
-  border-top: 1.5vw solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
-  z-index: 10;
-  overflow: hidden;
-
-  @media only screen and (min-width: 1025px) {
+    position: relative;
+    padding: 0vw 0 0vw 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 97.5%;
-    border-top: 0.8rem solid rgb(98, 78, 107);
-    border-right: 0.8rem solid rgb(98, 78, 107);
-    border-radius: 0px 3.5vw 0px 0px;
-    border-top: 0.8vw solid rgb(98, 78, 107);
-    border-right: 0.8vw solid rgb(98, 78, 107);
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
-    border-top: 1.3vw solid rgb(98, 78, 107);
-    border-radius: 0 7vw 0px 0px !important;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    width: 92.5%;
-    border-radius: 0px 5vw 0 0;
-  }
-
-  &:hover div.mainSkills {
-    transition: opacity 0.3s;
-    opacity: 1;
-  }
-
-  img {
-    margin: 0.7vw 1.5vw 0 0;
-    width: 2.5vw * 2;
-    height: auto;
-    opacity: 1;
-    filter: brightness(0.6) opacity(0.5);
-    transition: filter 1s, transform 0.1s;
-
-    @media only screen and (min-width: 768px) {
-      width: 2.5vw * 1.3;
-    }
-
+    line-height: 2.5vw;
+    background-color: white;
+    color: white;
+    border-radius: 0px 10rem 0px 0px;
+    border-top: 2rem solid rgb(98, 78, 107);
+    border-right: 2rem solid rgb(98, 78, 107);
+    border-radius: 0px 10vw 0px 0px;
+    border-top: 1.5vw solid rgb(98, 78, 107);
+    border-right: 1.5vw solid rgb(98, 78, 107);
+    z-index: 10;
+    overflow: hidden;
     @media only screen and (min-width: 1025px) {
-      width: 2.5vw;
+        width: 97.5%;
+        border-top: 0.8rem solid rgb(98, 78, 107);
+        border-right: 0.8rem solid rgb(98, 78, 107);
+        border-radius: 0px 3.5vw 0px 0px;
+        border-top: 0.8vw solid rgb(98, 78, 107);
+        border-right: 0.8vw solid rgb(98, 78, 107);
     }
-
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        border-right: 1.3vw solid rgb(98, 78, 107);
+        border-top: 1.3vw solid rgb(98, 78, 107);
+        border-radius: 0 7vw 0px 0px !important;
+    }
     @media only screen and (min-width: 1500px) {
-      width: 2.5vw * 0.8;
+        width: 92.5%;
+        border-radius: 0px 5vw 0 0;
     }
-
-    &:hover {
-      transition: 0.3s transform;
-      transform: scale(1.4) translate3d(0, 0, 0);
-      -webkit-transform-style: preserve-3d;
-      -webkit-backface-visibility: hidden;
+    &:hover div.mainSkills {
+        transition: opacity 0.3s;
+        opacity: 1;
     }
-
-    &.saga {
-      background: rgba(41, 41, 41, 0.747);
-      border-radius: 0.6vw;
+    img {
+        margin: 0.7vw 1.5vw 0 0;
+        width: 2.5vw * 2;
+        height: auto;
+        opacity: 1;
+        filter: brightness(0.6) opacity(0.5);
+        transition: filter 1s, transform 0.1s;
+        @media only screen and (min-width: 768px) {
+            width: 2.5vw * 1.3;
+        }
+        @media only screen and (min-width: 1025px) {
+            width: 2.5vw;
+        }
+        @media only screen and (min-width: 1500px) {
+            width: 2.5vw * 0.8;
+        }
+        &:hover {
+            transition: 0.3s transform;
+            transform: scale(1.4) translate3d(0, 0, 0);
+            -webkit-transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+        }
+        &.saga {
+            background: rgba(41, 41, 41, 0.747);
+            border-radius: 0.6vw;
+        }
+        &.axios {
+            border-radius: 50%;
+        }
+        &.prototype {
+            position: relative;
+            border-radius: 0.7vw;
+            box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.726);
+        }
     }
-
-    &.axios {
-      border-radius: 50%;
-    }
-
-    &.prototype {
-      position: relative;
-      border-radius: 0.7vw;
-      box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.726);
-    }
-  }
 }
 
 .leftDiv {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15vw;
-  height: 100%;
-  background-color: rgba(245, 212, 245, 0.473) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 100%;
+    background-color: rgba(212, 241, 245, 0.473);
 }
 
-.iskustvo > div {
-  padding: 0.5vw 0 0.5vw 16.5vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  transition: 0.3s;
-
-  @media only screen and (max-width: 1024px) {
-    padding: 0.5vh 0 0.5vh 16.5vw;
-  }
-
-  &:hover {
+.iskustvo>div {
+    padding: 0.5vw 0 0.5vw 16.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     transition: 0.3s;
-    opacity: 1;
-  }
-}
-
-.iskustvo > div:nth-child(2) {
-  position: relative;
-  padding-top: 1.5vw;
-  flex: 1 1 1;
-  background-color: rgba(194, 151, 211, 0.19);
-  background-color: rgba(197, 151, 211, 0.12);
-  overflow-y: visible;
-
-  @media only screen and (max-width: 1023px) {
-    padding-top: 4.5vw;
-  }
-
-  & .rotated {
-    position: absolute;
-    overflow: visible;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 206%;
-    transform: skewX(-60deg) rotate(-60deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(194, 151, 211, 0.2);
-    z-index: 2;
-  }
-}
-
-.iskustvo > div:nth-child(3) {
-  position: relative;
-  flex: 1 1 1;
-  background-color: rgba(221, 160, 221, 0.184);
-  background-color: rgba(232, 188, 241, 0.178);
-  overflow-y: visible;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-
-  & .skillsTitle {
-    display: inline-flex;
-    flex: 1 1 100%;
-  }
-
-  & .icons {
-    flex: 1 1 100%;
-  }
-
-  & .mainSkills {
-    display: flex;
-    flex: 1 1 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  & .basic {
-    flex: 1 1 100%;
-
-    & .skill {
-      &:nth-child(1) {
-        background: url("./images/skills/next.png");
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      &:nth-child(2) {
-        background: url("./images/skills/rn.png");
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      &:nth-child(3) {
-        background: url("./images/skills/ws.png");
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      &:nth-child(4) {
-        background: url("./images/skills/php.png");
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      &:nth-child(5) {
-        background: url("./images/skills/sql.png");
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      &:nth-child(6) {
-        background: url("./images/skills/mdb.png");
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      &:nth-child(7) {
-        background: url("./images/skills/woo.png");
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
+    @media only screen and (max-width: 1024px) {
+        padding: 0.5vh 0 0.5vh 16.5vw;
     }
-  }
-
-  .icons {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    @media only screen and (min-width: 1025px) {
-      padding-right: 17%;
-    }
-  }
-
-  & .skill {
-    width: 7vw;
-    height: 10vw;
-    margin-right: 2vw;
-    transition: 0.3s transform;
-
-    @media only screen and (min-width: 768px) {
-    }
-
-    @media only screen and (min-width: 1025px) {
-      width: 3vw;
-      height: 5vw;
-      margin-right: 1vw;
-    }
-
-    @media only screen and (min-width: 1500px) {
-      width: 2.6vw;
-      height: 5vw;
-    }
-
-    &:nth-child(1) {
-      background: url("./images/skills/html5.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(2) {
-      background: url("./images/skills/css.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(3) {
-      background: url("./images/skills/js.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(4) {
-      background: url("./images/skills/react.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(5) {
-      background: url("./images/skills/ajax.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(6) {
-      background: url("./images/skills/es6.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(7) {
-      background: url("./images/skills/flex.jpg");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(8) {
-      background: url("./images/skills/grid.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(9) {
-      background: url("./images/skills/bem.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(10) {
-      background: url("./images/skills/sass.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(11) {
-      background: url("./images/skills/postCss.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(12) {
-      background: url("./images/skills/wp.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(13) {
-      background: url("./images/skills/svg.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(14) {
-      background: url("./images/skills/nl.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(15) {
-      background: url("./images/skills/html4.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(16) {
-      background: url("./images/skills/redux.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(17) {
-      background: url("./images/skills/thunk.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(18) {
-      background: url("./images/skills/saga.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(19) {
-      background: url("./images/skills/ap.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(20) {
-      background: url("./images/skills/hb.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(21) {
-      background: url("./images/skills/boots.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(22) {
-      background: url("./images/skills/mui.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(23) {
-      background: url("./images/skills/axios.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(24) {
-      background: url("./images/skills/formik.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(25) {
-      background: url("./images/skills/jq.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(26) {
-      background: url("./images/skills/module.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(27) {
-      background: url("./images/skills/prototype.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(28) {
-      background: url("./images/skills/hooks.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(29) {
-      background: url("./images/skills/ubuntu.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &.saga {
-      background: rgba(41, 41, 41, 0.747);
-      border-radius: 0.6vw;
-    }
-
     &:hover {
-      transition: 0.3s transform;
-      transform: scale(1.4) translate3d(0, 0, 0);
-      -webkit-transform-style: preserve-3d;
-      -webkit-backface-visibility: hidden;
+        transition: 0.3s;
+        opacity: 1;
     }
-  }
-
-  .words {
-    display: none;
-  }
-
-  & .rotated {
-    &:nth-child(1) {
-      position: absolute;
-      overflow: visible;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 105%;
-      transform: skewX(17deg) rotate(17deg);
-      transform-origin: 100% 0%;
-      background-color: rgb(255, 225, 245);
-      z-index: 1;
-    }
-    &:nth-child(2) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 105%;
-      background-color: rgb(255, 225, 245);
-      transform: skewX(-17deg) rotate(-17deg);
-      transform-origin: 100% 0%;
-      background-color: rgba(194, 151, 211, 0.25);
-      z-index: 2;
-    }
-  }
-
-  & > p:nth-child(3) {
-    margin-top: 1vw;
-  }
 }
 
-.iskustvo > div:nth-child(4) {
-  position: relative;
-  overflow: visible;
-  flex: 1 1 1;
-  background-color: rgba(236, 125, 199, 0.109);
-  background-color: rgba(236, 125, 199, 0.065);
-  padding-right: 0vw;
-  & .rotated {
-    position: absolute;
+.iskustvo>div:nth-child(2) {
+    position: relative;
+    padding-top: 1.5vw;
+    flex: 1 1 1;
+    background-color: transparent;
+    overflow-y: visible;
+    @media only screen and (max-width: 1023px) {
+        padding-top: 4.5vw;
+    }
+    .leftDiv {
+        background-color: rgb(181, 209, 233);
+    }
+}
+
+.iskustvo>div:nth-child(3) {
+    position: relative;
+    flex: 1 1 1;
+    overflow-y: visible;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    & .skillsTitle {
+        display: inline-flex;
+        flex: 1 1 100%;
+    }
+    & .icons {
+        flex: 1 1 100%;
+    }
+    & .mainSkills {
+        display: flex;
+        flex: 1 1 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    & .basic {
+        flex: 1 1 100%;
+        min-width: 100%;
+        .next {
+            background: url("./images/skills/next.png");
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .reactnative {
+            background: url("./images/skills/rn.png");
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .websockets {
+            background: url("./images/skills/ws.png");
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .php {
+            background: url("./images/skills/php.png");
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .sql {
+            background: url("./images/skills/sql.png");
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .ongodb {
+            background: url("./images/skills/mdb.png");
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .woo {
+            background: url("./images/skills/woo.png");
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    .icons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        @media only screen and (min-width: 1025px) {
+            padding-right: 17%;
+        }
+    }
+    & .skill {
+        width: 7vw;
+        height: 10vw;
+        margin-right: 2vw;
+        transition: 0.3s transform;
+        @media only screen and (min-width: 768px) {}
+        @media only screen and (min-width: 1025px) {
+            width: 3vw;
+            height: 5vw;
+            margin-right: 1vw;
+        }
+        @media only screen and (min-width: 1500px) {
+            width: 2.6vw;
+            height: 5vw;
+        }
+        &:hover {
+            transition: 0.3s transform;
+            transform: scale(1.4) translate3d(0, 0, 0);
+            -webkit-transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+        }
+    }
+    .html {
+        background: url("./images/skills/html5.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .css {
+        background: url("./images/skills/css.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .js {
+        background: url("./images/skills/js.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .react {
+        background: url("./images/skills/react.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .ajax {
+        background: url("./images/skills/ajax.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .es6 {
+        background: url("./images/skills/es6.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .flex {
+        background: url("./images/skills/flex.jpg");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .grid {
+        background: url("./images/skills/grid.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .bem {
+        background: url("./images/skills/bem.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .sass {
+        background: url("./images/skills/sass.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .postcss {
+        background: url("./images/skills/postCss.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .wp {
+        background: url("./images/skills/wp.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .svg {
+        background: url("./images/skills/svg.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .newsletter {
+        background: url("./images/skills/nl.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .html4 {
+        background: url("./images/skills/html4.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .redux {
+        background: url("./images/skills/redux.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .thunk {
+        background: url("./images/skills/thunk.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .saga {
+        background: url("./images/skills/saga.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .apollo {
+        background: url("./images/skills/ap.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .handlebars {
+        background: url("./images/skills/hb.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .bootstrap {
+        background: url("./images/skills/boots.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .mui {
+        background: url("./images/skills/mui.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .axios {
+        background: url("./images/skills/axios.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .formik {
+        background: url("./images/skills/formik.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .jq {
+        background: url("./images/skills/jq.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .module {
+        background: url("./images/skills/module.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .prototype {
+        background: url("./images/skills/prototype.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hooks {
+        background: url("./images/skills/hooks.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .ubuntu {
+        background: url("./images/skills/ubuntu.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &.saga {
+        background: rgba(41, 41, 41, 0.747);
+        border-radius: 0.6vw;
+    }
+    .words {
+        display: none;
+    }
+    & .rotated {
+        &:nth-child(1) {
+            position: absolute;
+            overflow: visible;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 105%;
+            transform: skewX(17deg) rotate(17deg);
+            transform-origin: 100% 0%;
+            background-color: rgb(189, 223, 230);
+            z-index: 1;
+        }
+        &:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 105%;
+            transform: skewX(-17deg) rotate(-17deg);
+            transform-origin: 100% 0%;
+            background-color: rgba(188, 214, 229, 0.87);
+            z-index: 2;
+        }
+    }
+    &>p:nth-child(3) {
+        margin-top: 1vw;
+    }
+}
+
+.iskustvo>div:nth-child(4) {
+    position: relative;
     overflow: visible;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 104.5%;
-    transform: skewX(-17deg) rotate(-17deg);
-    transform-origin: 100% 0%;
-    background-color: rgb(241, 213, 240);
-    z-index: 3;
-  }
+    flex: 1 1 1;
+    padding-right: 0vw;
+    & .rotated {
+        position: absolute;
+        overflow: visible;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 104.5%;
+        transform: skewX(-17deg) rotate(-17deg);
+        transform-origin: 100% 0%;
+        background-color: rgb(213, 228, 241);
+        z-index: 3;
+    }
 }
 
-.iskustvo > div:nth-child(5) {
-  position: relative;
-  overflow: visible;
-  flex: 1 1 1;
-  background-color: rgba(247, 191, 247, 0.18);
-  background-color: rgba(247, 191, 247, 0.1);
-  & .rotated {
-    &:nth-child(1) {
-      position: absolute;
-      overflow: visible;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 104.5%;
-      transform: skewX(17deg) rotate(17deg);
-      transform-origin: 100% 0%;
-      background-color: rgba(231, 164, 209, 0.2);
-      z-index: 4;
+.iskustvo>div:nth-child(5) {
+    position: relative;
+    overflow: visible;
+    flex: 1 1 1;
+    & .rotated {
+        &:nth-child(1) {
+            position: absolute;
+            overflow: visible;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 104.5%;
+            transform: skewX(17deg) rotate(17deg);
+            transform-origin: 100% 0%;
+            background-color: rgba(164, 182, 231, 0.2);
+            z-index: 4;
+        }
     }
-  }
 }
 
 .skills {
-  position: relative;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
-  background: rgb(253, 244, 253);
-  color: white;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
-
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
-  }
-
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
+    position: relative;
+    line-height: 2.5vw;
     width: 97.5%;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    width: 92.5%;
-  }
-
-  & .rotated {
-    position: absolute;
-    top: 0;
-    left: 4.3%;
-    width: 95.72%;
-    height: 104.5%;
-    background-color: rgb(255, 225, 245);
-    transform: skewX(-17deg) rotate(-17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(194, 151, 211, 0.2);
-    z-index: 2;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 16.5vw;
+    // background: lighten(rgb(234, 234, 243), 5%);
+    background-color: white;
+    color: white;
+    border-right: 2rem solid rgb(98, 78, 107);
+    border-right: 1.5vw solid rgb(98, 78, 107);
+    @media only screen and (min-width: 768px) {
+        border-right: 1.3vw solid rgb(98, 78, 107);
+    }
+    @media only screen and (min-width: 1025px) {
+        border-right: 0.8vw solid rgb(98, 78, 107);
+        width: 97.5%;
+    }
+    @media only screen and (min-width: 1500px) {
+        width: 92.5%;
+    }
+    & .rotated {
+        position: absolute;
+        top: 0;
+        left: 4.3%;
+        width: 95.72%;
+        height: 104.5%;
+        background-color: rgb(231, 236, 248);
+        transform: skewX(-17deg) rotate(-17deg);
+        transform-origin: 100% 0%;
+        background-color: rgba(151, 172, 211, 0.2);
+        z-index: 2;
+    }
 }
 
 .obrazovanje {
-  position: relative;
-  top: 160%;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
-  background: lighten(rgb(253, 244, 253), 0.4%);
-  color: white;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
-
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
-  }
-
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
-  }
-
-  @media only screen and (min-width: 1500px) {
-    width: 92.5%;
-  }
-
-  & .rotated {
-    position: absolute;
-    overflow: visible;
-    top: 0;
-    left: 4.3%;
-    width: 95.72%;
-    height: 104.5%;
-    transform: skewX(17deg) rotate(17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(255, 225, 245, 0.3);
-    z-index: 3;
-  }
-  & .rotated:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 4.3%;
-    width: 95.72%;
-    height: 105%;
-    background-color: rgb(255, 225, 245);
-    transform: skewX(-17deg) rotate(-17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(194, 151, 211, 0.2);
-    z-index: 2;
-  }
+    position: relative;
+    top: 160%;
+    line-height: 2.5vw;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 16.5vw;
+    background-color: white;
+    color: white;
+    border-right: 2rem solid rgb(98, 78, 107);
+    border-right: 1.5vw solid rgb(98, 78, 107);
+    @media only screen and (min-width: 768px) {
+        border-right: 1.3vw solid rgb(98, 78, 107);
+    }
+    @media only screen and (min-width: 1025px) {
+        border-right: 0.8vw solid rgb(98, 78, 107);
+    }
+    @media only screen and (min-width: 1500px) {
+        width: 92.5%;
+    }
+    & .rotated {
+        position: absolute;
+        overflow: visible;
+        top: 0;
+        left: 4.3%;
+        width: 95.72%;
+        height: 104.5%;
+        transform: skewX(17deg) rotate(17deg);
+        transform-origin: 100% 0%;
+        background-color: rgba(225, 234, 255, 0.2);
+        z-index: 3;
+    }
+    & .rotated:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 4.3%;
+        width: 95.72%;
+        height: 105%;
+        background-color: rgb(255, 225, 245);
+        transform: skewX(-17deg) rotate(-17deg);
+        transform-origin: 100% 0%;
+        background-color: rgba(151, 175, 211, 0.548);
+        z-index: 2;
+    }
 }
 
 .kursevi {
-  position: relative;
-  top: 140%;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
-  background: lighten(rgb(253, 244, 253), 0%);
-  color: white;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
-
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
-  }
-
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
-  }
-
-  @media only screen and (min-width: 1500px) {
-    width: 92.5%;
-  }
-
-  & .rotated {
-    position: absolute;
-    overflow: visible;
-    top: 0;
-    left: 4.3%;
-    width: 95.72%;
-    height: 104.5%;
-    transform: skewX(17deg) rotate(17deg);
-    transform-origin: 100% 0%;
-    background-color: rgb(255, 225, 245);
-    z-index: 1;
-  }
-  & .rotated:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 4.3%;
-    width: 95.72%;
-    height: 104.5%;
-    background-color: rgb(255, 225, 245);
-    transform: skewX(-17deg) rotate(-17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(194, 151, 211, 0.4);
-    z-index: 2;
-  }
+    position: relative;
+    top: 140%;
+    line-height: 2.5vw;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 16.5vw;
+    background-color: white;
+    color: white;
+    border-right: 2rem solid rgb(98, 78, 107);
+    border-right: 1.5vw solid rgb(98, 78, 107);
+    @media only screen and (min-width: 768px) {
+        border-right: 1.3vw solid rgb(98, 78, 107);
+    }
+    @media only screen and (min-width: 1025px) {
+        border-right: 0.8vw solid rgb(98, 78, 107);
+    }
+    @media only screen and (min-width: 1500px) {
+        width: 92.5%;
+    }
+    & .rotated {
+        position: absolute;
+        overflow: visible;
+        top: 0;
+        left: 4.3%;
+        width: 95.72%;
+        height: 104.5%;
+        transform: skewX(17deg) rotate(17deg);
+        transform-origin: 100% 0%;
+        background-color: rgb(239, 238, 247);
+        z-index: 1;
+    }
+    & .rotated:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 4.3%;
+        width: 95.72%;
+        height: 104.5%;
+        transform: skewX(-17deg) rotate(-17deg);
+        transform-origin: 100% 0%;
+        background-color: rgba(171, 185, 230, 0.6);
+        z-index: 2;
+    }
 }
 
 .jez {
-  position: relative;
-  top: 120%;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
-  background: lighten(rgb(253, 244, 253), 0.4%);
-  color: white;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
-
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
-  }
-
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
-  }
-
-  @media only screen and (min-width: 1500px) {
-    width: 92.5%;
-  }
-
-  & .rotated {
-    position: absolute;
-    overflow: visible;
-    top: 0;
-    left: 4.3%;
-    width: 95.72%;
-    height: 104.5%;
-    transform: skewX(17deg) rotate(17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(255, 225, 245, 0.3);
-    z-index: 3;
-  }
-  & .rotated:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 4.3%;
-    width: 95.72%;
-    height: 104.5%;
-    background-color: rgb(255, 225, 245);
-    transform: skewX(-17deg) rotate(-17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(194, 151, 211, 0.2);
-    z-index: 2;
-  }
+    position: relative;
+    top: 120%;
+    line-height: 2.5vw;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 16.5vw;
+    background-color: white;
+    color: white;
+    border-right: 2rem solid rgb(98, 78, 107);
+    border-right: 1.5vw solid rgb(98, 78, 107);
+    @media only screen and (min-width: 768px) {
+        border-right: 1.3vw solid rgb(98, 78, 107);
+    }
+    @media only screen and (min-width: 1025px) {
+        border-right: 0.8vw solid rgb(98, 78, 107);
+    }
+    @media only screen and (min-width: 1500px) {
+        width: 92.5%;
+    }
+    & .rotated {
+        position: absolute;
+        overflow: visible;
+        top: 0;
+        left: 4.3%;
+        width: 95.72%;
+        height: 104.5%;
+        transform: skewX(17deg) rotate(17deg);
+        transform-origin: 100% 0%;
+        background-color: rgba(225, 227, 255, 0.3);
+        z-index: 3;
+    }
+    & .rotated:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 4.3%;
+        width: 95.72%;
+        height: 104.5%;
+        background-color: rgb(255, 225, 245);
+        transform: skewX(-17deg) rotate(-17deg);
+        transform-origin: 100% 0%;
+        background-color: rgba(151, 172, 211, 0.2);
+        z-index: 2;
+    }
 }
 
 .ostale {
-  position: relative;
-  top: 179.9%;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
-  background: lighten(rgb(253, 244, 253), 0%);
-  color: white;
-  margin-bottom: 10%;
-  border-radius: 0px 0px 0px 3.5rem;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
-  border-radius: 0px 0px 0px 10vw;
-
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
-    border-radius: 0px 0px 0px 7vw;
-  }
-
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
-    border-radius: 0px 0px 0px 3.5vw;
-  }
-
-  @media only screen and (min-width: 1500px) {
-    width: 92.5%;
-    border-radius: 0px 0px 0px 5vw;
-  }
-
-  .leftDiv {
+    position: relative;
+    top: 179.9%;
+    line-height: 2.5vw;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 16.5vw;
+    background-color: white;
+    color: white;
+    margin-bottom: 10%;
+    border-radius: 0px 0px 0px 3.5rem;
+    border-right: 2rem solid rgb(98, 78, 107);
+    border-right: 1.5vw solid rgb(98, 78, 107);
     border-radius: 0px 0px 0px 10vw;
-
     @media only screen and (min-width: 768px) {
-      border-radius: 0px 0px 0px 7vw;
+        border-right: 1.3vw solid rgb(98, 78, 107);
+        border-radius: 0px 0px 0px 7vw;
     }
     @media only screen and (min-width: 1025px) {
-      border-radius: 0px 0px 0px 3.5vw;
+        border-right: 0.8vw solid rgb(98, 78, 107);
+        border-radius: 0px 0px 0px 3.5vw;
     }
-
     @media only screen and (min-width: 1500px) {
-      border-radius: 0px 0px 0px 5vw;
+        width: 92.5%;
+        border-radius: 0px 0px 0px 5vw;
     }
-  }
+    .leftDiv {
+        border-radius: 0px 0px 0px 10vw;
+        @media only screen and (min-width: 768px) {
+            border-radius: 0px 0px 0px 7vw;
+        }
+        @media only screen and (min-width: 1025px) {
+            border-radius: 0px 0px 0px 3.5vw;
+        }
+        @media only screen and (min-width: 1500px) {
+            border-radius: 0px 0px 0px 5vw;
+        }
+    }
 }
 
 .rotated:hover {
-  transition: 1s;
+    transition: 1s;
 }
+
 .rotated:hover {
-  transition: 1s;
+    transition: 1s;
 }
 
 audio {
-  position: absolute;
-  top: -50%;
+    position: absolute;
+    top: -50%;
 }
 
 p a {
-  color: rgb(148, 56, 156);
-  opacity: 1;
-  -webkit-text-stroke: 0px black;
-  text-decoration: none;
+    color: rgb(148, 56, 156);
+    opacity: 1;
+    -webkit-text-stroke: 0px black;
+    text-decoration: none;
 }
 
 .iskustvo,
@@ -1124,8 +990,8 @@ p a {
 .jez,
 .obrazovanje,
 .ostale {
-  transition: 0.5s all;
-  -webkit-transition: all 0.7, border 0.01s;
+    transition: 0.5s all;
+    -webkit-transition: all 0.7, border 0.01s;
 }
 
 div.iskustvo:hover,
@@ -1134,9 +1000,9 @@ div.kursevi:hover,
 div.jez:hover,
 div.obrazovanje:hover,
 div.ostale:hover {
-  transition: 0.2s;
-  -webkit-transition: 0.3s;
-  background: $hoverColor;
+    transition: 0.2s;
+    -webkit-transition: 0.3s;
+    background: $hoverColor;
 }
 
 // sass --watch css/style.scss css/style.css
