@@ -205,9 +205,6 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 3vh 0 3vh 16.5vw;
-        background: #050007;
-        background: linear-gradient(aqua, skyblue);
-        background: #05060c;
         background: white;
         color: white;
         border-right: 1.5rem solid var(--borderColor);
@@ -222,7 +219,6 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 3vh 0 3vh 16.5vw;
-        background: #07070f;
         background: white;
         color: white;
         border-right: 1.5rem solid var(--borderColor);
@@ -237,7 +233,6 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 3vh 0 3vh 16.5vw;
-        background: #080911;
         background: white;
         color: white;
         border-right: 1.5rem solid var(--borderColor);
@@ -258,6 +253,12 @@
         border-right: 1.5rem solid var(--borderColor);
         border-right: var(--borderWidth) solid var(--borderColor);
         border-radius: 0px 0px 0px 7vw;
+    }
+    .ostale .text {
+        display: block;
+    }
+    .ostale .images {
+        display: none;
     }
     audio {
         position: absolute;

@@ -972,6 +972,20 @@ input {
             border-radius: 0px 0px 0px 5vw;
         }
     }
+    & .text {
+        display: none;
+    }
+    & .images {
+        display: block;
+        & img {
+            margin-right: 1vw;
+            width: 2vw;
+            height: auto;
+            &:last-child {
+                margin-right: 0vw;
+            }
+        }
+    }
 }
 
 .rotated:hover {

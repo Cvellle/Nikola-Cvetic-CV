@@ -1072,6 +1072,20 @@ input {
     border-radius: 0px 0px 0px 5vw;
   }
 }
+.ostale .text {
+  display: none;
+}
+.ostale .images {
+  display: block;
+}
+.ostale .images img {
+  margin-right: 1vw;
+  width: 2vw;
+  height: auto;
+}
+.ostale .images img:last-child {
+  margin-right: 0vw;
+}
 
 .rotated:hover {
   transition: 1s;
