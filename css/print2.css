@@ -1,8 +1,13 @@
 @media only print {
+     :root {
+        --borderColor: rgb(72, 182, 185);
+        --backgroundColor: #e0f7f4;
+        --borderWidth: 1vw;
+        --mainFont: 1.3vw;
+    }
     body,
     html {
-        background: #050007;
-        background: rgb(67, 161, 250);
+        background: var(--backgroundColor);
         overflow-x: hidden;
         margin: 0;
         padding: 0;
@@ -27,10 +32,10 @@
     p,
     input {
         font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-        font-size: 1.95vw;
+        font-size: var(--mainFont);
         line-height: 2vh;
         font-weight: 600;
-        color: #8E66A8;
+        color: #bddfe6;
         color: rgba(0, 0, 0, 0.671);
     }
     .licni>p>input {
@@ -58,7 +63,7 @@
         top: 15%;
         right: 15%;
         height: 70%;
-        border-radius: 4vw;
+        border-radius: 2vw;
         transition: 0.5s;
         -webkit-transition: 0.5s;
     }
@@ -73,6 +78,13 @@
     }
     .words {
         display: inline-block !important;
+        flex: 1 1 90%;
+    }
+    .words span {
+        background: #51788a;
+        border-radius: 0.5vw;
+        padding: 0.1vw 0.3vw;
+        color: white;
     }
     .icons {
         display: none !important;
@@ -84,28 +96,28 @@
         font-size: 90%;
         font-family: Trebuchet MS, sans-serif;
         font-weight: 900;
-        color: #3A2449;
+        color: #3a2449;
     }
     .licni h2 {
-        margin-top: 6.5%;
+        margin-top: 2.5%;
     }
     .iskustvo h2 {
-        margin-top: 8.5%;
+        margin-top: 5%;
     }
     .skills h2 {
         margin-top: 5%;
     }
     .obrazovanje h2 {
-        margin-top: 5.45%;
+        margin-top: 5%;
     }
     .kursevi h2 {
-        margin-top: 5.4%;
+        margin-top: 5%;
     }
     .jez h2 {
-        margin-top: 5.3%;
+        margin-top: 5%;
     }
     .ostale h2 {
-        margin-top: 5.2%;
+        margin-top: 5%;
     }
     .iskustvo,
     .skills,
@@ -132,137 +144,95 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 95%;
-        height: 28vh;
+        width: 98%;
+        height: 13.5vh;
         transform: translateY(0.1vh);
-        margin-top: 6.5vh;
-        margin-left: 5%;
+        margin-top: 2vh;
+        margin-left: 2%;
         line-height: 2vw;
         padding: 4vw 0 4vw 15.7vw;
-        background: rgb(67, 161, 250);
-        border-top: 1.5rem solid rgb(98, 78, 107);
-        border-left: 1.5rem solid rgb(98, 78, 107);
-        border-top: 1.5vw solid rgb(98, 78, 107);
-        border-left: 1.5vw solid rgb(98, 78, 107);
+        background: var(--backgroundColor);
+        border-top: 1.5rem solid var(--borderColor);
+        border-left: 1.5rem solid var(--borderColor);
+        border-top: var(--borderWidth) solid var(--borderColor);
+        border-left: var(--borderWidth) solid var(--borderColor);
         border-radius: 7rem 0px 0px 0px;
         border-radius: 7vw 0px 0px 0px;
         border-right: none;
     }
     .iskustvo {
         position: relative;
-        margin-left: 5%;
-        line-height: 5vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 65.5vh;
-        width: 90%;
-        padding: 7vw 0 10.5vw 16.5vw;
-        background: #07070F;
-        background: white;
-        color: white;
-        border-radius: 0px 7rem 0px 0px;
-        border-top: 1.5rem solid rgb(98, 78, 107);
-        border-right: 1.5rem solid rgb(98, 78, 107);
-        border-radius: 0px 7vw 0px 0px;
-        border-top: 1.5vw solid rgb(98, 78, 107);
-        border-right: 1.5vw solid rgb(98, 78, 107);
-        z-index: 10;
-    }
-    .iskustvo div:nth-child(2) {
-        flex: 1 1 5%;
-        padding-top: 1vh;
-        background-color: #ffF;
-    }
-    .iskustvo div:nth-child(3) {
-        margin-top: 4.5vw;
-        flex: 1 1 23%;
-        background-color: #ffF;
-    }
-    .iskustvo div:nth-child(3) img {
-        background-color: #ffF;
-    }
-    .iskustvo div:nth-child(4) {
-        flex: 1 1 39%;
-        background-color: #ffF;
-    }
-    .iskustvo div:nth-child(5) {
-        margin-top: 4vw;
-        flex: 1 1 23%;
-        position: relative;
-        background-color: #ffF;
-    }
-    .basic {
-        margin-top: 4.5vw;
-    }
-    .works {
-        margin-top: 4vw;
-    }
-    .iskustvo>div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        transition: 0.3s;
-        opacity: 0.9;
-        padding-left: 0 !important;
-    }
-    .skills {
-        position: relative;
-        top: 100%;
-        margin-left: 5%;
-        width: 90%;
-        height: 18.5vh;
+        margin-left: 2%;
+        width: 96%;
+        height: 13.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 3vh 0 3vh 16.5vw;
-        background: linear-gradient(aqua, skyblue);
-        background: #080911;
         background: white;
         color: white;
-        border-right: 1.5rem solid rgb(98, 78, 107);
-        border-right: 1.5vw solid rgb(98, 78, 107);
+        border-radius: 0px 7rem 0px 0px;
+        border-top: 1.5rem solid var(--borderColor);
+        border-right: 1.5rem solid var(--borderColor);
+        border-radius: 0px 7vw 0px 0px;
+        border-top: var(--borderWidth) solid var(--borderColor);
+        border-right: var(--borderWidth) solid var(--borderColor);
+        z-index: 10;
+    }
+    .iskustvo .basic {
+        margin-top: 0.7vw;
+    }
+    .skills {
+        position: relative;
+        margin-left: 2%;
+        width: 96%;
+        height: 13.5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3vh 0 3vh 16.5vw;
+        background: white;
+        color: white;
+        border-right: 1.5rem solid var(--borderColor);
+        border-right: var(--borderWidth) solid var(--borderColor);
     }
     .jez {
         position: relative;
-        top: 120%;
-        margin-left: 5%;
-        width: 90%;
-        height: 18.5vh;
+        margin-left: 2%;
+        width: 96%;
+        height: 13.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 3vh 0 3vh 16.5vw;
         background: #050007;
         background: linear-gradient(aqua, skyblue);
-        background: #05060C;
+        background: #05060c;
         background: white;
         color: white;
-        border-right: 1.5rem solid rgb(98, 78, 107);
-        border-right: 1.5vw solid rgb(98, 78, 107);
+        border-right: 1.5rem solid var(--borderColor);
+        border-right: var(--borderWidth) solid var(--borderColor);
     }
     .kursevi {
         position: relative;
-        top: 140%;
-        margin-left: 5%;
-        width: 90%;
-        height: 18.5vh;
+        margin-left: 2%;
+        width: 96%;
+        height: 13.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 3vh 0 3vh 16.5vw;
-        background: #07070F;
+        background: #07070f;
         background: white;
         color: white;
-        border-right: 1.5rem solid rgb(98, 78, 107);
-        border-right: 1.5vw solid rgb(98, 78, 107);
+        border-right: 1.5rem solid var(--borderColor);
+        border-right: var(--borderWidth) solid var(--borderColor);
     }
     .obrazovanje {
         position: relative;
-        top: 160%;
-        margin-left: 5%;
-        width: 90%;
-        height: 18.5vh;
+        margin-left: 2%;
+        width: 96%;
+        height: 13.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -270,37 +240,35 @@
         background: #080911;
         background: white;
         color: white;
-        border-right: 1.5rem solid rgb(98, 78, 107);
-        border-right: 1.5vw solid rgb(98, 78, 107);
+        border-right: 1.5rem solid var(--borderColor);
+        border-right: var(--borderWidth) solid var(--borderColor);
     }
     .ostale {
         position: relative;
-        margin-left: 5%;
-        width: 90%;
-        height: 18.5vh;
+        margin-left: 2%;
+        width: 96%;
+        height: 13.5vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 3vh 0 3vh 16.5vw;
         background: white;
-        margin-bottom: 10%;
+        margin-bottom: 2%;
         border-radius: 0px 0px 0px 7rem;
-        border-right: 1.5rem solid rgb(98, 78, 107);
-        border-right: 1.5vw solid rgb(98, 78, 107);
+        border-right: 1.5rem solid var(--borderColor);
+        border-right: var(--borderWidth) solid var(--borderColor);
         border-radius: 0px 0px 0px 7vw;
     }
     audio {
         position: absolute;
         top: -50%;
     }
-    .iskustvo p a {
+    .iskustvo p a,
+    a {
         color: rgb(148, 56, 156);
         opacity: 1;
         -webkit-text-stroke: 0px black;
         text-decoration: none;
-    }
-    .all>div:not(.iskustvo):not( .licni) {
-        height: 18.55vh;
     }
     * {
         -webkit-print-color-adjust: exact;
