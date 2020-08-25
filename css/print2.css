@@ -1,9 +1,11 @@
 @media only print {
      :root {
-        --borderColor: rgb(72, 182, 185);
-        --backgroundColor: #e0f7f4;
+        --backgroundColor: #d8f1ee;
+        --borderColor: #367e7e;
         --borderWidth: 1vw;
         --mainFont: 1.3vw;
+        --linksColor: rgb(43, 156, 147);
+        --portfolioColor: rgb(122, 192, 186);
     }
     body,
     html {
@@ -83,7 +85,7 @@
     .words span {
         background: #51788a;
         border-radius: 0.5vw;
-        padding: 0.1vw 0.3vw;
+        padding: 0.1vw 0.2vw;
         color: white;
     }
     .icons {
@@ -266,7 +268,7 @@
     }
     .iskustvo p a,
     a {
-        color: rgb(148, 56, 156);
+        color: var(--linksColor);
         opacity: 1;
         -webkit-text-stroke: 0px black;
         text-decoration: none;
@@ -274,5 +276,11 @@
     * {
         -webkit-print-color-adjust: exact;
         color-adjust: exact;
+    }
+    .portfolio {
+        background-color: var(--portfolioColor);
+        color: white;
+        border-radius: 1.1vw;
+        padding: 0.1vw 0.5vw;
     }
 }
