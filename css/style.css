@@ -848,8 +848,8 @@ input {
 .skills .rotated {
   position: absolute;
   top: 0;
-  left: 4.3%;
-  width: 95.72%;
+  left: 0%;
+  width: 100%;
   height: 104.5%;
   background-color: #e7ecf8;
   transform: skewX(-17deg) rotate(-17deg);
@@ -891,8 +891,8 @@ input {
   position: absolute;
   overflow: visible;
   top: 0;
-  left: 4.3%;
-  width: 95.72%;
+  left: 0%;
+  width: 100%;
   height: 104.5%;
   transform: skewX(17deg) rotate(17deg);
   transform-origin: 100% 0%;
@@ -902,8 +902,8 @@ input {
 .obrazovanje .rotated:nth-child(2) {
   position: absolute;
   top: 0;
-  left: 4.3%;
-  width: 95.72%;
+  left: 0%;
+  width: 100%;
   height: 105%;
   background-color: #ffe1f5;
   transform: skewX(-17deg) rotate(-17deg);
@@ -945,8 +945,8 @@ input {
   position: absolute;
   overflow: visible;
   top: 0;
-  left: 4.3%;
-  width: 95.72%;
+  left: 0%;
+  width: 100%;
   height: 104.5%;
   transform: skewX(17deg) rotate(17deg);
   transform-origin: 100% 0%;
@@ -956,8 +956,8 @@ input {
 .kursevi .rotated:nth-child(2) {
   position: absolute;
   top: 0;
-  left: 4.3%;
-  width: 95.72%;
+  left: 0%;
+  width: 100%;
   height: 104.5%;
   transform: skewX(-17deg) rotate(-17deg);
   transform-origin: 100% 0%;
@@ -998,8 +998,8 @@ input {
   position: absolute;
   overflow: visible;
   top: 0;
-  left: 4.3%;
-  width: 95.72%;
+  left: 0%;
+  width: 100%;
   height: 104.5%;
   transform: skewX(17deg) rotate(17deg);
   transform-origin: 100% 0%;
@@ -1009,8 +1009,8 @@ input {
 .jez .rotated:nth-child(2) {
   position: absolute;
   top: 0;
-  left: 4.3%;
-  width: 95.72%;
+  left: 0%;
+  width: 100%;
   height: 104.5%;
   background-color: #ffe1f5;
   transform: skewX(-17deg) rotate(-17deg);
