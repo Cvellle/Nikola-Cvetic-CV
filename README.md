@@ -1,3 +1,3 @@
 Nikola Cvetić - CV
 
-Frontend Developer
+React Developer
