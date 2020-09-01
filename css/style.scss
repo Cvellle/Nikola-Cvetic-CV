@@ -984,6 +984,15 @@ input {
                 margin-right: 0vw;
             }
         }
+        &>* {
+            display: inline-flex;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-self: center;
+            height: 2vw;
+            margin-right: 0.1vw;
+        }
     }
 }
 

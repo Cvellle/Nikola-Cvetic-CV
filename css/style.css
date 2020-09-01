@@ -1086,6 +1086,15 @@ input {
 .ostale .images img:last-child {
   margin-right: 0vw;
 }
+.ostale .images > * {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: center;
+  height: 2vw;
+  margin-right: 0.1vw;
+}
 
 .rotated:hover {
   transition: 1s;
