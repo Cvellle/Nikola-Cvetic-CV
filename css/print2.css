@@ -57,17 +57,29 @@
     .print {
         display: none;
     }
+    .reactLogo {
+        position: absolute;
+        top: 5.5vw;
+        right: 25vw;
+        overflow: visible;
+        z-index: 101;
+        opacity: 0.3;
+        width: 15vw;
+        height: auto;
+        transition: 2s;
+    }
     .me {
         position: absolute;
         display: flex;
         margin-right: auto;
         align-self: center;
         top: 15%;
-        right: 15%;
+        right: 10%;
         height: 70%;
         border-radius: 2vw;
         transition: 0.5s;
         -webkit-transition: 0.5s;
+        z-index: 51;
     }
     .me:hover {
         position: absolute;
@@ -161,6 +173,7 @@
         border-radius: 7rem 0px 0px 0px;
         border-radius: 7vw 0px 0px 0px;
         border-right: none;
+        z-index: 100;
     }
     .iskustvo {
         position: relative;

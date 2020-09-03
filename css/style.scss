@@ -2,8 +2,9 @@
 // sass --watch css/style.scss css/style.css
 // $bgColor: rgb(206, 180, 221);
 // $bgColor: rgb(204, 115, 255);
-$bgColor: rgb(154, 214, 230);
-$bgColor: rgb(191, 197, 250);
+// $bgColor: rgb(154, 214, 230);
+// $bgColor: rgb(191, 197, 250);
+$bgColor: rgb(141, 198, 221);
 $hoverColor: rgb(212, 229, 243);
 $centuryGothic: Century Gothic,
 sans-serif;
@@ -52,6 +53,23 @@ h4 {
 .all {
     overflow: hidden;
     transition: 1s;
+}
+
+.reactLogo {
+    position: absolute;
+    top: 1vw;
+    right: 4vw;
+    overflow: visible;
+    z-index: 100;
+    opacity: 0.3;
+    width: 30vw;
+    height: auto;
+    transition: 2s;
+}
+
+.reactLogo:hover {
+    opacity: 0.6;
+    transition: 2s;
 }
 
 .print {
@@ -217,6 +235,8 @@ input {
     border-radius: 10rem 0px 0px 0px;
     border-radius: 10vw 0px 0px 0px;
     border-right: none;
+    overflow: visible;
+    z-index: 100;
     @media only screen and (min-width: 768px) {
         border-left: 1.3vw solid rgb(98, 78, 107);
         border-top: 1.3vw solid rgb(98, 78, 107);
