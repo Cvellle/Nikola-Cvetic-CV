@@ -56,15 +56,19 @@ h4 {
 }
 
 .reactLogo {
-    position: absolute;
-    top: 1vw;
-    right: 4vw;
-    overflow: visible;
-    z-index: 100;
-    opacity: 0.3;
-    width: 30vw;
-    height: auto;
-    transition: 2s;
+    display: none;
+    @media only screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 5.5vw;
+        right: 24vw;
+        overflow: visible;
+        z-index: 100;
+        opacity: 1;
+        width: 10vw;
+        height: auto;
+        transition: 2s;
+    }
 }
 
 .reactLogo:hover {
