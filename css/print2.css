@@ -1,11 +1,12 @@
 @media only print {
      :root {
         --backgroundColor: #d8f1ee;
-        --borderColor: #367e7e;
+        --backgroundColor: #d8eef1;
+        --borderColor: #95d3e5;
         --borderWidth: 1vw;
-        --mainFont: 1.3vw;
-        --linksColor: rgb(43, 156, 147);
-        --portfolioColor: rgb(122, 192, 186);
+        --mainFont: 1.4vw;
+        --linksColor: #47869b;
+        --portfolioColor: #47869b;
     }
     body,
     html {
@@ -110,28 +111,28 @@
         font-size: 90%;
         font-family: Trebuchet MS, sans-serif;
         font-weight: 900;
-        color: #3a2449;
+        color: #3b6477;
     }
     .licni h2 {
         margin-top: 2.5%;
     }
     .iskustvo h2 {
-        margin-top: 5%;
+        margin-top: 4.8%;
     }
     .skills h2 {
-        margin-top: 5%;
+        margin-top: 5.5%;
     }
     .obrazovanje h2 {
-        margin-top: 5%;
+        margin-top: 4.8%;
     }
     .kursevi h2 {
-        margin-top: 5%;
+        margin-top: 4.8%;
     }
     .jez h2 {
-        margin-top: 5%;
+        margin-top: 4.8%;
     }
     .ostale h2 {
-        margin-top: 5%;
+        margin-top: 4.8%;
     }
     .iskustvo,
     .skills,
@@ -293,7 +294,7 @@
     .portfolio {
         background-color: var(--portfolioColor);
         color: white;
-        border-radius: 1.1vw;
-        padding: 0.1vw 0.5vw;
+        border-radius: 1vw;
+        padding: 0.2vw 0.5vw;
     }
 }
