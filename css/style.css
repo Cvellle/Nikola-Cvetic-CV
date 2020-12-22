@@ -525,14 +525,8 @@ input {
   background-position: center;
   background-repeat: no-repeat;
 }
-.iskustvo > div:nth-child(3) .basic .reactnative {
-  background: url("./images/skills/rn.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .basic .websockets {
-  background: url("./images/skills/ws.png");
+.iskustvo > div:nth-child(3) .basic .ts {
+  background: url("./images/skills/typescript.png");
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -549,7 +543,7 @@ input {
   background-position: center;
   background-repeat: no-repeat;
 }
-.iskustvo > div:nth-child(3) .basic .ongodb {
+.iskustvo > div:nth-child(3) .basic .mongodb {
   background: url("./images/skills/mdb.png");
   background-size: 100% auto;
   background-position: center;
