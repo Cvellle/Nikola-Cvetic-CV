@@ -525,7 +525,7 @@ input {
   background-position: center;
   background-repeat: no-repeat;
 }
-.iskustvo > div:nth-child(3) .basic .ts {
+.iskustvo > div:nth-child(3) .basic .typescript {
   background: url("./images/skills/typescript.png");
   background-size: 100% auto;
   background-position: center;
