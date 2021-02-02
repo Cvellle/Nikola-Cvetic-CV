@@ -2,12 +2,17 @@
   :root {
     --backgroundColor: #d8f1ee;
     --backgroundColor: #d8eef1;
+    --backgroundColor: rgb(206, 180, 221);
     --borderColor: #95d3e5;
-    --borderWidth: 1vw;
+    --borderColor: rgb(98, 78, 107);
+    --borderWidth: 1.1vw;
     --mainFont: 1.4vw;
     --linksColor: #47869b;
-    --portfolioColor: #47869b;
+    --linksColor: rgb(142, 89, 167);
+    --skillsBackground: #47869b;
+    --skillsBackground: #f5f0f8;
   }
+
   body,
   html {
     background: var(--backgroundColor);
@@ -96,10 +101,11 @@
     flex: 1 1 100%;
   }
   .words span {
-    background: #51788a;
+    background: var(--skillsBackground);
     border-radius: 0.5vw;
-    padding: 0.3vw 0.3vw;
-    color: white;
+    padding: 0.5vw 0.8vw;
+    margin: 0 0.15vw;
+    color: black;
   }
   .icons {
     display: none !important;
@@ -111,7 +117,7 @@
     font-size: 90%;
     font-family: Trebuchet MS, sans-serif;
     font-weight: 900;
-    color: #3b6477;
+    color: rgb(98, 78, 107);
   }
   .licni h2 {
     margin-top: 2.5%;
@@ -184,7 +190,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3vh 0 0vh 16.5vw;
     background: white;
     color: white;
     border-radius: 0px 0rem 0px 0px;
@@ -194,9 +199,13 @@
     border-top: var(--borderWidth) solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
     z-index: 10;
+    padding: 3vh 0 3vh 16.5vw;
+  }
+  .iskustvo .mainSkills {
+    margin-top: 1.7vw;
   }
   .iskustvo .basic {
-    margin-top: 0.7vw;
+    margin-top: 1.7vw;
   }
   .skills {
     position: relative;
@@ -206,9 +215,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3vh 0 0vh 16.5vw;
+    padding: 3vh 0 3vh 16.5vw;
     background: white;
-    color: white;
+    border-right: 1.5rem solid var(--borderColor);
+    border-right: var(--borderWidth) solid var(--borderColor);
+  }
+  .skills {
+    position: relative;
+    margin-left: 2%;
+    width: 96%;
+    height: 13.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3vh 0 3vh 16.5vw;
+    background: white;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
   }
@@ -292,9 +313,9 @@
     color-adjust: exact;
   }
   .portfolio {
-    background-color: var(--portfolioColor);
-    color: white;
-    border-radius: 1vw;
-    padding: 0.2vw 0.5vw;
+    background-color: var(--skillsBackground);
+    border-radius: 0.5vw;
+    padding: 0.5vw 1.3vw;
+    color: black;
   }
 }

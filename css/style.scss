@@ -1,11 +1,18 @@
 // sass --watch css/style.scss:css/style.css
 // sass --watch css/style.scss css/style.css
-// $bgColor: rgb(206, 180, 221);
+//violet
+$bgColor: rgb(206, 180, 221);
 // $bgColor: rgb(204, 115, 255);
+//blue
 // $bgColor: rgb(154, 214, 230);
 // $bgColor: rgb(191, 197, 250);
-$bgColor: rgb(141, 198, 221);
-$hoverColor: rgb(212, 229, 243);
+// $bgColor: rgb(141, 198, 221);
+//violet
+$hoverColor: rgb(206, 180, 221);
+$hoverColor: rgb(236, 222, 245);
+
+//blue
+// $hoverColor: rgb(212, 229, 243);
 $centuryGothic: Century Gothic, sans-serif;
 $Trebuchet: MS, sans-serif;
 body {
@@ -147,53 +154,48 @@ h4 {
 h2 {
   position: absolute;
   font-size: 2vw;
-  top: 0;
-  margin-top: 3vw;
+  top: 5.7vw;
   left: 2vw;
   font-weight: 900;
   color: #3a2449;
   z-index: 100;
   @media only screen and (min-width: 768px) {
-    margin-top: 2.8vw;
+    top: 5.7vw;
     font-size: 1.6vw;
   }
   @media only screen and (min-width: 1025px) {
     font-size: 1.6vw;
-    margin-top: 1.4vw;
+    top: 2.15vw;
   }
   @media only screen and (min-width: 1500px) {
-    margin-top: 1.4vw;
     font-size: 1.5vw;
     left: 2.5;
   }
 }
 
 .licni h2 {
-  margin-top: 6.4vw;
+  top: 4.4vw;
   @media only screen and (min-width: 768px) {
-    margin-top: 6.3vw;
+    top: 5.7vw;
     font-size: 1.6vw;
   }
   @media only screen and (min-width: 1025px) {
-    margin-top: 1.4vw;
+    top: 1.4vw;
   }
   @media only screen and (min-width: 1500px) {
+    top: 1.6vw;
+
     font-size: 1.5vw;
-    margin-top: 1.6vw;
   }
 }
 
 .iskustvo h2 {
-  margin-top: 6vw;
   @media only screen and (min-width: 768px) {
-    margin-top: 5.8vw;
     font-size: 1.6vw;
   }
   @media only screen and (min-width: 1025px) {
-    margin-top: 1.4vw;
   }
   @media only screen and (min-width: 1500px) {
-    margin-top: 1.2vw;
     font-size: 1.5vw;
   }
 }
@@ -306,7 +308,6 @@ input {
 
 .iskustvo {
   position: relative;
-  padding: 0vw 0 0vw 0vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -389,13 +390,12 @@ input {
 }
 
 .iskustvo > div {
-  padding: 0.5vw 0 0.5vw 16.5vw;
+  padding-left: 16.5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   transition: 0.3s;
   @media only screen and (max-width: 1024px) {
-    padding: 0.5vh 0 0.5vh 16.5vw;
   }
   &:hover {
     transition: 0.3s;
@@ -404,13 +404,13 @@ input {
 }
 
 .iskustvo > div:nth-child(2) {
+  padding-left: 16.5vw;
   position: relative;
-  padding-top: 1.5vw;
   flex: 1 1 1;
   background-color: transparent;
   overflow-y: visible;
-  @media only screen and (max-width: 1023px) {
-    padding-top: 4.5vw;
+  @media only screen and (min-width: 1025px) {
+    padding-left: 16.5vw;
   }
   .leftDiv {
     background-color: rgb(181, 209, 233);
@@ -428,7 +428,7 @@ input {
     display: flex;
     align-self: center;
     display: inline-flex;
-    flex: 1 1 8%;
+    flex: 0 1 6%;
   }
   & .icons {
     flex: 1 1 92%;
@@ -445,10 +445,10 @@ input {
     .basicTitle {
       display: flex;
       align-self: center;
-      flex: 1 1 8%;
+      flex: 0 1 6%;
     }
     .basicIcons {
-      flex: 1 1 92%;
+      // flex: 1 1 92%;
     }
     .next {
       background: url("./images/skills/next.png");
@@ -489,6 +489,7 @@ input {
   }
   .icons {
     display: flex;
+    display: none;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -697,8 +698,12 @@ input {
     background: rgba(41, 41, 41, 0.747);
     border-radius: 0.6vw;
   }
-  .words {
-    display: none;
+
+  .words span {
+    background: #a275a71c;
+    border-radius: 0.5vw;
+    padding: 0.2vw 0.3vw;
+    margin: 0 0.2vw;
   }
   & .rotated {
     &:nth-child(1) {
@@ -1055,4 +1060,39 @@ div.ostale:hover {
   background: $hoverColor;
 }
 
+p {
+  line-height: 8vw;
+
+  @media only screen and (min-width: 768px) {
+    line-height: 6vw;
+  }
+  @media only screen and (min-width: 1025px) {
+    line-height: 3vw;
+  }
+}
+
+.iskustvo p {
+  line-height: 8vw;
+
+  @media only screen and (min-width: 768px) {
+    line-height: 6vw;
+  }
+  @media only screen and (min-width: 1025px) {
+    line-height: 3vw;
+  }
+}
+
+.all > div {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+  @media only screen and (min-width: 1025px) {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+}
 // sass --watch css/style.scss css/style.css
