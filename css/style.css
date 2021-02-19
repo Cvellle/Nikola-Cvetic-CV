@@ -160,7 +160,7 @@ h1 {
 h2 {
   position: absolute;
   font-size: 2vw;
-  top: 5.7vw;
+  top: 4.5vw;
   left: 2vw;
   font-weight: 900;
   color: rgba(0, 0, 0, 0.671);
@@ -168,7 +168,7 @@ h2 {
 }
 @media only screen and (min-width: 768px) {
   h2 {
-    top: 5.7vw;
+    top: 3vw;
     font-size: 1.6vw;
   }
 }
@@ -178,22 +178,26 @@ h2 {
     top: 1.7vw;
   }
 }
-.licni h2 {
-  top: 4.4vw;
+.licni2 h2 {
+  top: 8vw;
 }
 @media only screen and (min-width: 768px) {
-  .licni h2 {
+  .licni2 h2 {
     top: 5.7vw;
     font-size: 1.6vw;
   }
 }
 @media only screen and (min-width: 1025px) {
-  .licni h2 {
+  .licni2 h2 {
     top: 1.4vw;
   }
 }
+.iskustvo h2 {
+  top: 5.5vw;
+}
 @media only screen and (min-width: 768px) {
   .iskustvo h2 {
+    top: 5.5vw;
     font-size: 1.6vw;
   }
 }
@@ -901,11 +905,6 @@ input {
 @media only screen and (min-width: 1025px) {
   .kursevi {
     border-right: 0.8vw solid white;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .kursevi {
-    width: 92.5%;
   }
 }
 .kursevi .rotated {

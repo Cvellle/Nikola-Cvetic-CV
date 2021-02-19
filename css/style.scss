@@ -179,13 +179,15 @@ h1 {
 h2 {
   position: absolute;
   font-size: 2vw;
-  top: 5.7vw;
+  top: 4.5vw;
   left: 2vw;
   font-weight: 900;
   color: $h2Color;
   z-index: 100;
+
   @media only screen and (min-width: 768px) {
-    top: 5.7vw;
+    top: 3vw;
+
     font-size: 1.6vw;
   }
   @media only screen and (min-width: 1025px) {
@@ -198,8 +200,9 @@ h2 {
   }
 }
 
-.licni h2 {
-  top: 4.4vw;
+.licni2 h2 {
+  top: 8vw;
+
   @media only screen and (min-width: 768px) {
     top: 5.7vw;
     font-size: 1.6vw;
@@ -214,7 +217,10 @@ h2 {
 }
 
 .iskustvo h2 {
+  top: 5.5vw;
+
   @media only screen and (min-width: 768px) {
+    top: 5.5vw;
     font-size: 1.6vw;
   }
   @media only screen and (min-width: 1025px) {
@@ -989,7 +995,7 @@ input {
     border-right: 0.8vw solid $borderColor;
   }
   @media only screen and (min-width: 1500px) {
-    width: 92.5%;
+    // width: 92.5%;
   }
   & .rotated {
     position: absolute;
