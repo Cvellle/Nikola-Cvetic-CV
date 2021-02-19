@@ -2,15 +2,21 @@
   :root {
     --backgroundColor: #d8f1ee;
     --backgroundColor: #d8eef1;
-    --backgroundColor: rgb(206, 180, 221);
+    --backgroundColor: rgba(245, 245, 245, 0.432);
+    --backgroundColor: #9ec9eb;
     --borderColor: #95d3e5;
     --borderColor: rgb(98, 78, 107);
+    --borderColor: rgb(255, 255, 255);
     --borderWidth: 1.1vw;
     --mainFont: 1.4vw;
     --linksColor: #47869b;
     --linksColor: rgb(142, 89, 167);
+    --linksColor: #5a9bcc;
     --skillsBackground: #47869b;
     --skillsBackground: #f5f0f8;
+    --skillsBackground: white;
+    --h2Color: rgb(98, 78, 107);
+    --h2Color: rgb(0, 0, 0, 0.671);
   }
 
   body,
@@ -117,7 +123,7 @@
     font-size: 90%;
     font-family: Trebuchet MS, sans-serif;
     font-weight: 900;
-    color: rgb(98, 78, 107);
+    color: var(--h2Color);
   }
   .licni h2 {
     margin-top: 2.5%;
@@ -316,6 +322,6 @@
     background-color: var(--skillsBackground);
     border-radius: 0.5vw;
     padding: 0.5vw 1.3vw;
-    color: black;
+    color: var(--linksColor);
   }
 }

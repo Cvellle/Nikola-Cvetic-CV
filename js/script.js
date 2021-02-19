@@ -7,6 +7,6 @@ function rootFunction() {
 
   // volume
   document.querySelectorAll("audio").forEach((element) => {
-    element.volume = 0.1;
+    element.volume = 0.03;
   });
 }

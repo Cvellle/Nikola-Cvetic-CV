@@ -2,6 +2,9 @@
 // sass --watch css/style.scss css/style.css
 //violet
 $bgColor: rgb(206, 180, 221);
+$bgColor: #9ec9eb;
+//  $borderColor: rgb(98, 78, 107);
+$borderColor: white;
 // $bgColor: rgb(204, 115, 255);
 //blue
 // $bgColor: rgb(154, 214, 230);
@@ -10,6 +13,13 @@ $bgColor: rgb(206, 180, 221);
 //violet
 $hoverColor: rgb(206, 180, 221);
 $hoverColor: rgb(236, 222, 245);
+$hoverColor: #e1ebf3;
+$skillsBackground: #a275a71c;
+$skillsBackground: #fdfdfd;
+$linksColor: rgb(148, 56, 156);
+$linksColor: #5a9bcc;
+$h2Color: rgb(98, 78, 107);
+$h2Color: rgba(0, 0, 0, 0.671);
 
 //blue
 // $hoverColor: rgb(212, 229, 243);
@@ -157,7 +167,7 @@ h2 {
   top: 5.7vw;
   left: 2vw;
   font-weight: 900;
-  color: #3a2449;
+  color: $h2Color;
   z-index: 100;
   @media only screen and (min-width: 768px) {
     top: 5.7vw;
@@ -233,28 +243,28 @@ input {
   margin-top: 6vw;
   padding: 4.6vw 0 4.6vw 15.7vw;
   background: transparent;
-  border-top: 1.3rem solid rgb(98, 78, 107);
-  border-left: 1.3rem solid rgb(98, 78, 107);
-  border-top: 1.5vw solid rgb(98, 78, 107);
-  border-left: 1.5vw solid rgb(98, 78, 107);
+  border-top: 1.3rem solid $borderColor;
+  border-left: 1.3rem solid $borderColor;
+  border-top: 1.5vw solid $borderColor;
+  border-left: 1.5vw solid $borderColor;
   border-radius: 10rem 0px 0px 0px;
   border-radius: 10vw 0px 0px 0px;
   border-right: none;
   overflow: visible;
   z-index: 100;
   @media only screen and (min-width: 768px) {
-    border-left: 1.3vw solid rgb(98, 78, 107);
-    border-top: 1.3vw solid rgb(98, 78, 107);
+    border-left: 1.3vw solid $borderColor;
+    border-top: 1.3vw solid $borderColor;
     border-radius: 7vw 0px 0px 0px;
   }
   @media only screen and (min-width: 1025px) {
     height: 15.5vw;
     margin-top: 2.5vw;
     width: 100%;
-    border-top: 0.8rem solid rgb(98, 78, 107);
-    border-left: 0.8rem solid rgb(98, 78, 107);
-    border-top: 0.8vw solid rgb(98, 78, 107);
-    border-left: 0.8vw solid rgb(98, 78, 107);
+    border-top: 0.8rem solid $borderColor;
+    border-left: 0.8rem solid $borderColor;
+    border-top: 0.8vw solid $borderColor;
+    border-left: 0.8vw solid $borderColor;
     border-radius: 3.5vw 0px 0px 0px;
   }
   @media only screen and (min-width: 1500px) {
@@ -316,23 +326,23 @@ input {
   background-color: white;
   color: white;
   border-radius: 0px 10rem 0px 0px;
-  border-top: 2rem solid rgb(98, 78, 107);
-  border-right: 2rem solid rgb(98, 78, 107);
+  border-top: 2rem solid $borderColor;
+  border-right: 2rem solid $borderColor;
   border-radius: 0px 10vw 0px 0px;
-  border-top: 1.5vw solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
+  border-top: 1.5vw solid $borderColor;
+  border-right: 1.5vw solid $borderColor;
   z-index: 10;
   @media only screen and (min-width: 1025px) {
     width: 97.5%;
-    border-top: 0.8rem solid rgb(98, 78, 107);
-    border-right: 0.8rem solid rgb(98, 78, 107);
+    border-top: 0.8rem solid $borderColor;
+    border-right: 0.8rem solid $borderColor;
     border-radius: 0px 3.5vw 0px 0px;
-    border-top: 0.8vw solid rgb(98, 78, 107);
-    border-right: 0.8vw solid rgb(98, 78, 107);
+    border-top: 0.8vw solid $borderColor;
+    border-right: 0.8vw solid $borderColor;
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
-    border-top: 1.3vw solid rgb(98, 78, 107);
+    border-right: 1.3vw solid $borderColor;
+    border-top: 1.3vw solid $borderColor;
     border-radius: 0 7vw 0px 0px !important;
   }
   @media only screen and (min-width: 1500px) {
@@ -700,7 +710,7 @@ input {
   }
 
   .words span {
-    background: #a275a71c;
+    background: $skillsBackground;
     border-radius: 0.5vw;
     padding: 0.2vw 0.3vw;
     margin: 0 0.2vw;
@@ -785,13 +795,13 @@ input {
   // background: lighten(rgb(234, 234, 243), 5%);
   background-color: white;
   color: white;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
+  border-right: 2rem solid $borderColor;
+  border-right: 1.5vw solid $borderColor;
   @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
+    border-right: 1.3vw solid $borderColor;
   }
   @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
+    border-right: 0.8vw solid $borderColor;
     width: 97.5%;
   }
   @media only screen and (min-width: 1500px) {
@@ -822,13 +832,13 @@ input {
   padding: 1.5vw 0 1.5vw 16.5vw;
   background-color: white;
   color: white;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
+  border-right: 2rem solid $borderColor;
+  border-right: 1.5vw solid $borderColor;
   @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
+    border-right: 1.3vw solid $borderColor;
   }
   @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
+    border-right: 0.8vw solid $borderColor;
   }
   @media only screen and (min-width: 1500px) {
     width: 92.5%;
@@ -870,13 +880,13 @@ input {
   padding: 1.5vw 0 1.5vw 16.5vw;
   background-color: white;
   color: white;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
+  border-right: 2rem solid $borderColor;
+  border-right: 1.5vw solid $borderColor;
   @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
+    border-right: 1.3vw solid $borderColor;
   }
   @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
+    border-right: 0.8vw solid $borderColor;
   }
   @media only screen and (min-width: 1500px) {
     width: 92.5%;
@@ -917,13 +927,13 @@ input {
   padding: 1.5vw 0 1.5vw 16.5vw;
   background-color: white;
   color: white;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
+  border-right: 2rem solid $borderColor;
+  border-right: 1.5vw solid $borderColor;
   @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
+    border-right: 1.3vw solid $borderColor;
   }
   @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
+    border-right: 0.8vw solid $borderColor;
   }
   @media only screen and (min-width: 1500px) {
     width: 92.5%;
@@ -967,15 +977,15 @@ input {
   color: white;
   margin-bottom: 10%;
   border-radius: 0px 0px 0px 3.5rem;
-  border-right: 2rem solid rgb(98, 78, 107);
-  border-right: 1.5vw solid rgb(98, 78, 107);
+  border-right: 2rem solid $borderColor;
+  border-right: 1.5vw solid $borderColor;
   border-radius: 0px 0px 0px 10vw;
   @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid rgb(98, 78, 107);
+    border-right: 1.3vw solid $borderColor;
     border-radius: 0px 0px 0px 7vw;
   }
   @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid rgb(98, 78, 107);
+    border-right: 0.8vw solid $borderColor;
     border-radius: 0px 0px 0px 3.5vw;
   }
   @media only screen and (min-width: 1500px) {
@@ -1033,7 +1043,7 @@ audio {
 }
 
 p a {
-  color: rgb(148, 56, 156);
+  color: $linksColor;
   opacity: 1;
   -webkit-text-stroke: 0px black;
   text-decoration: none;
