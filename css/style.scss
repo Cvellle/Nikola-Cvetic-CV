@@ -2,7 +2,7 @@
 // sass --watch css/style.scss css/style.css
 //violet
 $bgColor: rgb(206, 180, 221);
-$bgColor: #9ec9eb;
+$bgColor: #cae8e6;
 //  $borderColor: rgb(98, 78, 107);
 $borderColor: white;
 // $bgColor: rgb(204, 115, 255);
@@ -11,9 +11,10 @@ $borderColor: white;
 // $bgColor: rgb(191, 197, 250);
 // $bgColor: rgb(141, 198, 221);
 //violet
+$leftDivBg: rgba(212, 241, 245, 0.473);
 $hoverColor: rgb(206, 180, 221);
 $hoverColor: rgb(236, 222, 245);
-$hoverColor: #e1ebf3;
+$hoverColor: #eaf9fb;
 $skillsBackground: #a275a71c;
 $skillsBackground: #fdfdfd;
 $linksColor: rgb(148, 56, 156);
@@ -62,7 +63,7 @@ h4 {
     padding: 0 0 0 2.5%;
   }
   @media only screen and (min-width: 1500px) {
-    padding: 0 0 0 7.5%;
+    // padding: 0 0 0 7.5%;
   }
 }
 
@@ -122,36 +123,50 @@ h4 {
   }
 }
 
+h1 {
+  position: relative;
+  font-size: 6vw;
+  margin-top: -0.5vw;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 5vw;
+  }
+
+  @media only screen and (min-width: 1025px) {
+    margin-top: -1vw;
+    font-size: 3vw;
+  }
+}
+
 .me {
   position: absolute;
   display: flex;
   margin-right: auto;
   align-self: center;
   top: 15%;
-  right: 10%;
+  left: 5%;
   height: 70%;
-  border-radius: 1.5vw;
+  border-radius: 50%;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   @media only screen and (max-width: 767px) {
-    top: 15%;
-    right: 6vw;
-    height: 70%;
-    border-radius: 10px;
+    top: 20%;
+    left: 2.5vw;
+    height: 55%;
+    border-radius: 50%;
     transition: 0.5s;
     -webkit-transition: 0.5s;
-    border-radius: 3vw;
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    top: 15%;
-    right: 10%;
-    height: 70%;
-    border-radius: 3vw;
+    top: 20%;
+    left: 2.5%;
+    height: 55%;
+    border-radius: 50%;
   }
   @media only screen and (min-width: 1500px) {
-    right: 15%;
-    top: 16%;
-    height: 68%;
+    // left: 15%;
+    // top: 16%;
+    // height: 68%;
   }
   &:hover {
     position: absolute;
@@ -175,11 +190,11 @@ h2 {
   }
   @media only screen and (min-width: 1025px) {
     font-size: 1.6vw;
-    top: 2.15vw;
+    top: 1.7vw;
   }
   @media only screen and (min-width: 1500px) {
-    font-size: 1.5vw;
-    left: 2.5;
+    // font-size: 1.5vw;
+    // left: 2.5;
   }
 }
 
@@ -193,9 +208,8 @@ h2 {
     top: 1.4vw;
   }
   @media only screen and (min-width: 1500px) {
-    top: 1.6vw;
-
-    font-size: 1.5vw;
+    // top: 1.6vw;
+    // font-size: 1.5vw;
   }
 }
 
@@ -204,9 +218,10 @@ h2 {
     font-size: 1.6vw;
   }
   @media only screen and (min-width: 1025px) {
+    top: 2vw;
   }
   @media only screen and (min-width: 1500px) {
-    font-size: 1.5vw;
+    // font-size: 1.5vw;
   }
 }
 
@@ -227,8 +242,92 @@ input {
     line-height: 2.5vw;
   }
   @media only screen and (min-width: 1500px) {
-    font-size: 1.05vw;
+    // font-size: 1.05vw;
+    // line-height: 2.3vw;
+  }
+}
+
+.licni2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20vw;
+  width: 97.5%;
+  margin-top: 7vh;
+  margin-top: 10vw;
+  padding: 4.6vw 0 4.6vw 15.7vw;
+  background: white;
+  // border-left: 1.3rem solid $borderColor;
+  // border-left: 1.5vw solid $borderColor;
+  // border-radius: 10rem 0px 0px 0px;
+  // border-radius: 10vw 0px 0px 0px;
+  border-right: none;
+  overflow: visible;
+  z-index: 100;
+  padding-left: 20vw;
+
+  @media only screen and (min-width: 768px) {
+    // border-left: 1.3vw solid $borderColor;
+    // border-radius: 7vw 0px 0px 0px;
+  }
+  @media only screen and (min-width: 1025px) {
+    height: 10.5vw;
+    margin-top: 2.5vw;
+    width: 97.5%;
+    padding-left: 20vw;
+
+    // border-top: 0.8rem solid $borderColor;
+    // border-left: 0.8rem solid $borderColor;
+    // border-top: 0.8vw solid $borderColor;
+    // border-left: 0.8vw solid $borderColor;
+    // border-radius: 3.5vw 0px 0px 0px;
+  }
+  @media only screen and (min-width: 1500px) {
+    // margin-top: 7.5vw;
+    // font-size: 1.5vw;
+    // min-width: 85.5%;
+    // height: 15vw;
+    // width: 100%;
+    // border-radius: 5vw 0px 0px 0px;
+  }
+  & p {
+    line-height: 3vw;
+    height: 3vw;
+    padding: 0;
+    @media only screen and (min-width: 768px) {
+      line-height: 3vw;
+      height: 3vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      margin: 0.2vw 0;
+      max-height: 2vw;
+      height: 2vw;
+      line-height: 2vw;
+    }
+    @media only screen and (min-width: 1500px) {
+      // line-height: 1.7vw;
+      // height: 1.7vw;
+    }
+  }
+  & p > input {
+    height: 100%;
+    margin: 0 0 0vw 0;
+    padding: 0;
+    background: white;
+    border: none;
+    font-weight: 600;
+    display: inline-block;
+    width: 15rem;
+    width: 45vw;
+    cursor: text;
+    font-family: $centuryGothic;
     line-height: 2.3vw;
+    @media only screen and (min-width: 768px) {
+      height: 97%;
+      width: 25rem;
+      width: 25vw;
+    }
   }
 }
 
@@ -237,43 +336,42 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 40vw;
-  width: 100%;
-  margin-top: 7vh;
-  margin-top: 6vw;
+  height: 25vw;
+  width: 97.5%;
+  border-top: 0.15rem solid rgb(226, 226, 226);
+  border-bottom: 0.15rem solid rgb(226, 226, 226);
   padding: 4.6vw 0 4.6vw 15.7vw;
-  background: transparent;
-  border-top: 1.3rem solid $borderColor;
-  border-left: 1.3rem solid $borderColor;
-  border-top: 1.5vw solid $borderColor;
-  border-left: 1.5vw solid $borderColor;
-  border-radius: 10rem 0px 0px 0px;
-  border-radius: 10vw 0px 0px 0px;
+  background: white;
+  // border-left: 1.3rem solid $borderColor;
+  // border-left: 1.5vw solid $borderColor;
+  // border-radius: 10rem 0px 0px 0px;
+  // border-radius: 10vw 0px 0px 0px;
   border-right: none;
   overflow: visible;
   z-index: 100;
+  padding-left: 20vw;
+
   @media only screen and (min-width: 768px) {
-    border-left: 1.3vw solid $borderColor;
-    border-top: 1.3vw solid $borderColor;
-    border-radius: 7vw 0px 0px 0px;
+    // border-left: 1.3vw solid $borderColor;
+    // border-radius: 7vw 0px 0px 0px;
   }
   @media only screen and (min-width: 1025px) {
-    height: 15.5vw;
-    margin-top: 2.5vw;
-    width: 100%;
-    border-top: 0.8rem solid $borderColor;
-    border-left: 0.8rem solid $borderColor;
-    border-top: 0.8vw solid $borderColor;
-    border-left: 0.8vw solid $borderColor;
-    border-radius: 3.5vw 0px 0px 0px;
+    height: 12.5vw;
+    width: 97.5%;
+    padding-left: 20vw;
+
+    // border-top: 0.8rem solid $borderColor;
+    // border-left: 0.8rem solid $borderColor;
+    // border-top: 0.8vw solid $borderColor;
+    // border-left: 0.8vw solid $borderColor;
+    // border-radius: 3.5vw 0px 0px 0px;
   }
   @media only screen and (min-width: 1500px) {
-    margin-top: 7.5vw;
-    font-size: 1.5vw;
-    min-width: 85.5%;
-    height: 15vw;
-    width: 100%;
-    border-radius: 5vw 0px 0px 0px;
+    // font-size: 1.5vw;
+    // min-width: 85.5%;
+    // height: 15vw;
+    // width: 100%;
+    // border-radius: 5vw 0px 0px 0px;
   }
   & p {
     line-height: 3vw;
@@ -288,18 +386,18 @@ input {
       margin: 0.2vw 0;
       max-height: 2vw;
       height: 2vw;
-      line-height: 2vw;
+      line-height: 2.2vw;
     }
     @media only screen and (min-width: 1500px) {
-      line-height: 1.7vw;
-      height: 1.7vw;
+      // line-height: 1.7vw;
+      // height: 1.7vw;
     }
   }
   & p > input {
     height: 100%;
     margin: 0 0 0vw 0;
     padding: 0;
-    background: $bgColor;
+    background: white;
     border: none;
     font-weight: 600;
     display: inline-block;
@@ -325,29 +423,32 @@ input {
   line-height: 2.5vw;
   background-color: white;
   color: white;
-  border-radius: 0px 10rem 0px 0px;
-  border-top: 2rem solid $borderColor;
-  border-right: 2rem solid $borderColor;
-  border-radius: 0px 10vw 0px 0px;
-  border-top: 1.5vw solid $borderColor;
+  // border-radius: 0px 10rem 0px 0px;
+  // border-top: 2rem solid $borderColor;
+  // border-right: 2rem solid $borderColor;
+  // border-radius: 0px 10vw 0px 0px;
+  // border-top: 1.5vw solid $borderColor;
   border-right: 1.5vw solid $borderColor;
   z-index: 10;
+  padding-left: 20vw;
+
   @media only screen and (min-width: 1025px) {
     width: 97.5%;
-    border-top: 0.8rem solid $borderColor;
-    border-right: 0.8rem solid $borderColor;
-    border-radius: 0px 3.5vw 0px 0px;
-    border-top: 0.8vw solid $borderColor;
+    // border-top: 0.8rem solid $borderColor;
+    // border-right: 0.8rem solid $borderColor;
+    // border-radius: 0px 3.5vw 0px 0px;
+    // border-top: 0.8vw solid $borderColor;
     border-right: 0.8vw solid $borderColor;
+    padding-left: 20vw;
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     border-right: 1.3vw solid $borderColor;
-    border-top: 1.3vw solid $borderColor;
-    border-radius: 0 7vw 0px 0px !important;
+    // border-top: 1.3vw solid $borderColor;
+    // border-radius: 0 7vw 0px 0px !important;
   }
   @media only screen and (min-width: 1500px) {
-    width: 92.5%;
-    border-radius: 0px 5vw 0 0;
+    // width: 92.5%;
+    // border-radius: 0px 5vw 0 0;
   }
   &:hover div.mainSkills {
     transition: opacity 0.3s;
@@ -367,7 +468,7 @@ input {
       width: 2.5vw;
     }
     @media only screen and (min-width: 1500px) {
-      width: 2.5vw * 0.8;
+      // width: 2.5vw * 0.8;
     }
     &:hover {
       transition: 0.3s transform;
@@ -394,13 +495,13 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  width: 15vw;
+  width: 18vw;
   height: 100%;
-  background-color: rgba(212, 241, 245, 0.473);
+  background-color: $leftDivBg;
 }
 
 .iskustvo > div {
-  padding-left: 16.5vw;
+  // padding-left: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -414,17 +515,16 @@ input {
 }
 
 .iskustvo > div:nth-child(2) {
-  padding-left: 16.5vw;
-  position: relative;
+  // padding-left: 20vw;
+  position: absolute;
   flex: 1 1 1;
-  background-color: transparent;
   overflow-y: visible;
   @media only screen and (min-width: 1025px) {
-    padding-left: 16.5vw;
+    // padding-left: 20vw;
   }
-  .leftDiv {
-    background-color: rgb(181, 209, 233);
-  }
+  // .leftDiv {
+  //   background-color: rgb(181, 209, 233);
+  // }
 }
 
 .iskustvo > div:nth-child(3) {
@@ -520,8 +620,8 @@ input {
       margin-right: 1vw;
     }
     @media only screen and (min-width: 1500px) {
-      width: 2.6vw;
-      height: 5vw;
+      // width: 2.6vw;
+      // height: 5vw;
     }
     &:hover {
       transition: 0.3s transform;
@@ -791,7 +891,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
+  padding: 1.5vw 0 1.5vw 20vw;
   // background: lighten(rgb(234, 234, 243), 5%);
   background-color: white;
   color: white;
@@ -805,7 +905,7 @@ input {
     width: 97.5%;
   }
   @media only screen and (min-width: 1500px) {
-    width: 92.5%;
+    // width: 92.5%;
   }
   & .rotated {
     position: absolute;
@@ -829,7 +929,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
+  padding: 1.5vw 0 1.5vw 20vw;
   background-color: white;
   color: white;
   border-right: 2rem solid $borderColor;
@@ -841,7 +941,7 @@ input {
     border-right: 0.8vw solid $borderColor;
   }
   @media only screen and (min-width: 1500px) {
-    width: 92.5%;
+    // width: 92.5%;
   }
   & .rotated {
     position: absolute;
@@ -877,7 +977,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
+  padding: 1.5vw 0 1.5vw 20vw;
   background-color: white;
   color: white;
   border-right: 2rem solid $borderColor;
@@ -924,7 +1024,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
+  padding: 1.5vw 0 1.5vw 20vw;
   background-color: white;
   color: white;
   border-right: 2rem solid $borderColor;
@@ -936,7 +1036,7 @@ input {
     border-right: 0.8vw solid $borderColor;
   }
   @media only screen and (min-width: 1500px) {
-    width: 92.5%;
+    // width: 92.5%;
   }
   & .rotated {
     position: absolute;
@@ -972,7 +1072,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 16.5vw;
+  padding: 1.5vw 0 1.5vw 20vw;
   background-color: white;
   color: white;
   margin-bottom: 10%;
@@ -989,8 +1089,8 @@ input {
     border-radius: 0px 0px 0px 3.5vw;
   }
   @media only screen and (min-width: 1500px) {
-    width: 92.5%;
-    border-radius: 0px 0px 0px 5vw;
+    // width: 92.5%;
+    // border-radius: 0px 0px 0px 5vw;
   }
   .leftDiv {
     border-radius: 0px 0px 0px 10vw;
@@ -1001,7 +1101,7 @@ input {
       border-radius: 0px 0px 0px 3.5vw;
     }
     @media only screen and (min-width: 1500px) {
-      border-radius: 0px 0px 0px 5vw;
+      // border-radius: 0px 0px 0px 5vw;
     }
   }
   & .text {

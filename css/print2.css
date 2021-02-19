@@ -4,10 +4,13 @@
     --backgroundColor: #d8eef1;
     --backgroundColor: rgba(245, 245, 245, 0.432);
     --backgroundColor: #9ec9eb;
+    --backgroundColor: white;
     --borderColor: #95d3e5;
     --borderColor: rgb(98, 78, 107);
     --borderColor: rgb(255, 255, 255);
     --borderWidth: 1.1vw;
+    --leftDivBg: #cae8e6;
+    --leftDivBg: rgba(212, 241, 245, 0.473);
     --mainFont: 1.4vw;
     --linksColor: #47869b;
     --linksColor: rgb(142, 89, 167);
@@ -51,6 +54,7 @@
     font-weight: 600;
     color: #bddfe6;
     color: rgba(0, 0, 0, 0.671);
+    margin: 0.5vw 0vw;
   }
   .licni > p > input {
     background: transparent;
@@ -80,15 +84,22 @@
     height: auto;
     transition: 2s;
   }
+  h1 {
+    position: relative;
+    top: 0vh;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-top: 2vw;
+  }
   .me {
     position: absolute;
     display: flex;
     margin-right: auto;
     align-self: center;
     top: 15%;
-    right: 10%;
+    left: 2.5%;
     height: 70%;
     border-radius: 2vw;
+    border-radius: 50%;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     z-index: 51;
@@ -100,7 +111,13 @@
     border-radius: 0px;
   }
   .leftDiv {
-    display: none;
+    position: absolute;
+    left: 0;
+    display: block;
+    background: var(--leftDivBg);
+    height: 100%;
+    width: 18vw;
+    z-index: 0;
   }
   .words {
     display: inline-block !important;
@@ -110,8 +127,9 @@
     background: var(--skillsBackground);
     border-radius: 0.5vw;
     padding: 0.5vw 0.8vw;
-    margin: 0 0.15vw;
+    margin: 0 0.05vw;
     color: black;
+    font-weight: 900;
   }
   .icons {
     display: none !important;
@@ -119,14 +137,15 @@
   h2 {
     position: absolute;
     top: 0;
-    left: 2.8vw;
+    left: 2.5vw;
     font-size: 90%;
     font-family: Trebuchet MS, sans-serif;
     font-weight: 900;
     color: var(--h2Color);
+    z-index: 1;
   }
-  .licni h2 {
-    margin-top: 2.5%;
+  .licni2 h2 {
+    margin-top: 4%;
   }
   .iskustvo h2 {
     margin-top: 4.8%;
@@ -166,88 +185,113 @@
     background: rgb(200, 180, 221);
     background-color: #fff;
   }
+
+  .licni2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 98%;
+    width: 100%;
+    height: 7vh;
+    transform: translateY(0.1vh);
+    /* margin-top: 2vh; */
+    /* margin-left: 2%; */
+    line-height: 2vw;
+    padding: 4vw 0 4vw 20vw;
+    background: white;
+    border-right: none;
+    z-index: 100;
+  }
+
   .licni {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 98%;
-    height: 13.5vh;
+    width: 100%;
+    height: 12vh;
     transform: translateY(0.1vh);
-    margin-top: 2vh;
-    margin-left: 2%;
+    /* margin-left: 2%; */
     line-height: 2vw;
-    padding: 4vw 0 4vw 15.7vw;
+    padding: 4vw 0 4vw 20vw;
     background: var(--backgroundColor);
-    border-top: 1.5rem solid var(--borderColor);
+    /* border-top: 1.5rem solid var(--borderColor);
     border-left: 1.5rem solid var(--borderColor);
     border-top: var(--borderWidth) solid var(--borderColor);
-    border-left: var(--borderWidth) solid var(--borderColor);
-    border-radius: 7rem 0px 0px 0px;
-    border-radius: 7vw 0px 0px 0px;
+    border-left: var(--borderWidth) solid var(--borderColor); */
+    /* border-radius: 7rem 0px 0px 0px;
+    border-radius: 7vw 0px 0px 0px; */
     border-right: none;
     z-index: 100;
+    border-top: 0.15rem solid rgb(226, 226, 226);
+    border-bottom: 0.15rem solid rgb(226, 226, 226);
   }
   .iskustvo {
     position: relative;
-    margin-left: 2%;
-    width: 96%;
+    /* margin-left: 2%; */
+    width: 100%;
+
     height: 13.5vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     background: white;
     color: white;
-    border-radius: 0px 0rem 0px 0px;
-    border-top: 1.5rem solid var(--borderColor);
-    border-right: 1.5rem solid var(--borderColor);
-    border-radius: 0px 7vw 0px 0px;
-    border-top: var(--borderWidth) solid var(--borderColor);
+    /* border-radius: 0px 0rem 0px 0px; */
+    /* border-top: 1.5rem solid var(--borderColor); */
+    /* border-right: 1.5rem solid var(--borderColor); */
+    /* border-radius: 0px 7vw 0px 0px; */
+    /* border-top: var(--borderWidth) solid var(--borderColor); */
     border-right: var(--borderWidth) solid var(--borderColor);
+    padding-left: 20vw;
     z-index: 10;
-    padding: 3vh 0 3vh 16.5vw;
+    /* padding: 3vh 0 3vh 20vw; */
   }
   .iskustvo .mainSkills {
-    margin-top: 1.7vw;
+    /* margin-top: 1.7vw; */
   }
   .iskustvo .basic {
-    margin-top: 1.7vw;
+    /* margin-top: 1.7vw; */
   }
   .skills {
     position: relative;
-    margin-left: 2%;
-    width: 96%;
+    /* margin-left: 2%; */
+    width: 100%;
+
     height: 13.5vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 3vh 0 3vh 16.5vw;
+    justify-content: center;
+    padding: 3vh 0 3vh 20vw;
     background: white;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
   }
   .skills {
     position: relative;
-    margin-left: 2%;
-    width: 96%;
+    /* margin-left: 2%; */
+    width: 100%;
+
     height: 13.5vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 3vh 0 3vh 16.5vw;
+    justify-content: center;
+    padding: 3vh 0 3vh 20vw;
     background: white;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
   }
   .jez {
     position: relative;
-    margin-left: 2%;
-    width: 96%;
+    /* margin-left: 2%; */
+    width: 100%;
     height: 13.5vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 3vh 0 3vh 16.5vw;
+    justify-content: center;
+    padding: 3vh 0 3vh 20vw;
     background: white;
     color: white;
     border-right: 1.5rem solid var(--borderColor);
@@ -255,13 +299,14 @@
   }
   .kursevi {
     position: relative;
-    margin-left: 2%;
-    width: 96%;
+    /* margin-left: 2%; */
+    width: 100%;
+
     height: 13.5vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 3vh 0 3vh 16.5vw;
+    justify-content: center;
+    padding: 3vh 0 3vh 20vw;
     background: white;
     color: white;
     border-right: 1.5rem solid var(--borderColor);
@@ -269,13 +314,13 @@
   }
   .obrazovanje {
     position: relative;
-    margin-left: 2%;
-    width: 96%;
+    /* margin-left: 2%; */
+    width: 100%;
     height: 13.5vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 3vh 0 3vh 16.5vw;
+    justify-content: center;
+    padding: 3vh 0 3vh 20vw;
     background: white;
     color: white;
     border-right: 1.5rem solid var(--borderColor);
@@ -283,19 +328,19 @@
   }
   .ostale {
     position: relative;
-    margin-left: 2%;
-    width: 96%;
+    /* margin-left: 2%; */
+    width: 100%;
     height: 13.5vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 3vh 0 3vh 16.5vw;
+    justify-content: center;
+    padding: 3vh 0 3vh 20vw;
     background: white;
-    margin-bottom: 2%;
     border-radius: 0px 0px 0px 7rem;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
     border-radius: 0px 0px 0px 7vw;
+    overflow: hidden;
   }
   .ostale .text {
     display: block;
