@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: local("Century Gothic, sans-serif"), url(../century-gothic-font/CenturyGothic.ttf);
+  font-weight: bold;
+}
 body {
   background: #cae8e6;
   overflow-x: hidden;
@@ -8,7 +13,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: Century Gothic, sans-serif;
+  font-family: Century Gothic;
 }
 
 p,
@@ -130,6 +135,7 @@ h1 {
   height: 70%;
   border-radius: 50%;
   transition: 0.5s;
+  font-weight: 900;
   -webkit-transition: 0.5s;
 }
 @media only screen and (max-width: 767px) {
@@ -209,8 +215,8 @@ h2 {
 p,
 input {
   font-size: 1.02vw;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.671);
+  font-weight: 900;
+  color: black;
   font-size: 2.5vw;
   line-height: 5vw;
   word-break: keep-all;
@@ -283,7 +289,7 @@ input {
   width: 15rem;
   width: 45vw;
   cursor: text;
-  font-family: Century Gothic, sans-serif;
+  font-family: Century Gothic;
   line-height: 2.3vw;
 }
 @media only screen and (min-width: 768px) {
@@ -348,7 +354,7 @@ input {
   width: 15rem;
   width: 45vw;
   cursor: text;
-  font-family: Century Gothic, sans-serif;
+  font-family: Century Gothic;
   line-height: 2.3vw;
 }
 @media only screen and (min-width: 768px) {
@@ -383,6 +389,13 @@ input {
   .iskustvo {
     border-right: 1.3vw solid white;
   }
+}
+.iskustvo .tech span > span {
+  background: #fdfdfd;
+  border-radius: 0.5vw;
+  padding: 0.2vw 0.3vw;
+  margin: 0 0.3vw;
+  font-weight: 900;
 }
 .iskustvo:hover div.mainSkills {
   transition: opacity 0.3s;
@@ -726,12 +739,6 @@ input {
 .iskustvo > div:nth-child(3).saga {
   background: rgba(41, 41, 41, 0.747);
   border-radius: 0.6vw;
-}
-.iskustvo > div:nth-child(3) .words span {
-  background: #fdfdfd;
-  border-radius: 0.5vw;
-  padding: 0.2vw 0.3vw;
-  margin: 0 0.2vw;
 }
 .iskustvo > div:nth-child(3) .rotated:nth-child(1) {
   position: absolute;
