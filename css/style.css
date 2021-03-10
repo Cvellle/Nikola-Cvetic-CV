@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
   font-family: "Century Gothic";
   src: local("Century Gothic, sans-serif"), url(../century-gothic-font/CenturyGothic.ttf);
@@ -13,7 +14,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: Century Gothic;
+  font-family: "Open sans", sans-serif;
 }
 
 p,
@@ -391,11 +392,12 @@ input {
   }
 }
 .iskustvo .tech span > span {
-  background: #fdfdfd;
-  border-radius: 0.5vw;
-  padding: 0.2vw 0.3vw;
+  background: #333134;
+  border-radius: 0.3vw;
+  padding: 0.15vw 0.3vw;
   margin: 0 0.3vw;
   font-weight: 900;
+  color: white;
 }
 .iskustvo:hover div.mainSkills {
   transition: opacity 0.3s;

@@ -1,3 +1,6 @@
+/* h1 old - font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
   font-family: "Century Gothic";
   src: local("Century Gothic, sans-serif"),
@@ -7,6 +10,7 @@
 
 @media only print {
   :root {
+    --font: "Open sans", sans-serif;
     --backgroundColor: #d8f1ee;
     --backgroundColor: #d8eef1;
     --backgroundColor: rgba(245, 245, 245, 0.432);
@@ -24,7 +28,8 @@
     --linksColor: #5a9bcc;
     --skillsBackground: #47869b;
     --skillsBackground: #f5f0f8;
-    --skillsBackground: white;
+    --skillsBackground: #333134;
+    --skillsColor: white;
     --h2Color: rgb(98, 78, 107);
     --h2Color: rgb(0, 0, 0, 0.671);
   }
@@ -35,10 +40,10 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family: Century Gothic;
   }
   * {
     box-sizing: border-box;
+    font-family: var(--font);
   }
   p,
   h1,
@@ -56,7 +61,7 @@
   }
   p,
   input {
-    font-family: Century Gothic;
+    font-family: "Open-sans", sans-serif;
     font-size: var(--mainFont);
     line-height: 2vh;
     font-weight: 900;
@@ -95,7 +100,6 @@
   h1 {
     position: relative;
     top: 0vh;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     margin-top: 2vw;
   }
   .me {
@@ -133,11 +137,15 @@
   }
   .words span {
     background: var(--skillsBackground);
-    border-radius: 0.5vw;
-    padding: 0.5vw 0.8vw;
+    border-radius: 0.3vw;
+    padding: 0vw 0.8vw;
+    height: 2.2vw;
     margin: 0 0.05vw;
-    color: black;
+    color: var(--skillsColor);
     font-weight: 900;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
   .icons {
     display: none !important;
@@ -372,7 +380,7 @@
     color-adjust: exact;
   }
   .portfolio {
-    background-color: var(--skillsBackground);
+    /* background-color: var(--skillsBackground); */
     border-radius: 0.5vw;
     padding: 0.5vw 1.3vw;
     color: var(--linksColor);

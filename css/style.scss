@@ -1,30 +1,21 @@
 // sass --watch css/style.scss:css/style.css
-// sass --watch css/style.scss css/style.css
+//
 //violet
-$bgColor: rgb(206, 180, 221);
 $bgColor: #cae8e6;
-//  $borderColor: rgb(98, 78, 107);
 $borderColor: white;
-// $bgColor: rgb(204, 115, 255);
-//blue
-// $bgColor: rgb(154, 214, 230);
-// $bgColor: rgb(191, 197, 250);
-// $bgColor: rgb(141, 198, 221);
-//violet
 $leftDivBg: rgba(212, 241, 245, 0.473);
 $hoverColor: rgb(206, 180, 221);
 $hoverColor: rgb(236, 222, 245);
 $hoverColor: #eaf9fb;
 $skillsBackground: #a275a71c;
-$skillsBackground: #fdfdfd;
+$skillsBackground: #333134;
+$skillsColor: white;
 $linksColor: rgb(148, 56, 156);
 $linksColor: #5a9bcc;
 $h2Color: rgb(98, 78, 107);
 $h2Color: rgba(0, 0, 0, 0.671);
 
-//blue
-// $hoverColor: rgb(212, 229, 243);
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
   font-family: "Century Gothic";
   src: local("Century Gothic, sans-serif"),
@@ -33,6 +24,7 @@ $h2Color: rgba(0, 0, 0, 0.671);
 }
 
 $centuryGothic: Century Gothic;
+$openSans: "Open sans", sans-serif;
 $Trebuchet: MS, sans-serif;
 
 body {
@@ -45,7 +37,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: $centuryGothic;
+  font-family: $openSans;
 }
 
 p,
@@ -469,10 +461,11 @@ input {
 
   & .tech span > span {
     background: $skillsBackground;
-    border-radius: 0.5vw;
-    padding: 0.2vw 0.3vw;
+    border-radius: 0.3vw;
+    padding: 0.15vw 0.3vw;
     margin: 0 0.3vw;
     font-weight: 900;
+    color: $skillsColor;
 
     @media only screen and (min-width: 768px) {
     }
