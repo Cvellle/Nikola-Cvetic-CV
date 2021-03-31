@@ -63,9 +63,6 @@ h4 {
   @media only screen and (min-width: 1025px) {
     padding: 0 0 0 2.5%;
   }
-  @media only screen and (min-width: 1500px) {
-    // padding: 0 0 0 7.5%;
-  }
 }
 
 .all {
@@ -164,11 +161,6 @@ h1 {
     left: 2.5%;
     height: 55%;
     border-radius: 50%;
-  }
-  @media only screen and (min-width: 1500px) {
-    // left: 15%;
-    // top: 16%;
-    // height: 68%;
   }
   &:hover {
     position: absolute;
@@ -466,51 +458,6 @@ input {
     margin: 0 0.3vw;
     font-weight: 900;
     color: $skillsColor;
-
-    @media only screen and (min-width: 768px) {
-    }
-    @media only screen and (min-width: 1025px) {
-    }
-  }
-
-  &:hover div.mainSkills {
-    transition: opacity 0.3s;
-    opacity: 1;
-  }
-  img {
-    margin: 0.7vw 1.5vw 0 0;
-    width: 2.5vw * 2;
-    height: auto;
-    opacity: 1;
-    filter: brightness(0.6) opacity(0.5);
-    transition: filter 1s, transform 0.1s;
-    @media only screen and (min-width: 768px) {
-      width: 2.5vw * 1.3;
-    }
-    @media only screen and (min-width: 1025px) {
-      width: 2.5vw;
-    }
-    @media only screen and (min-width: 1500px) {
-      // width: 2.5vw * 0.8;
-    }
-    &:hover {
-      transition: 0.3s transform;
-      transform: scale(1.4) translate3d(0, 0, 0);
-      -webkit-transform-style: preserve-3d;
-      -webkit-backface-visibility: hidden;
-    }
-    &.saga {
-      background: rgba(41, 41, 41, 0.747);
-      border-radius: 0.6vw;
-    }
-    &.axios {
-      border-radius: 50%;
-    }
-    &.prototype {
-      position: relative;
-      border-radius: 0.7vw;
-      box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.726);
-    }
   }
 }
 
@@ -524,13 +471,10 @@ input {
 }
 
 .iskustvo > div {
-  // padding-left: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   transition: 0.3s;
-  @media only screen and (max-width: 1024px) {
-  }
   &:hover {
     transition: 0.3s;
     opacity: 1;
@@ -538,16 +482,9 @@ input {
 }
 
 .iskustvo > div:nth-child(2) {
-  // padding-left: 20vw;
   position: absolute;
   flex: 1 1 1;
   overflow-y: visible;
-  @media only screen and (min-width: 1025px) {
-    // padding-left: 20vw;
-  }
-  // .leftDiv {
-  //   background-color: rgb(181, 209, 233);
-  // }
 }
 
 .iskustvo > div:nth-child(3) {
@@ -563,26 +500,28 @@ input {
     display: inline-flex;
     flex: 0 1 6%;
   }
+
   & .icons {
     flex: 1 1 92%;
   }
+
   & .mainSkills {
     display: flex;
     flex: 1 1 92%;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   & .basic {
     flex: 1 1 100%;
     display: flex;
+
     .basicTitle {
       display: flex;
       align-self: center;
       flex: 0 1 6%;
     }
-    .basicIcons {
-      // flex: 1 1 92%;
-    }
+
     .next {
       background: url("./images/skills/next.png");
       background-size: 100% auto;
@@ -642,221 +581,8 @@ input {
       height: 5vw;
       margin-right: 1vw;
     }
-    @media only screen and (min-width: 1500px) {
-      // width: 2.6vw;
-      // height: 5vw;
-    }
-    &:hover {
-      transition: 0.3s transform;
-      transform: scale(1.4) translate3d(0, 0, 0);
-      -webkit-transform-style: preserve-3d;
-      -webkit-backface-visibility: hidden;
-    }
-  }
-  .html {
-    background: url("./images/skills/html5.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .css {
-    background: url("./images/skills/css.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .js {
-    background: url("./images/skills/js.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .react {
-    background: url("./images/skills/react.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .ajax {
-    background: url("./images/skills/ajax.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .es6 {
-    background: url("./images/skills/es6.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .flex {
-    background: url("./images/skills/flex.jpg");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .grid {
-    background: url("./images/skills/grid.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .bem {
-    background: url("./images/skills/bem.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .sass {
-    background: url("./images/skills/sass.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .postcss {
-    background: url("./images/skills/postCss.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .wp {
-    background: url("./images/skills/wp.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .svg {
-    background: url("./images/skills/svg.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .newsletter {
-    background: url("./images/skills/nl.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .html4 {
-    background: url("./images/skills/html4.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .redux {
-    background: url("./images/skills/redux.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .thunk {
-    background: url("./images/skills/thunk.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .saga {
-    background: url("./images/skills/saga.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .apollo {
-    background: url("./images/skills/ap.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .handlebars {
-    background: url("./images/skills/hb.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .bootstrap {
-    background: url("./images/skills/boots.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .mui {
-    background: url("./images/skills/mui.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .axios {
-    background: url("./images/skills/axios.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .formik {
-    background: url("./images/skills/formik.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .jq {
-    background: url("./images/skills/jq.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .module {
-    background: url("./images/skills/module.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .prototype {
-    background: url("./images/skills/prototype.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .hooks {
-    background: url("./images/skills/hooks.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .ubuntu {
-    background: url("./images/skills/ubuntu.png");
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  &.saga {
-    background: rgba(41, 41, 41, 0.747);
-    border-radius: 0.6vw;
   }
 
-  & .rotated {
-    &:nth-child(1) {
-      position: absolute;
-      overflow: visible;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 105%;
-      transform: skewX(17deg) rotate(17deg);
-      transform-origin: 100% 0%;
-      background-color: rgb(189, 223, 230);
-      z-index: 1;
-    }
-    &:nth-child(2) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 105%;
-      transform: skewX(-17deg) rotate(-17deg);
-      transform-origin: 100% 0%;
-      background-color: rgba(188, 214, 229, 0.87);
-      z-index: 2;
-    }
-  }
   & > p:nth-child(3) {
     margin-top: 1vw;
   }
@@ -867,18 +593,6 @@ input {
   overflow: visible;
   flex: 1 1 1;
   padding-right: 0vw;
-  & .rotated {
-    position: absolute;
-    overflow: visible;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 104.5%;
-    transform: skewX(-17deg) rotate(-17deg);
-    transform-origin: 100% 0%;
-    background-color: rgb(213, 228, 241);
-    z-index: 3;
-  }
 }
 
 .iskustvo > div:nth-child(5) {
@@ -914,6 +628,7 @@ input {
   color: white;
   border-right: 2rem solid $borderColor;
   border-right: 1.5vw solid $borderColor;
+
   @media only screen and (min-width: 768px) {
     border-right: 1.3vw solid $borderColor;
   }
@@ -921,20 +636,11 @@ input {
     border-right: 0.8vw solid $borderColor;
     width: 97.5%;
   }
-  @media only screen and (min-width: 1500px) {
-    // width: 92.5%;
-  }
-  & .rotated {
-    position: absolute;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 104.5%;
-    background-color: rgb(231, 236, 248);
-    transform: skewX(-17deg) rotate(-17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(151, 172, 211, 0.2);
-    z-index: 2;
+
+  & p > span {
+    @media only screen and (min-width: 1025px) {
+      font-size: 1.1vw;
+    }
   }
 }
 
@@ -1146,14 +852,6 @@ input {
   }
 }
 
-.rotated:hover {
-  transition: 1s;
-}
-
-.rotated:hover {
-  transition: 1s;
-}
-
 audio {
   position: absolute;
   top: -50%;
@@ -1177,7 +875,7 @@ p a {
 }
 
 div.iskustvo:hover,
-div.skills:hover,
+div.works:hover,
 div.kursevi:hover,
 div.jez:hover,
 div.obrazovanje:hover,

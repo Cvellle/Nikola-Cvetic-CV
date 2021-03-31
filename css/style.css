@@ -45,6 +45,7 @@ h4 {
     padding: 0 0 0 2.5%;
   }
 }
+
 .all {
   overflow: hidden;
   transition: 1s;
@@ -399,46 +400,6 @@ input {
   font-weight: 900;
   color: white;
 }
-.iskustvo:hover div.mainSkills {
-  transition: opacity 0.3s;
-  opacity: 1;
-}
-.iskustvo img {
-  margin: 0.7vw 1.5vw 0 0;
-  width: 5vw;
-  height: auto;
-  opacity: 1;
-  filter: brightness(0.6) opacity(0.5);
-  transition: filter 1s, transform 0.1s;
-}
-@media only screen and (min-width: 768px) {
-  .iskustvo img {
-    width: 3.25vw;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .iskustvo img {
-    width: 2.5vw;
-  }
-}
-.iskustvo img:hover {
-  transition: 0.3s transform;
-  transform: scale(1.4) translate3d(0, 0, 0);
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-}
-.iskustvo img.saga {
-  background: rgba(41, 41, 41, 0.747);
-  border-radius: 0.6vw;
-}
-.iskustvo img.axios {
-  border-radius: 50%;
-}
-.iskustvo img.prototype {
-  position: relative;
-  border-radius: 0.7vw;
-  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.726);
-}
 
 .leftDiv {
   position: absolute;
@@ -465,6 +426,7 @@ input {
   flex: 1 1 1;
   overflow-y: visible;
 }
+
 .iskustvo > div:nth-child(3) {
   position: relative;
   flex: 1 1 1;
@@ -558,213 +520,6 @@ input {
     margin-right: 1vw;
   }
 }
-.iskustvo > div:nth-child(3) .skill:hover {
-  transition: 0.3s transform;
-  transform: scale(1.4) translate3d(0, 0, 0);
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-}
-.iskustvo > div:nth-child(3) .html {
-  background: url("./images/skills/html5.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .css {
-  background: url("./images/skills/css.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .js {
-  background: url("./images/skills/js.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .react {
-  background: url("./images/skills/react.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .ajax {
-  background: url("./images/skills/ajax.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .es6 {
-  background: url("./images/skills/es6.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .flex {
-  background: url("./images/skills/flex.jpg");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .grid {
-  background: url("./images/skills/grid.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .bem {
-  background: url("./images/skills/bem.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .sass {
-  background: url("./images/skills/sass.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .postcss {
-  background: url("./images/skills/postCss.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .wp {
-  background: url("./images/skills/wp.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .svg {
-  background: url("./images/skills/svg.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .newsletter {
-  background: url("./images/skills/nl.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .html4 {
-  background: url("./images/skills/html4.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .redux {
-  background: url("./images/skills/redux.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .thunk {
-  background: url("./images/skills/thunk.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .saga {
-  background: url("./images/skills/saga.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .apollo {
-  background: url("./images/skills/ap.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .handlebars {
-  background: url("./images/skills/hb.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .bootstrap {
-  background: url("./images/skills/boots.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .mui {
-  background: url("./images/skills/mui.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .axios {
-  background: url("./images/skills/axios.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .formik {
-  background: url("./images/skills/formik.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .jq {
-  background: url("./images/skills/jq.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .module {
-  background: url("./images/skills/module.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .prototype {
-  background: url("./images/skills/prototype.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .hooks {
-  background: url("./images/skills/hooks.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3) .ubuntu {
-  background: url("./images/skills/ubuntu.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iskustvo > div:nth-child(3).saga {
-  background: rgba(41, 41, 41, 0.747);
-  border-radius: 0.6vw;
-}
-.iskustvo > div:nth-child(3) .rotated:nth-child(1) {
-  position: absolute;
-  overflow: visible;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 105%;
-  transform: skewX(17deg) rotate(17deg);
-  transform-origin: 100% 0%;
-  background-color: #bddfe6;
-  z-index: 1;
-}
-.iskustvo > div:nth-child(3) .rotated:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 105%;
-  transform: skewX(-17deg) rotate(-17deg);
-  transform-origin: 100% 0%;
-  background-color: rgba(188, 214, 229, 0.87);
-  z-index: 2;
-}
 .iskustvo > div:nth-child(3) > p:nth-child(3) {
   margin-top: 1vw;
 }
@@ -774,18 +529,6 @@ input {
   overflow: visible;
   flex: 1 1 1;
   padding-right: 0vw;
-}
-.iskustvo > div:nth-child(4) .rotated {
-  position: absolute;
-  overflow: visible;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 104.5%;
-  transform: skewX(-17deg) rotate(-17deg);
-  transform-origin: 100% 0%;
-  background-color: #d5e4f1;
-  z-index: 3;
 }
 
 .iskustvo > div:nth-child(5) {
@@ -830,17 +573,10 @@ input {
     width: 97.5%;
   }
 }
-.works .rotated {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  width: 100%;
-  height: 104.5%;
-  background-color: #e7ecf8;
-  transform: skewX(-17deg) rotate(-17deg);
-  transform-origin: 100% 0%;
-  background-color: rgba(151, 172, 211, 0.2);
-  z-index: 2;
+@media only screen and (min-width: 1025px) {
+  .works p > span {
+    font-size: 1.1vw;
+  }
 }
 
 .obrazovanje {
@@ -1055,14 +791,6 @@ input {
   margin-right: 0.1vw;
 }
 
-.rotated:hover {
-  transition: 1s;
-}
-
-.rotated:hover {
-  transition: 1s;
-}
-
 audio {
   position: absolute;
   top: -50%;
@@ -1086,7 +814,7 @@ p a {
 }
 
 div.iskustvo:hover,
-div.skills:hover,
+div.works:hover,
 div.kursevi:hover,
 div.jez:hover,
 div.obrazovanje:hover,
