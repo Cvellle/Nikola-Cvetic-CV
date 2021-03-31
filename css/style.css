@@ -806,7 +806,7 @@ input {
   z-index: 4;
 }
 
-.skills {
+.works {
   position: relative;
   line-height: 2.5vw;
   width: 97.5%;
@@ -820,17 +820,17 @@ input {
   border-right: 1.5vw solid white;
 }
 @media only screen and (min-width: 768px) {
-  .skills {
+  .works {
     border-right: 1.3vw solid white;
   }
 }
 @media only screen and (min-width: 1025px) {
-  .skills {
+  .works {
     border-right: 0.8vw solid white;
     width: 97.5%;
   }
 }
-.skills .rotated {
+.works .rotated {
   position: absolute;
   top: 0;
   left: 0%;

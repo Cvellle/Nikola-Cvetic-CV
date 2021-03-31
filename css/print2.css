@@ -164,25 +164,25 @@
     margin-top: 4%;
   }
   .iskustvo h2 {
-    margin-top: 4.8%;
+    margin-top: 3.2%;
   }
-  .skills h2 {
-    margin-top: 5.5%;
+  .works h2 {
+    margin-top: 0.5%;
   }
   .obrazovanje h2 {
-    margin-top: 4.8%;
+    margin-top: 3.2%;
   }
   .kursevi h2 {
-    margin-top: 4.8%;
+    margin-top: 3.2%;
   }
   .jez h2 {
-    margin-top: 4.8%;
+    margin-top: 3.2%;
   }
   .ostale h2 {
-    margin-top: 4.8%;
+    margin-top: 3.2%;
   }
   .iskustvo,
-  .skills,
+  .works,
   .kursevi,
   .jez,
   .obrazovanje,
@@ -191,7 +191,7 @@
     -webkit-transition: all 0.7, border 0.01s;
   }
   div.iskustvo:hover,
-  div.skills:hover,
+  div.works:hover,
   div.kursevi:hover,
   div.jez:hover,
   div.obrazovanje:hover,
@@ -227,18 +227,11 @@
     justify-content: space-around;
     width: 98%;
     width: 100%;
-    height: 12vh;
+    height: 11.5vh;
     transform: translateY(0.1vh);
-    /* margin-left: 2%; */
     line-height: 2vw;
     padding: 4vw 0 4vw 20vw;
     background: var(--backgroundColor);
-    /* border-top: 1.5rem solid var(--borderColor);
-    border-left: 1.5rem solid var(--borderColor);
-    border-top: var(--borderWidth) solid var(--borderColor);
-    border-left: var(--borderWidth) solid var(--borderColor); */
-    /* border-radius: 7rem 0px 0px 0px;
-    border-radius: 7vw 0px 0px 0px; */
     border-right: none;
     z-index: 100;
     border-top: 0.15rem solid rgb(226, 226, 226);
@@ -248,22 +241,15 @@
     position: relative;
     /* margin-left: 2%; */
     width: 100%;
-
-    height: 13.5vh;
+    height: 11.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: white;
     color: white;
-    /* border-radius: 0px 0rem 0px 0px; */
-    /* border-top: 1.5rem solid var(--borderColor); */
-    /* border-right: 1.5rem solid var(--borderColor); */
-    /* border-radius: 0px 7vw 0px 0px; */
-    /* border-top: var(--borderWidth) solid var(--borderColor); */
     border-right: var(--borderWidth) solid var(--borderColor);
     padding-left: 20vw;
     z-index: 10;
-    /* padding: 3vh 0 3vh 20vw; */
   }
   .iskustvo .mainSkills {
     /* margin-top: 1.7vw; */
@@ -271,12 +257,10 @@
   .iskustvo .basic {
     /* margin-top: 1.7vw; */
   }
-  .skills {
+  .works {
     position: relative;
-    /* margin-left: 2%; */
     width: 100%;
-
-    height: 13.5vh;
+    height: 24vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,25 +269,13 @@
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
   }
-  .skills {
-    position: relative;
-    /* margin-left: 2%; */
-    width: 100%;
-
-    height: 13.5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3vh 0 3vh 20vw;
-    background: white;
-    border-right: 1.5rem solid var(--borderColor);
-    border-right: var(--borderWidth) solid var(--borderColor);
+  .works p > span {
+    font-size: 1vw;
   }
   .jez {
     position: relative;
-    /* margin-left: 2%; */
     width: 100%;
-    height: 13.5vh;
+    height: 11.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -315,10 +287,8 @@
   }
   .kursevi {
     position: relative;
-    /* margin-left: 2%; */
     width: 100%;
-
-    height: 13.5vh;
+    height: 11.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -330,9 +300,8 @@
   }
   .obrazovanje {
     position: relative;
-    /* margin-left: 2%; */
     width: 100%;
-    height: 13.5vh;
+    height: 11.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -344,9 +313,8 @@
   }
   .ostale {
     position: relative;
-    /* margin-left: 2%; */
     width: 100%;
-    height: 13.5vh;
+    height: 11.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
