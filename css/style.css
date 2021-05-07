@@ -392,6 +392,17 @@ input {
     border-right: 1.3vw solid white;
   }
 }
+.iskustvo p {
+  display: flex;
+}
+.iskustvo p .period {
+  margin-left: auto;
+}
+@media only screen and (min-width: 1025px) {
+  .iskustvo p .period {
+    margin-right: 2vw;
+  }
+}
 .iskustvo .tech span > span {
   background: #333134;
   border-radius: 0.3vw;
@@ -603,29 +614,16 @@ input {
     border-right: 0.8vw solid white;
   }
 }
-.obrazovanje .rotated {
-  position: absolute;
-  overflow: visible;
-  top: 0;
-  left: 0%;
-  width: 100%;
-  height: 104.5%;
-  transform: skewX(17deg) rotate(17deg);
-  transform-origin: 100% 0%;
-  background-color: rgba(225, 234, 255, 0.2);
-  z-index: 3;
+.obrazovanje p {
+  display: flex;
 }
-.obrazovanje .rotated:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  width: 100%;
-  height: 105%;
-  background-color: #ffe1f5;
-  transform: skewX(-17deg) rotate(-17deg);
-  transform-origin: 100% 0%;
-  background-color: rgba(151, 175, 211, 0.548);
-  z-index: 2;
+.obrazovanje p .period {
+  margin-left: auto;
+}
+@media only screen and (min-width: 1025px) {
+  .obrazovanje p .period {
+    margin-right: 2vw;
+  }
 }
 
 .kursevi {
