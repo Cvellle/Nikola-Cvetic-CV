@@ -132,7 +132,7 @@ h1 {
 
   @media only screen and (min-width: 1025px) {
     margin-top: -1vw;
-    font-size: 3vw;
+    font-size: 2.4rem;
   }
 }
 
@@ -205,8 +205,6 @@ h2 {
     top: 1.4vw;
   }
   @media only screen and (min-width: 1500px) {
-    // top: 1.6vw;
-    // font-size: 1.5vw;
   }
 }
 
@@ -238,12 +236,12 @@ input {
     line-height: 5vw;
   }
   @media only screen and (min-width: 1025px) {
-    font-size: 1.25vw;
+    font-size: 1rem;
     line-height: 2.5vw;
   }
   @media only screen and (min-width: 1500px) {
     // font-size: 1.05vw;
-    // line-height: 2.3vw;
+    // line-height: 3rem;
   }
 }
 
@@ -258,19 +256,14 @@ input {
   margin-top: 10vw;
   padding: 4.6vw 0 4.6vw 15.7vw;
   background: white;
-  // border-left: 1.3rem solid $borderColor;
-  // border-left: 1.5vw solid $borderColor;
-  // border-radius: 10rem 0px 0px 0px;
-  // border-radius: 10vw 0px 0px 0px;
   border-right: none;
   overflow: visible;
   z-index: 100;
   padding-left: 20vw;
 
   @media only screen and (min-width: 768px) {
-    // border-left: 1.3vw solid $borderColor;
-    // border-radius: 7vw 0px 0px 0px;
   }
+
   @media only screen and (min-width: 1025px) {
     height: 10.5vw;
     margin-top: 2.5vw;
@@ -292,9 +285,9 @@ input {
     // border-radius: 5vw 0px 0px 0px;
   }
   & p {
-    line-height: 3vw;
     height: 3vw;
     padding: 0;
+
     @media only screen and (min-width: 768px) {
       line-height: 3vw;
       height: 3vw;
@@ -342,43 +335,27 @@ input {
   border-bottom: 0.15rem solid rgb(226, 226, 226);
   padding: 4.6vw 0 4.6vw 15.7vw;
   background: white;
-  // border-left: 1.3rem solid $borderColor;
-  // border-left: 1.5vw solid $borderColor;
-  // border-radius: 10rem 0px 0px 0px;
-  // border-radius: 10vw 0px 0px 0px;
   border-right: none;
   overflow: visible;
   z-index: 100;
   padding-left: 20vw;
 
   @media only screen and (min-width: 768px) {
-    // border-left: 1.3vw solid $borderColor;
-    // border-radius: 7vw 0px 0px 0px;
   }
+
   @media only screen and (min-width: 1025px) {
     height: 12.5vw;
     width: 97.5%;
     padding-left: 20vw;
-
-    // border-top: 0.8rem solid $borderColor;
-    // border-left: 0.8rem solid $borderColor;
-    // border-top: 0.8vw solid $borderColor;
-    // border-left: 0.8vw solid $borderColor;
-    // border-radius: 3.5vw 0px 0px 0px;
   }
   @media only screen and (min-width: 1500px) {
-    // font-size: 1.5vw;
-    // min-width: 85.5%;
-    // height: 15vw;
-    // width: 100%;
-    // border-radius: 5vw 0px 0px 0px;
   }
+
   & p {
-    line-height: 3vw;
+    line-height: 2vw;
     height: 3vw;
     padding: 0;
     @media only screen and (min-width: 768px) {
-      line-height: 3vw;
       height: 3vw;
     }
     @media only screen and (min-width: 1025px) {
@@ -389,8 +366,8 @@ input {
       line-height: 2.2vw;
     }
     @media only screen and (min-width: 1500px) {
-      // line-height: 1.7vw;
-      // height: 1.7vw;
+      line-height: 1.7vw;
+      height: 1.7vw;
     }
   }
   & p > input {
@@ -423,41 +400,30 @@ input {
   line-height: 2.5vw;
   background-color: white;
   color: white;
-  // border-radius: 0px 10rem 0px 0px;
-  // border-top: 2rem solid $borderColor;
-  // border-right: 2rem solid $borderColor;
-  // border-radius: 0px 10vw 0px 0px;
-  // border-top: 1.5vw solid $borderColor;
   border-right: 1.5vw solid $borderColor;
   z-index: 10;
   padding-left: 20vw;
 
   @media only screen and (min-width: 1025px) {
     width: 97.5%;
-    // border-top: 0.8rem solid $borderColor;
-    // border-right: 0.8rem solid $borderColor;
-    // border-radius: 0px 3.5vw 0px 0px;
-    // border-top: 0.8vw solid $borderColor;
     border-right: 0.8vw solid $borderColor;
     padding-left: 20vw;
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     border-right: 1.3vw solid $borderColor;
-    // border-top: 1.3vw solid $borderColor;
-    // border-radius: 0 7vw 0px 0px !important;
   }
   @media only screen and (min-width: 1500px) {
-    // width: 92.5%;
-    // border-radius: 0px 5vw 0 0;
   }
 
   & p {
     display: flex;
+    flex-wrap: wrap;
 
     & .period {
       margin-left: auto;
       @media only screen and (min-width: 1025px) {
         margin-right: 2vw;
+        line-height: 3rem;
       }
     }
   }
@@ -891,7 +857,7 @@ p {
     line-height: 6vw;
   }
   @media only screen and (min-width: 1025px) {
-    line-height: 3vw;
+    line-height: 3rem;
   }
 }
 
@@ -902,7 +868,7 @@ p {
     line-height: 6vw;
   }
   @media only screen and (min-width: 1025px) {
-    line-height: 3vw;
+    line-height: 3rem;
   }
 }
 

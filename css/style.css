@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
   font-family: "Century Gothic";
-  src: local("Century Gothic, sans-serif"),
-    url(../century-gothic-font/CenturyGothic.ttf);
+  src: local("Century Gothic, sans-serif"), url(../century-gothic-font/CenturyGothic.ttf);
   font-weight: bold;
 }
 body {
@@ -183,7 +182,7 @@ h2 {
 }
 @media only screen and (min-width: 1025px) {
   h2 {
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     top: 1.7vw;
   }
 }
@@ -199,7 +198,6 @@ h2 {
 @media only screen and (min-width: 1025px) {
   .licni2 h2 {
     top: 1.4vw;
-    font-size: 1.4vw;
   }
 }
 .iskustvo h2 {
@@ -214,7 +212,6 @@ h2 {
 @media only screen and (min-width: 1025px) {
   .iskustvo h2 {
     top: 2vw;
-    font-size: 1.4vw;
   }
 }
 p,
@@ -228,14 +225,14 @@ input {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   p,
-  input {
+input {
     font-size: 2vw;
     line-height: 5vw;
   }
 }
 @media only screen and (min-width: 1025px) {
   p,
-  input {
+input {
     font-size: 1rem;
     line-height: 2.5vw;
   }
@@ -265,7 +262,6 @@ input {
   }
 }
 .licni2 p {
-  line-height: 3vw;
   height: 3vw;
   padding: 0;
 }
@@ -329,13 +325,12 @@ input {
   }
 }
 .licni p {
-  line-height: 3vw;
+  line-height: 2vw;
   height: 3vw;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
   .licni p {
-    line-height: 3vw;
     height: 3vw;
   }
 }
@@ -346,6 +341,12 @@ input {
     max-height: 2vw;
     height: 2vw;
     line-height: 2.2vw;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .licni p {
+    line-height: 1.7vw;
+    height: 1.7vw;
   }
 }
 .licni p > input {
@@ -397,6 +398,7 @@ input {
 }
 .iskustvo p {
   display: flex;
+  flex-wrap: wrap;
 }
 .iskustvo p .period {
   margin-left: auto;
@@ -404,6 +406,7 @@ input {
 @media only screen and (min-width: 1025px) {
   .iskustvo p .period {
     margin-right: 2vw;
+    line-height: 3rem;
   }
 }
 .iskustvo .tech span > span {
@@ -589,7 +592,7 @@ input {
 }
 @media only screen and (min-width: 1025px) {
   .works p > span {
-    font-size: 1.1rem;
+    font-size: 1.1vw;
   }
 }
 
@@ -835,7 +838,7 @@ p {
 }
 @media only screen and (min-width: 1025px) {
   p {
-    line-height: 3vw;
+    line-height: 3rem;
   }
 }
 
@@ -849,7 +852,7 @@ p {
 }
 @media only screen and (min-width: 1025px) {
   .iskustvo p {
-    line-height: 3vw;
+    line-height: 3rem;
   }
 }
 
