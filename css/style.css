@@ -95,14 +95,14 @@ h4 {
   .print {
     bottom: 1.5vw;
     right: 7vw;
-    width: 5vw;
+    width: 30px;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1500px) {
   .print {
     bottom: 1.5vw;
     right: 5vw;
-    width: 5vw;
+    width: 30px;
   }
 }
 .print:hover {
@@ -182,7 +182,7 @@ h2 {
 }
 @media only screen and (min-width: 1025px) {
   h2 {
-    font-size: 1.6vw;
+    font-size: 22px;
     top: 1.7vw;
   }
 }
@@ -198,6 +198,7 @@ h2 {
 @media only screen and (min-width: 1025px) {
   .licni2 h2 {
     top: 1.4vw;
+    font-size: 22px;
   }
 }
 .iskustvo h2 {
@@ -212,6 +213,7 @@ h2 {
 @media only screen and (min-width: 1025px) {
   .iskustvo h2 {
     top: 2vw;
+    font-size: 22px;
   }
 }
 p,
@@ -592,7 +594,7 @@ input {
 }
 @media only screen and (min-width: 1025px) {
   .works p > span {
-    font-size: 1.1vw;
+    font-size: 16px;
   }
 }
 
@@ -779,7 +781,7 @@ input {
 }
 .ostale .images img {
   margin-right: 1vw;
-  width: 2vw;
+  width: 30px;
   height: auto;
 }
 .ostale .images img:last-child {
@@ -791,7 +793,7 @@ input {
   flex-direction: row;
   flex-wrap: nowrap;
   align-self: center;
-  height: 2vw;
+  height: 30px;
   margin-right: 0.1vw;
 }
 
