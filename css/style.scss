@@ -108,12 +108,7 @@ h4 {
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     bottom: 1.5vw;
     right: 7vw;
-    width: 5vw;
-  }
-  @media only screen and (min-width: 1025px) and (max-width: 1500px) {
-    bottom: 1.5vw;
-    right: 5vw;
-    width: 5vw;
+    width: 70px;
   }
   &:hover {
     opacity: 1;
@@ -185,12 +180,8 @@ h2 {
     font-size: 1.6vw;
   }
   @media only screen and (min-width: 1025px) {
-    font-size: 1.6vw;
+    font-size: 22px;
     top: 1.7vw;
-  }
-  @media only screen and (min-width: 1500px) {
-    // font-size: 1.5vw;
-    // left: 2.5;
   }
 }
 
@@ -203,8 +194,7 @@ h2 {
   }
   @media only screen and (min-width: 1025px) {
     top: 1.4vw;
-  }
-  @media only screen and (min-width: 1500px) {
+    font-size: 22px;
   }
 }
 
@@ -217,9 +207,7 @@ h2 {
   }
   @media only screen and (min-width: 1025px) {
     top: 2vw;
-  }
-  @media only screen and (min-width: 1500px) {
-    // font-size: 1.5vw;
+    font-size: 22px;
   }
 }
 
@@ -238,10 +226,6 @@ input {
   @media only screen and (min-width: 1025px) {
     font-size: 1rem;
     line-height: 2.5vw;
-  }
-  @media only screen and (min-width: 1500px) {
-    // font-size: 1.05vw;
-    // line-height: 3rem;
   }
 }
 
@@ -617,7 +601,7 @@ input {
 
   & p > span {
     @media only screen and (min-width: 1025px) {
-      font-size: 1.1vw;
+      font-size: 16px;
     }
   }
 }
@@ -797,14 +781,17 @@ input {
   }
   & .images {
     display: block;
+
     & img {
       margin-right: 1vw;
-      width: 2vw;
+      width: 30px;
       height: auto;
+
       &:last-child {
         margin-right: 0vw;
       }
     }
+
     & > * {
       display: inline-flex;
       align-items: center;

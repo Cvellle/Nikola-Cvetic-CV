@@ -95,14 +95,7 @@ h4 {
   .print {
     bottom: 1.5vw;
     right: 7vw;
-    width: 30px;
-  }
-}
-@media only screen and (min-width: 1025px) and (max-width: 1500px) {
-  .print {
-    bottom: 1.5vw;
-    right: 5vw;
-    width: 30px;
+    width: 70px;
   }
 }
 .print:hover {
@@ -186,6 +179,7 @@ h2 {
     top: 1.7vw;
   }
 }
+
 .licni2 h2 {
   top: 8vw;
 }
@@ -201,6 +195,7 @@ h2 {
     font-size: 22px;
   }
 }
+
 .iskustvo h2 {
   top: 5.5vw;
 }
@@ -216,6 +211,7 @@ h2 {
     font-size: 22px;
   }
 }
+
 p,
 input {
   font-size: 1.02vw;
@@ -239,6 +235,7 @@ input {
     line-height: 2.5vw;
   }
 }
+
 .licni2 {
   position: relative;
   display: flex;
@@ -793,7 +790,7 @@ input {
   flex-direction: row;
   flex-wrap: nowrap;
   align-self: center;
-  height: 30px;
+  height: 2vw;
   margin-right: 0.1vw;
 }
 
