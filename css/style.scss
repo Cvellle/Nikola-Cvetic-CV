@@ -652,7 +652,7 @@ input {
     display: flex;
 
     & .period {
-      margin-left: auto;
+      // margin-left: auto;
       @media only screen and (min-width: 1025px) {
         margin-right: 2vw;
       }

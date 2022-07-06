@@ -640,9 +640,6 @@ input {
 .obrazovanje p {
   display: flex;
 }
-.obrazovanje p .period {
-  margin-left: auto;
-}
 @media only screen and (min-width: 1025px) {
   .obrazovanje p .period {
     margin-right: 2vw;
