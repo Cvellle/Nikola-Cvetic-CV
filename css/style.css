@@ -410,9 +410,18 @@ input {
 .iskustvo p {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.iskustvo p span {
+  width: 100%;
+}
+.iskustvo p .job-decr {
+  display: flex;
+  flex-wrap: wrap;
 }
 .iskustvo p .period {
   margin-left: auto;
+  min-width: 200px;
 }
 @media only screen and (min-width: 1025px) {
   .iskustvo p .period {
@@ -547,9 +556,6 @@ input {
     height: 5vw;
     margin-right: 1vw;
   }
-}
-.iskustvo > div:nth-child(3) > p:nth-child(3) {
-  margin-top: 1vw;
 }
 
 .iskustvo > div:nth-child(4) {

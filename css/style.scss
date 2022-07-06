@@ -15,16 +15,16 @@ $linksColor: #5a9bcc;
 $h2Color: rgb(98, 78, 107);
 $h2Color: rgba(0, 0, 0, 0.671);
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
-  font-family: "Century Gothic";
-  src: local("Century Gothic, sans-serif"),
+  font-family: 'Century Gothic';
+  src: local('Century Gothic, sans-serif'),
     url(../century-gothic-font/CenturyGothic.ttf);
   font-weight: bold;
 }
 
 $centuryGothic: Century Gothic;
-$openSans: "Open sans", sans-serif;
+$openSans: 'Open sans', sans-serif;
 $Trebuchet: MS, sans-serif;
 
 body {
@@ -103,7 +103,7 @@ h4 {
   cursor: pointer;
   transition: 0.5s;
   background-size: contain;
-  background-image: url("./images/pr3.png");
+  background-image: url('./images/pr3.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 80px;
@@ -413,9 +413,21 @@ input {
   & p {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    span {
+      width: 100%;
+    }
+
+    .job-decr {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     & .period {
       margin-left: auto;
+      min-width: 200px;
+
       @media only screen and (min-width: 1025px) {
         margin-right: 2vw;
         line-height: 3rem;
@@ -496,37 +508,37 @@ input {
     }
 
     .next {
-      background: url("./images/skills/next.png");
+      background: url('./images/skills/next.png');
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .typescript {
-      background: url("./images/skills/typescript.png");
+      background: url('./images/skills/typescript.png');
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .php {
-      background: url("./images/skills/php.png");
+      background: url('./images/skills/php.png');
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .sql {
-      background: url("./images/skills/sql.png");
+      background: url('./images/skills/sql.png');
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .mongodb {
-      background: url("./images/skills/mdb.png");
+      background: url('./images/skills/mdb.png');
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .woo {
-      background: url("./images/skills/woo.png");
+      background: url('./images/skills/woo.png');
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
@@ -554,10 +566,6 @@ input {
       height: 5vw;
       margin-right: 1vw;
     }
-  }
-
-  & > p:nth-child(3) {
-    margin-top: 1vw;
   }
 }
 
