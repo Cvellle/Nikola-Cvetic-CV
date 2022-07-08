@@ -410,38 +410,48 @@ input {
   @media only screen and (min-width: 1500px) {
   }
 
-  & p {
+  .jobs {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
 
-    span {
-      width: 100%;
-    }
-
-    .job-decr {
+    & p {
       display: flex;
       flex-wrap: wrap;
-    }
+      flex: 1 1 100%;
+      width: 100%;
+      margin-bottom: 1rem;
 
-    & .period {
-      margin-left: auto;
-      min-width: 200px;
+      .job-decr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      & .job-header {
+        display: flex;
+        min-width: 100%;
 
-      @media only screen and (min-width: 1025px) {
-        margin-right: 2vw;
-        line-height: 3rem;
+        & .period {
+          margin-left: auto;
+          color: gray;
+          font-size: 16px;
+
+          @media only screen and (min-width: 1025px) {
+            margin-right: 2vw;
+          }
+        }
       }
     }
   }
 
-  & .tech span > span {
-    background: $skillsBackground;
-    border-radius: 0.3vw;
-    padding: 0.15vw 0.3vw;
-    margin: 0 0.3vw;
-    font-weight: 900;
-    color: $skillsColor;
+  & .tech {
+    padding: 20px 50px 0 0;
+
+    .words span {
+      background: $skillsBackground;
+      border-radius: 0.3vw;
+      padding: 0.15vw 0.3vw;
+      margin: 0 0.3vw;
+      font-weight: 900;
+      color: $skillsColor;
+    }
   }
 }
 
@@ -651,10 +661,15 @@ input {
   & p {
     display: flex;
 
-    & .period {
-      // margin-left: auto;
-      @media only screen and (min-width: 1025px) {
-        margin-right: 2vw;
+    .job-header {
+      display: flex;
+      min-width: 100%;
+
+      & .period {
+        margin-left: auto;
+        @media only screen and (min-width: 1025px) {
+          margin-right: 2vw;
+        }
       }
     }
   }
@@ -895,4 +910,5 @@ p {
     padding-bottom: 2vw;
   }
 }
+
 // sass --watch css/style.scss css/style.css

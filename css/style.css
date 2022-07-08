@@ -407,29 +407,38 @@ input {
     border-right: 1.3vw solid white;
   }
 }
-.iskustvo p {
+.iskustvo .jobs {
+  display: flex;
+}
+.iskustvo .jobs p {
   display: flex;
   flex-wrap: wrap;
+  flex: 1 1 100%;
+  width: 100%;
   margin-bottom: 1rem;
 }
-.iskustvo p span {
-  width: 100%;
-}
-.iskustvo p .job-decr {
+.iskustvo .jobs p .job-decr {
   display: flex;
   flex-wrap: wrap;
 }
-.iskustvo p .period {
+.iskustvo .jobs p .job-header {
+  display: flex;
+  min-width: 100%;
+}
+.iskustvo .jobs p .job-header .period {
   margin-left: auto;
-  min-width: 200px;
+  color: gray;
+  font-size: 16px;
 }
 @media only screen and (min-width: 1025px) {
-  .iskustvo p .period {
+  .iskustvo .jobs p .job-header .period {
     margin-right: 2vw;
-    line-height: 3rem;
   }
 }
-.iskustvo .tech span > span {
+.iskustvo .tech {
+  padding: 20px 50px 0 0;
+}
+.iskustvo .tech .words span {
   background: #333134;
   border-radius: 0.3vw;
   padding: 0.15vw 0.3vw;
@@ -640,8 +649,15 @@ input {
 .obrazovanje p {
   display: flex;
 }
+.obrazovanje p .job-header {
+  display: flex;
+  min-width: 100%;
+}
+.obrazovanje p .job-header .period {
+  margin-left: auto;
+}
 @media only screen and (min-width: 1025px) {
-  .obrazovanje p .period {
+  .obrazovanje p .job-header .period {
     margin-right: 2vw;
   }
 }
