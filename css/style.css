@@ -428,10 +428,11 @@ input {
 .iskustvo .jobs p .job-header .period {
   margin-left: auto;
   color: gray;
-  font-size: 16px;
+  font-size: 2vw;
 }
 @media only screen and (min-width: 1025px) {
   .iskustvo .jobs p .job-header .period {
+    font-size: 16px;
     margin-right: 2vw;
   }
 }

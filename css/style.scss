@@ -431,9 +431,10 @@ input {
         & .period {
           margin-left: auto;
           color: gray;
-          font-size: 16px;
+          font-size: 2vw;
 
           @media only screen and (min-width: 1025px) {
+            font-size: 16px;
             margin-right: 2vw;
           }
         }
