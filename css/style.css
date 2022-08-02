@@ -438,6 +438,7 @@ input {
 }
 .iskustvo .tech {
   padding: 20px 50px 0 0;
+  display: flex;
 }
 .iskustvo .tech .words span {
   background: #333134;

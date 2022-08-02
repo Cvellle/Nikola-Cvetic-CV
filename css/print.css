@@ -217,10 +217,10 @@
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    height: 7.5vh;
+    height: 5vh;
     transform: translateY(0.1vh);
     line-height: 2vw;
-    padding: 4vw 0 4vw 20vw;
+    padding: 0.5vw 0 0.5vw 20vw;
     border-right: none;
     z-index: 100;
   }
@@ -386,4 +386,8 @@
 
 br + span {
   display: none;
+}
+
+.tech {
+  display: flex;
 }
