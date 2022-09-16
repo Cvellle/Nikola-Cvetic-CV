@@ -8,6 +8,11 @@
   font-weight: bold;
 }
 
+@page {
+  size: auto;
+  margin: 0;
+}
+
 @media only print {
   :root {
     --font: 'Open sans', sans-serif;
