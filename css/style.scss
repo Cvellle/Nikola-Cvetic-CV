@@ -15,16 +15,16 @@ $linksColor: #5a9bcc;
 $h2Color: rgb(98, 78, 107);
 $h2Color: rgba(0, 0, 0, 0.671);
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
-  font-family: 'Century Gothic';
-  src: local('Century Gothic, sans-serif'),
+  font-family: "Century Gothic";
+  src: local("Century Gothic, sans-serif"),
     url(../century-gothic-font/CenturyGothic.ttf);
   font-weight: bold;
 }
 
 $centuryGothic: Century Gothic;
-$openSans: 'Open sans', sans-serif;
+$openSans: "Open sans", sans-serif;
 $Trebuchet: MS, sans-serif;
 
 body {
@@ -103,7 +103,7 @@ h4 {
   cursor: pointer;
   transition: 0.5s;
   background-size: contain;
-  background-image: url('./images/pr3.png');
+  background-image: url("./images/pr3.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 80px;
@@ -142,39 +142,68 @@ h1 {
   }
 }
 
-.me {
+.circular--portrait {
   position: absolute;
-  display: flex;
-  margin-right: auto;
-  align-self: center;
-  top: 15%;
-  left: 5%;
-  height: 70%;
+  left: 20px;
+  width: 8vw;
+  height: 8vw;
+  overflow: hidden;
   border-radius: 50%;
-  transition: 0.5s;
-  font-weight: 900;
-  -webkit-transition: 0.5s;
+  top: 17%;
+  left: 5%;
+
   @media only screen and (max-width: 767px) {
-    top: 20%;
-    left: 2.5vw;
-    height: 55%;
-    border-radius: 50%;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
+    top: 22%;
+    // left: 2.5vw;
+    width: 12vw;
+    height: 12vw;
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    top: 20%;
-    left: 2.5%;
-    height: 55%;
-    border-radius: 50%;
-  }
-  &:hover {
-    position: absolute;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    border-radius: 0px;
+    top: 25%;
+    // left: 2.5%;
+    width: 10vw;
+    height: 10vw;
   }
 }
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+// .me {
+//   position: absolute;
+//   display: flex;
+//   margin-right: auto;
+//   align-self: center;
+//   top: 15%;
+//   left: 5%;
+//   height: 70%;
+//   border-radius: 50%;
+//   transition: 0.5s;
+//   font-weight: 900;
+//   -webkit-transition: 0.5s;
+//   @media only screen and (max-width: 767px) {
+//     top: 20%;
+//     left: 2.5vw;
+//     height: 55%;
+//     border-radius: 50%;
+//     transition: 0.5s;
+//     -webkit-transition: 0.5s;
+//   }
+//   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+//     top: 20%;
+//     left: 2.5%;
+//     height: 55%;
+//     border-radius: 50%;
+//   }
+//   &:hover {
+//     position: absolute;
+//     transition: 0.5s;
+//     -webkit-transition: 0.5s;
+//     border-radius: 0px;
+//   }
+// }
 
 h2 {
   position: absolute;
@@ -520,37 +549,37 @@ input {
     }
 
     .next {
-      background: url('./images/skills/next.png');
+      background: url("./images/skills/next.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .typescript {
-      background: url('./images/skills/typescript.png');
+      background: url("./images/skills/typescript.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .php {
-      background: url('./images/skills/php.png');
+      background: url("./images/skills/php.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .sql {
-      background: url('./images/skills/sql.png');
+      background: url("./images/skills/sql.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .mongodb {
-      background: url('./images/skills/mdb.png');
+      background: url("./images/skills/mdb.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .woo {
-      background: url('./images/skills/woo.png');
+      background: url("./images/skills/woo.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
