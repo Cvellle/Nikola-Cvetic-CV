@@ -20,8 +20,6 @@ $h2Color: rgba(0, 0, 0, 0.671);
 @font-face {
   font-family: "Century Gothic";
   src: local("Century Gothic, sans-serif"),
-  font-family: "Century Gothic";
-  src: local("Century Gothic, sans-serif"),
     url(../century-gothic-font/CenturyGothic.ttf);
   font-weight: bold;
 }
@@ -148,333 +146,574 @@ h1 {
 }
 
 .circular--portrait {
-.circular--portrait {
-  position: absolute;
-  left: 20px;
-  width: 8vw;
-  height: 8vw;
-  overflow: hidden;
-  left: 20px;
-  width: 8vw;
-  height: 8vw;
-  overflow: hidden;
-  border-radius: 50%;
-  top: 17%;
-  left: 5%;
+  .circular--portrait {
+    position: absolute;
+    left: 20px;
+    width: 8vw;
+    height: 8vw;
+    overflow: hidden;
+    left: 20px;
+    width: 8vw;
+    height: 8vw;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 17%;
+    left: 5%;
 
-  top: 17%;
-  left: 5%;
+    top: 17%;
+    left: 5%;
 
-  @media only screen and (max-width: 767px) {
-    top: 22%;
-    width: 12vw;
-    height: 12vw;
+    @media only screen and (max-width: 767px) {
+      top: 22%;
+      width: 12vw;
+      height: 12vw;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      top: 25%;
+      width: 10vw;
+      height: 10vw;
+    }
   }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    top: 25%;
-    width: 10vw;
-    height: 10vw;
+
+  .circular--portrait img {
+    width: 100%;
+    height: auto;
   }
-}
 
-.circular--portrait img {
-  width: 100%;
-  height: auto;
-}
+  // .me {
+  //   position: absolute;
+  //   display: flex;
+  //   margin-right: auto;
+  //   align-self: center;
+  //   top: 15%;
+  //   left: 5%;
+  //   height: 70%;
+  //   border-radius: 50%;
+  //   transition: 0.5s;
+  //   font-weight: 900;
+  //   -webkit-transition: 0.5s;
+  //   @media only screen and (max-width: 767px) {
+  //     top: 20%;
+  //     left: 2.5vw;
+  //     height: 55%;
+  //     border-radius: 50%;
+  //     transition: 0.5s;
+  //     -webkit-transition: 0.5s;
+  //   }
+  //   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  //     top: 20%;
+  //     left: 2.5%;
+  //     height: 55%;
+  //     border-radius: 50%;
+  //   }
+  //   &:hover {
+  //     position: absolute;
+  //     transition: 0.5s;
+  //     -webkit-transition: 0.5s;
+  //     border-radius: 0px;
+  //   }
+  // }
 
-// .me {
-//   position: absolute;
-//   display: flex;
-//   margin-right: auto;
-//   align-self: center;
-//   top: 15%;
-//   left: 5%;
-//   height: 70%;
-//   border-radius: 50%;
-//   transition: 0.5s;
-//   font-weight: 900;
-//   -webkit-transition: 0.5s;
-//   @media only screen and (max-width: 767px) {
-//     top: 20%;
-//     left: 2.5vw;
-//     height: 55%;
-//     border-radius: 50%;
-//     transition: 0.5s;
-//     -webkit-transition: 0.5s;
-//   }
-//   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-//     top: 20%;
-//     left: 2.5%;
-//     height: 55%;
-//     border-radius: 50%;
-//   }
-//   &:hover {
-//     position: absolute;
-//     transition: 0.5s;
-//     -webkit-transition: 0.5s;
-//     border-radius: 0px;
-//   }
-// }
-
-h2 {
-  position: absolute;
-  font-size: 2vw;
-  top: 4.5vw;
-  left: 2vw;
-  font-weight: 900;
-  color: $h2Color;
-  z-index: 100;
-
-  @media only screen and (min-width: 768px) {
-    top: 3vw;
-
-    font-size: 1.6vw;
-  }
-  @media only screen and (min-width: 1025px) {
-    font-size: 22px;
-    top: 1.7vw;
-  }
-}
-
-.licni2 h2 {
-  top: 8vw;
-
-  @media only screen and (min-width: 768px) {
-    top: 5.7vw;
-    font-size: 1.6vw;
-  }
-  @media only screen and (min-width: 1025px) {
-    top: 1.4vw;
-    font-size: 22px;
-  }
-}
-
-.iskustvo h2 {
-  top: 5.5vw;
-
-  @media only screen and (min-width: 768px) {
-    top: 5.5vw;
-    font-size: 1.6vw;
-  }
-  @media only screen and (min-width: 1025px) {
-    top: 2vw;
-    font-size: 22px;
-  }
-}
-
-p,
-input {
-  font-size: 1.02vw;
-  font-weight: 900;
-  color: rgb(0, 0, 0);
-  font-size: 2.5vw;
-  line-height: 5vw;
-  word-break: keep-all;
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h2 {
+    position: absolute;
     font-size: 2vw;
+    top: 4.5vw;
+    left: 2vw;
+    font-weight: 900;
+    color: $h2Color;
+    z-index: 100;
+
+    @media only screen and (min-width: 768px) {
+      top: 3vw;
+
+      font-size: 1.6vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-size: 22px;
+      top: 1.7vw;
+    }
+  }
+
+  .licni2 h2 {
+    top: 8vw;
+
+    @media only screen and (min-width: 768px) {
+      top: 5.7vw;
+      font-size: 1.6vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      top: 1.4vw;
+      font-size: 22px;
+    }
+  }
+
+  .iskustvo h2 {
+    top: 5.5vw;
+
+    @media only screen and (min-width: 768px) {
+      top: 5.5vw;
+      font-size: 1.6vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      top: 2vw;
+      font-size: 22px;
+    }
+  }
+
+  p,
+  input {
+    font-size: 1.02vw;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    font-size: 2.5vw;
     line-height: 5vw;
-  }
-  @media only screen and (min-width: 1025px) {
-    font-size: 1rem;
-    line-height: 2.5vw;
-  }
-}
-
-.licni2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 20vw;
-  width: 97.5%;
-  margin-top: 7vh;
-  margin-top: 10vw;
-  padding: 4.6vw 0 4.6vw 15.7vw;
-  background: white;
-  border-right: none;
-  overflow: visible;
-  z-index: 100;
-  padding-left: 20vw;
-
-  @media only screen and (min-width: 768px) {
-  }
-
-  @media only screen and (min-width: 1025px) {
-    height: 10.5vw;
-    margin-top: 2.5vw;
-    width: 97.5%;
-    padding-left: 20vw;
-
-    // border-top: 0.8rem solid $borderColor;
-    // border-left: 0.8rem solid $borderColor;
-    // border-top: 0.8vw solid $borderColor;
-    // border-left: 0.8vw solid $borderColor;
-    // border-radius: 3.5vw 0px 0px 0px;
-  }
-  @media only screen and (min-width: 1500px) {
-    // margin-top: 7.5vw;
-    // font-size: 1.5vw;
-    // min-width: 85.5%;
-    // height: 15vw;
-    // width: 100%;
-    // border-radius: 5vw 0px 0px 0px;
-  }
-  & p {
-    height: 3vw;
-    padding: 0;
-
-    @media only screen and (min-width: 768px) {
-      line-height: 3vw;
-      height: 3vw;
+    word-break: keep-all;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2vw;
+      line-height: 5vw;
     }
     @media only screen and (min-width: 1025px) {
-      margin: 0.2vw 0;
-      max-height: 2vw;
-      height: 2vw;
-      line-height: 2vw;
-    }
-    @media only screen and (min-width: 1500px) {
-      // line-height: 1.7vw;
-      // height: 1.7vw;
+      font-size: 1rem;
+      line-height: 2.5vw;
     }
   }
-  & p > input {
-    height: 100%;
-    margin: 0 0 0vw 0;
-    padding: 0;
-    background: white;
-    border: none;
-    font-weight: 600;
-    display: inline-block;
-    width: 15rem;
-    width: 45vw;
-    cursor: text;
-    font-family: $centuryGothic;
-    line-height: 2.3vw;
-    @media only screen and (min-width: 768px) {
-      height: 97%;
-      width: 25rem;
-      width: 25vw;
-    }
-  }
-}
 
-.licni {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 25vw;
-  width: 97.5%;
-  border-top: 0.15rem solid rgb(226, 226, 226);
-  border-bottom: 0.15rem solid rgb(226, 226, 226);
-  padding: 4.6vw 0 4.6vw 15.7vw;
-  background: white;
-  border-right: none;
-  overflow: visible;
-  z-index: 100;
-  padding-left: 20vw;
-
-  @media only screen and (min-width: 768px) {
-  }
-
-  @media only screen and (min-width: 1025px) {
-    height: 12.5vw;
-    width: 97.5%;
-    padding-left: 20vw;
-  }
-  @media only screen and (min-width: 1500px) {
-  }
-
-  & p {
-    line-height: 2vw;
-    height: 3vw;
-    padding: 0;
-    @media only screen and (min-width: 768px) {
-      height: 3vw;
-    }
-    @media only screen and (min-width: 1025px) {
-      line-height: unset;
-      margin: 0.2vw 0;
-      max-height: 2vw;
-      height: 2vw;
-      line-height: 2.2vw;
-    }
-    @media only screen and (min-width: 1500px) {
-      line-height: 1.7vw;
-      height: 1.7vw;
-    }
-  }
-  & p > input {
-    height: 100%;
-    margin: 0 0 0vw 0;
-    padding: 0;
-    background: white;
-    border: none;
-    font-weight: 600;
-    display: inline-block;
-    width: 15rem;
-    width: 45vw;
-    cursor: text;
-    font-family: $centuryGothic;
-    line-height: 2.3vw;
-    @media only screen and (min-width: 768px) {
-      height: 97%;
-      width: 25rem;
-      width: 25vw;
-    }
-  }
-}
-
-.iskustvo {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 97.5%;
-  line-height: 2.5vw;
-  background-color: white;
-  color: white;
-  border-right: 1.5vw solid $borderColor;
-  z-index: 10;
-  padding-left: 20vw;
-
-  @media only screen and (min-width: 1025px) {
-    width: 97.5%;
-    border-right: 0.8vw solid $borderColor;
-    padding-left: 20vw;
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    border-right: 1.3vw solid $borderColor;
-  }
-  @media only screen and (min-width: 1500px) {
-  }
-
-  .jobs {
+  .licni2 {
+    position: relative;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vw;
+    width: 97.5%;
+    margin-top: 7vh;
+    margin-top: 10vw;
+    padding: 4.6vw 0 4.6vw 15.7vw;
+    background: white;
+    border-right: none;
+    overflow: visible;
+    z-index: 100;
+    padding-left: 20vw;
+
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (min-width: 1025px) {
+      height: 10.5vw;
+      margin-top: 2.5vw;
+      width: 97.5%;
+      padding-left: 20vw;
+
+      // border-top: 0.8rem solid $borderColor;
+      // border-left: 0.8rem solid $borderColor;
+      // border-top: 0.8vw solid $borderColor;
+      // border-left: 0.8vw solid $borderColor;
+      // border-radius: 3.5vw 0px 0px 0px;
+    }
+    @media only screen and (min-width: 1500px) {
+      // margin-top: 7.5vw;
+      // font-size: 1.5vw;
+      // min-width: 85.5%;
+      // height: 15vw;
+      // width: 100%;
+      // border-radius: 5vw 0px 0px 0px;
+    }
+    & p {
+      height: 3vw;
+      padding: 0;
+
+      @media only screen and (min-width: 768px) {
+        line-height: 3vw;
+        height: 3vw;
+      }
+      @media only screen and (min-width: 1025px) {
+        margin: 0.2vw 0;
+        max-height: 2vw;
+        height: 2vw;
+        line-height: 2vw;
+      }
+      @media only screen and (min-width: 1500px) {
+        // line-height: 1.7vw;
+        // height: 1.7vw;
+      }
+    }
+    & p > input {
+      height: 100%;
+      margin: 0 0 0vw 0;
+      padding: 0;
+      background: white;
+      border: none;
+      font-weight: 600;
+      display: inline-block;
+      width: 15rem;
+      width: 45vw;
+      cursor: text;
+      font-family: $centuryGothic;
+      line-height: 2.3vw;
+      @media only screen and (min-width: 768px) {
+        height: 97%;
+        width: 25rem;
+        width: 25vw;
+      }
+    }
+  }
+
+  .licni {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25vw;
+    width: 97.5%;
+    border-top: 0.15rem solid rgb(226, 226, 226);
+    border-bottom: 0.15rem solid rgb(226, 226, 226);
+    padding: 4.6vw 0 4.6vw 15.7vw;
+    background: white;
+    border-right: none;
+    overflow: visible;
+    z-index: 100;
+    padding-left: 20vw;
+
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (min-width: 1025px) {
+      height: 12.5vw;
+      width: 97.5%;
+      padding-left: 20vw;
+    }
+    @media only screen and (min-width: 1500px) {
+    }
+
+    & p {
+      line-height: 2vw;
+      height: 3vw;
+      padding: 0;
+      @media only screen and (min-width: 768px) {
+        height: 3vw;
+      }
+      @media only screen and (min-width: 1025px) {
+        line-height: unset;
+        margin: 0.2vw 0;
+        max-height: 2vw;
+        height: 2vw;
+        line-height: 2.2vw;
+      }
+      @media only screen and (min-width: 1500px) {
+        line-height: 1.7vw;
+        height: 1.7vw;
+      }
+    }
+    & p > input {
+      height: 100%;
+      margin: 0 0 0vw 0;
+      padding: 0;
+      background: white;
+      border: none;
+      font-weight: 600;
+      display: inline-block;
+      width: 15rem;
+      width: 45vw;
+      cursor: text;
+      font-family: $centuryGothic;
+      line-height: 2.3vw;
+      @media only screen and (min-width: 768px) {
+        height: 97%;
+        width: 25rem;
+        width: 25vw;
+      }
+    }
+  }
+
+  .iskustvo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 97.5%;
+    line-height: 2.5vw;
+    background-color: white;
+    color: white;
+    border-right: 1.5vw solid $borderColor;
+    z-index: 10;
+    padding-left: 20vw;
+
+    @media only screen and (min-width: 1025px) {
+      width: 97.5%;
+      border-right: 0.8vw solid $borderColor;
+      padding-left: 20vw;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      border-right: 1.3vw solid $borderColor;
+    }
+    @media only screen and (min-width: 1500px) {
+    }
+
+    .jobs {
+      display: flex;
+
+      & p {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .job-decr {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        & .job-header {
+          display: flex;
+          min-width: 100%;
+
+          & .period {
+            margin-left: auto;
+            color: gray;
+            font-size: 2vw;
+
+            @media only screen and (min-width: 1025px) {
+              font-size: 16px;
+              margin-right: 2vw;
+            }
+          }
+        }
+      }
+    }
+
+    & .tech {
+      padding: 20px 50px 0 0;
+      display: flex;
+
+      .words span {
+        background: $skillsBackground;
+        border-radius: 0.3vw;
+        padding: 0.15vw 0.3vw;
+        margin: 0 0.3vw;
+        font-weight: 900;
+        color: $skillsColor;
+      }
+    }
+  }
+
+  .leftDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18vw;
+    height: 100%;
+    background-color: $leftDivBg;
+  }
+
+  .iskustvo > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      opacity: 1;
+    }
+  }
+
+  .iskustvo > div:nth-child(2) {
+    position: absolute;
+    flex: 1 1 1;
+    overflow-y: visible;
+  }
+
+  .iskustvo > div:nth-child(3) {
+    position: relative;
+    flex: 1 1 1;
+    overflow-y: visible;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    & .skillsTitle {
+      display: flex;
+      align-self: center;
+      display: inline-flex;
+      flex: 0 1 6%;
+    }
+
+    & .icons {
+      flex: 1 1 92%;
+    }
+
+    & .mainSkills {
+      display: flex;
+      flex: 1 1 92%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    & .basic {
+      flex: 1 1 100%;
+      display: flex;
+
+      .basicTitle {
+        display: flex;
+        align-self: center;
+        flex: 0 1 6%;
+      }
+
+      .next {
+        background: url("./images/skills/next.png");
+        background: url("./images/skills/next.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .typescript {
+        background: url("./images/skills/typescript.png");
+        background: url("./images/skills/typescript.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .php {
+        background: url("./images/skills/php.png");
+        background: url("./images/skills/php.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .sql {
+        background: url("./images/skills/sql.png");
+        background: url("./images/skills/sql.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .mongodb {
+        background: url("./images/skills/mdb.png");
+        background: url("./images/skills/mdb.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .woo {
+        background: url("./images/skills/woo.png");
+        background: url("./images/skills/woo.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .icons {
+      display: flex;
+      display: none;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      @media only screen and (min-width: 1025px) {
+        padding-right: 17%;
+      }
+    }
+    & .skill {
+      width: 7vw;
+      height: 10vw;
+      margin-right: 2vw;
+      transition: 0.3s transform;
+      @media only screen and (min-width: 768px) {
+      }
+      @media only screen and (min-width: 1025px) {
+        width: 3vw;
+        height: 5vw;
+        margin-right: 1vw;
+      }
+    }
+  }
+
+  .iskustvo > div:nth-child(4) {
+    position: relative;
+    overflow: visible;
+    flex: 1 1 1;
+    padding-right: 0vw;
+  }
+
+  .iskustvo > div:nth-child(5) {
+    position: relative;
+    overflow: visible;
+    flex: 1 1 1;
+    & .rotated {
+      &:nth-child(1) {
+        position: absolute;
+        overflow: visible;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 104.5%;
+        transform: skewX(17deg) rotate(17deg);
+        transform-origin: 100% 0%;
+        background-color: rgba(164, 182, 231, 0.2);
+        z-index: 4;
+      }
+    }
+  }
+
+  .works {
+    position: relative;
+    line-height: 2.5vw;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 20vw;
+    // background: lighten(rgb(234, 234, 243), 5%);
+    background-color: white;
+    color: white;
+    border-right: 2rem solid $borderColor;
+    border-right: 1.5vw solid $borderColor;
+
+    @media only screen and (min-width: 768px) {
+      border-right: 1.3vw solid $borderColor;
+    }
+    @media only screen and (min-width: 1025px) {
+      border-right: 0.8vw solid $borderColor;
+      width: 97.5%;
+    }
+
+    & p > span {
+      @media only screen and (min-width: 1025px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .obrazovanje {
+    position: relative;
+    top: 160%;
+    line-height: 2.5vw;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 20vw;
+    background-color: white;
+    color: white;
+    border-right: 2rem solid $borderColor;
+    border-right: 1.5vw solid $borderColor;
+    @media only screen and (min-width: 768px) {
+      border-right: 1.3vw solid $borderColor;
+    }
+    @media only screen and (min-width: 1025px) {
+      border-right: 0.8vw solid $borderColor;
+    }
+    @media only screen and (min-width: 1500px) {
+      // width: 92.5%;
+    }
 
     & p {
       display: flex;
-      flex-wrap: wrap;
-      flex: 1 1 100%;
-      width: 100%;
-      margin-bottom: 1rem;
 
-      .job-decr {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      & .job-header {
+      .job-header {
         display: flex;
         min-width: 100%;
 
         & .period {
           margin-left: auto;
-          color: gray;
-          font-size: 2vw;
-
           @media only screen and (min-width: 1025px) {
-            font-size: 16px;
             margin-right: 2vw;
           }
         }
@@ -482,482 +721,241 @@ input {
     }
   }
 
-  & .tech {
-    padding: 20px 50px 0 0;
+  .kursevi {
+    position: relative;
+    top: 140%;
+    line-height: 2.5vw;
+    width: 97.5%;
     display: flex;
-
-    .words span {
-      background: $skillsBackground;
-      border-radius: 0.3vw;
-      padding: 0.15vw 0.3vw;
-      margin: 0 0.3vw;
-      font-weight: 900;
-      color: $skillsColor;
-    }
-  }
-}
-
-.leftDiv {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 18vw;
-  height: 100%;
-  background-color: $leftDivBg;
-}
-
-.iskustvo > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  transition: 0.3s;
-
-  &:hover {
-    transition: 0.3s;
-    opacity: 1;
-  }
-}
-
-.iskustvo > div:nth-child(2) {
-  position: absolute;
-  flex: 1 1 1;
-  overflow-y: visible;
-}
-
-.iskustvo > div:nth-child(3) {
-  position: relative;
-  flex: 1 1 1;
-  overflow-y: visible;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  & .skillsTitle {
-    display: flex;
-    align-self: center;
-    display: inline-flex;
-    flex: 0 1 6%;
-  }
-
-  & .icons {
-    flex: 1 1 92%;
-  }
-
-  & .mainSkills {
-    display: flex;
-    flex: 1 1 92%;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  & .basic {
-    flex: 1 1 100%;
-    display: flex;
-
-    .basicTitle {
-      display: flex;
-      align-self: center;
-      flex: 0 1 6%;
-    }
-
-    .next {
-      background: url("./images/skills/next.png");
-      background: url("./images/skills/next.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .typescript {
-      background: url("./images/skills/typescript.png");
-      background: url("./images/skills/typescript.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .php {
-      background: url("./images/skills/php.png");
-      background: url("./images/skills/php.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .sql {
-      background: url("./images/skills/sql.png");
-      background: url("./images/skills/sql.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .mongodb {
-      background: url("./images/skills/mdb.png");
-      background: url("./images/skills/mdb.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .woo {
-      background: url("./images/skills/woo.png");
-      background: url("./images/skills/woo.png");
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  }
-  .icons {
-    display: flex;
-    display: none;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    @media only screen and (min-width: 1025px) {
-      padding-right: 17%;
-    }
-  }
-  & .skill {
-    width: 7vw;
-    height: 10vw;
-    margin-right: 2vw;
-    transition: 0.3s transform;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 20vw;
+    background-color: white;
+    color: white;
+    border-right: 2rem solid $borderColor;
+    border-right: 1.5vw solid $borderColor;
     @media only screen and (min-width: 768px) {
+      border-right: 1.3vw solid $borderColor;
     }
     @media only screen and (min-width: 1025px) {
-      width: 3vw;
-      height: 5vw;
-      margin-right: 1vw;
+      border-right: 0.8vw solid $borderColor;
     }
-  }
-}
-
-.iskustvo > div:nth-child(4) {
-  position: relative;
-  overflow: visible;
-  flex: 1 1 1;
-  padding-right: 0vw;
-}
-
-.iskustvo > div:nth-child(5) {
-  position: relative;
-  overflow: visible;
-  flex: 1 1 1;
-  & .rotated {
-    &:nth-child(1) {
+    @media only screen and (min-width: 1500px) {
+      // width: 92.5%;
+    }
+    & .rotated {
       position: absolute;
       overflow: visible;
       top: 0;
-      left: 0;
+      left: 0%;
       width: 100%;
       height: 104.5%;
       transform: skewX(17deg) rotate(17deg);
       transform-origin: 100% 0%;
-      background-color: rgba(164, 182, 231, 0.2);
-      z-index: 4;
+      background-color: rgb(232, 240, 250);
+      z-index: 1;
+    }
+    & .rotated:nth-child(2) {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      width: 100%;
+      height: 104.5%;
+      transform: skewX(-17deg) rotate(-17deg);
+      transform-origin: 100% 0%;
+      background-color: rgba(171, 201, 230, 0.6);
+      z-index: 2;
     }
   }
-}
 
-.works {
-  position: relative;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
-  // background: lighten(rgb(234, 234, 243), 5%);
-  background-color: white;
-  color: white;
-  border-right: 2rem solid $borderColor;
-  border-right: 1.5vw solid $borderColor;
-
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid $borderColor;
-  }
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid $borderColor;
+  .jez {
+    position: relative;
+    top: 120%;
+    line-height: 2.5vw;
     width: 97.5%;
-  }
-
-  & p > span {
-    @media only screen and (min-width: 1025px) {
-      font-size: 16px;
-    }
-  }
-}
-
-.obrazovanje {
-  position: relative;
-  top: 160%;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
-  background-color: white;
-  color: white;
-  border-right: 2rem solid $borderColor;
-  border-right: 1.5vw solid $borderColor;
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid $borderColor;
-  }
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid $borderColor;
-  }
-  @media only screen and (min-width: 1500px) {
-    // width: 92.5%;
-  }
-
-  & p {
     display: flex;
-
-    .job-header {
-      display: flex;
-      min-width: 100%;
-
-      & .period {
-        margin-left: auto;
-        @media only screen and (min-width: 1025px) {
-          margin-right: 2vw;
-        }
-      }
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 20vw;
+    background-color: white;
+    color: white;
+    border-right: 2rem solid $borderColor;
+    border-right: 1.5vw solid $borderColor;
+    @media only screen and (min-width: 768px) {
+      border-right: 1.3vw solid $borderColor;
+    }
+    @media only screen and (min-width: 1025px) {
+      border-right: 0.8vw solid $borderColor;
+    }
+    @media only screen and (min-width: 1500px) {
+      // width: 92.5%;
+    }
+    & .rotated {
+      position: absolute;
+      overflow: visible;
+      top: 0;
+      left: 0%;
+      width: 100%;
+      height: 104.5%;
+      transform: skewX(17deg) rotate(17deg);
+      transform-origin: 100% 0%;
+      background-color: rgba(225, 227, 255, 0.3);
+      z-index: 3;
+    }
+    & .rotated:nth-child(2) {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      width: 100%;
+      height: 104.5%;
+      background-color: rgb(255, 225, 245);
+      transform: skewX(-17deg) rotate(-17deg);
+      transform-origin: 100% 0%;
+      background-color: rgba(151, 172, 211, 0.2);
+      z-index: 2;
     }
   }
-}
 
-.kursevi {
-  position: relative;
-  top: 140%;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
-  background-color: white;
-  color: white;
-  border-right: 2rem solid $borderColor;
-  border-right: 1.5vw solid $borderColor;
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid $borderColor;
-  }
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid $borderColor;
-  }
-  @media only screen and (min-width: 1500px) {
-    // width: 92.5%;
-  }
-  & .rotated {
-    position: absolute;
-    overflow: visible;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 104.5%;
-    transform: skewX(17deg) rotate(17deg);
-    transform-origin: 100% 0%;
-    background-color: rgb(232, 240, 250);
-    z-index: 1;
-  }
-  & .rotated:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 104.5%;
-    transform: skewX(-17deg) rotate(-17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(171, 201, 230, 0.6);
-    z-index: 2;
-  }
-}
-
-.jez {
-  position: relative;
-  top: 120%;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
-  background-color: white;
-  color: white;
-  border-right: 2rem solid $borderColor;
-  border-right: 1.5vw solid $borderColor;
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid $borderColor;
-  }
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid $borderColor;
-  }
-  @media only screen and (min-width: 1500px) {
-    // width: 92.5%;
-  }
-  & .rotated {
-    position: absolute;
-    overflow: visible;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 104.5%;
-    transform: skewX(17deg) rotate(17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(225, 227, 255, 0.3);
-    z-index: 3;
-  }
-  & .rotated:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 104.5%;
-    background-color: rgb(255, 225, 245);
-    transform: skewX(-17deg) rotate(-17deg);
-    transform-origin: 100% 0%;
-    background-color: rgba(151, 172, 211, 0.2);
-    z-index: 2;
-  }
-}
-
-.ostale {
-  position: relative;
-  top: 179.9%;
-  line-height: 2.5vw;
-  width: 97.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
-  background-color: white;
-  color: white;
-  margin-bottom: 10%;
-  border-radius: 0px 0px 0px 3.5rem;
-  border-right: 2rem solid $borderColor;
-  border-right: 1.5vw solid $borderColor;
-  border-radius: 0px 0px 0px 10vw;
-  @media only screen and (min-width: 768px) {
-    border-right: 1.3vw solid $borderColor;
-    border-radius: 0px 0px 0px 7vw;
-  }
-  @media only screen and (min-width: 1025px) {
-    border-right: 0.8vw solid $borderColor;
-    border-radius: 0px 0px 0px 3.5vw;
-  }
-  @media only screen and (min-width: 1500px) {
-    // width: 92.5%;
-    // border-radius: 0px 0px 0px 5vw;
-  }
-  .leftDiv {
+  .ostale {
+    position: relative;
+    top: 179.9%;
+    line-height: 2.5vw;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5vw 0 1.5vw 20vw;
+    background-color: white;
+    color: white;
+    margin-bottom: 10%;
+    border-radius: 0px 0px 0px 3.5rem;
+    border-right: 2rem solid $borderColor;
+    border-right: 1.5vw solid $borderColor;
     border-radius: 0px 0px 0px 10vw;
     @media only screen and (min-width: 768px) {
+      border-right: 1.3vw solid $borderColor;
       border-radius: 0px 0px 0px 7vw;
     }
     @media only screen and (min-width: 1025px) {
+      border-right: 0.8vw solid $borderColor;
       border-radius: 0px 0px 0px 3.5vw;
     }
     @media only screen and (min-width: 1500px) {
+      // width: 92.5%;
       // border-radius: 0px 0px 0px 5vw;
     }
-  }
-  & .text {
-    display: none;
-  }
-  & .images {
-    display: block;
-
-    & img {
-      margin-right: 1vw;
-      width: 20px;
-      height: auto;
-
+    .leftDiv {
+      border-radius: 0px 0px 0px 10vw;
+      @media only screen and (min-width: 768px) {
+        border-radius: 0px 0px 0px 7vw;
+      }
       @media only screen and (min-width: 1025px) {
-        width: 30px;
+        border-radius: 0px 0px 0px 3.5vw;
       }
-
-      &:last-child {
-        margin-right: 0vw;
+      @media only screen and (min-width: 1500px) {
+        // border-radius: 0px 0px 0px 5vw;
       }
     }
+    & .text {
+      display: none;
+    }
+    & .images {
+      display: block;
 
-    & > * {
-      display: inline-flex;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-self: center;
-      height: 2vw;
-      margin-right: 0.1vw;
+      & img {
+        margin-right: 1vw;
+        width: 20px;
+        height: auto;
+
+        @media only screen and (min-width: 1025px) {
+          width: 30px;
+        }
+
+        &:last-child {
+          margin-right: 0vw;
+        }
+      }
+
+      & > * {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-self: center;
+        height: 2vw;
+        margin-right: 0.1vw;
+      }
     }
   }
-}
 
-audio {
-  position: absolute;
-  top: -50%;
-}
-
-p a {
-  color: $linksColor;
-  opacity: 1;
-  -webkit-text-stroke: 0px black;
-  text-decoration: none;
-}
-
-.iskustvo,
-.skills,
-.kursevi,
-.jez,
-.obrazovanje,
-.ostale {
-  transition: 0.5s all;
-  -webkit-transition: all 0.7, border 0.01s;
-}
-
-div.iskustvo:hover,
-div.works:hover,
-div.kursevi:hover,
-div.jez:hover,
-div.obrazovanje:hover,
-div.ostale:hover {
-  transition: 0.2s;
-  -webkit-transition: 0.3s;
-  background: $hoverColor;
-}
-
-p {
-  line-height: 8vw;
-
-  @media only screen and (min-width: 768px) {
-    line-height: 6vw;
+  audio {
+    position: absolute;
+    top: -50%;
   }
-  @media only screen and (min-width: 1025px) {
-    line-height: 3rem;
+
+  p a {
+    color: $linksColor;
+    opacity: 1;
+    -webkit-text-stroke: 0px black;
+    text-decoration: none;
   }
+
+  .iskustvo,
+  .skills,
+  .kursevi,
+  .jez,
+  .obrazovanje,
+  .ostale {
+    transition: 0.5s all;
+    -webkit-transition: all 0.7, border 0.01s;
+  }
+
+  div.iskustvo:hover,
+  div.works:hover,
+  div.kursevi:hover,
+  div.jez:hover,
+  div.obrazovanje:hover,
+  div.ostale:hover {
+    transition: 0.2s;
+    -webkit-transition: 0.3s;
+    background: $hoverColor;
+  }
+
+  p {
+    line-height: 8vw;
+
+    @media only screen and (min-width: 768px) {
+      line-height: 6vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      line-height: 3rem;
+    }
+  }
+
+  .iskustvo p {
+    line-height: 8vw;
+
+    @media only screen and (min-width: 768px) {
+      line-height: 6vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      line-height: 3rem;
+    }
+  }
+
+  .all > div {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+
+    @media only screen and (min-width: 768px) {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
+  }
+
+  // sass --watch css/style.scss css/style.css
 }
-
-.iskustvo p {
-  line-height: 8vw;
-
-  @media only screen and (min-width: 768px) {
-    line-height: 6vw;
-  }
-  @media only screen and (min-width: 1025px) {
-    line-height: 3rem;
-  }
-}
-
-.all > div {
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-
-  @media only screen and (min-width: 768px) {
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-  }
-  @media only screen and (min-width: 1025px) {
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-  }
-}
-
-// sass --watch css/style.scss css/style.css
-
