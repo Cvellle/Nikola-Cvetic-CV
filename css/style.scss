@@ -16,7 +16,10 @@ $h2Color: rgb(98, 78, 107);
 $h2Color: rgba(0, 0, 0, 0.671);
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
+  font-family: "Century Gothic";
+  src: local("Century Gothic, sans-serif"),
   font-family: "Century Gothic";
   src: local("Century Gothic, sans-serif"),
     url(../century-gothic-font/CenturyGothic.ttf);
@@ -24,6 +27,7 @@ $h2Color: rgba(0, 0, 0, 0.671);
 }
 
 $centuryGothic: Century Gothic;
+$openSans: "Open sans", sans-serif;
 $openSans: "Open sans", sans-serif;
 $Trebuchet: MS, sans-serif;
 
@@ -104,6 +108,7 @@ h4 {
   transition: 0.5s;
   background-size: contain;
   background-image: url("./images/pr3.png");
+  background-image: url("./images/pr3.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 80px;
@@ -143,12 +148,20 @@ h1 {
 }
 
 .circular--portrait {
+.circular--portrait {
   position: absolute;
   left: 20px;
   width: 8vw;
   height: 8vw;
   overflow: hidden;
+  left: 20px;
+  width: 8vw;
+  height: 8vw;
+  overflow: hidden;
   border-radius: 50%;
+  top: 17%;
+  left: 5%;
+
   top: 17%;
   left: 5%;
 
@@ -548,11 +561,13 @@ input {
 
     .next {
       background: url("./images/skills/next.png");
+      background: url("./images/skills/next.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .typescript {
+      background: url("./images/skills/typescript.png");
       background: url("./images/skills/typescript.png");
       background-size: 100% auto;
       background-position: center;
@@ -560,11 +575,13 @@ input {
     }
     .php {
       background: url("./images/skills/php.png");
+      background: url("./images/skills/php.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .sql {
+      background: url("./images/skills/sql.png");
       background: url("./images/skills/sql.png");
       background-size: 100% auto;
       background-position: center;
@@ -572,11 +589,13 @@ input {
     }
     .mongodb {
       background: url("./images/skills/mdb.png");
+      background: url("./images/skills/mdb.png");
       background-size: 100% auto;
       background-position: center;
       background-repeat: no-repeat;
     }
     .woo {
+      background: url("./images/skills/woo.png");
       background: url("./images/skills/woo.png");
       background-size: 100% auto;
       background-position: center;
@@ -941,3 +960,4 @@ p {
 }
 
 // sass --watch css/style.scss css/style.css
+
