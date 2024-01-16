@@ -122,9 +122,10 @@
     display: flex;
     margin-right: auto;
     align-self: center;
-    top: 15%;
+    top: 16%;
     left: 4%;
-    height: 70%;
+    height: 55px;
+    width: 55px;
     border-radius: 2vw;
     border-radius: 50%;
     transition: 0.5s;
