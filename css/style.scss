@@ -33,6 +33,21 @@ h4 {
   padding-inline-end: 0;
 }
 
+.translation {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1000;
+}
+
+.translation a {
+  color: rgb(141, 141, 141);
+  margin: 0 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .all-wrapper {
   padding: 0 0 0 2.5%;
 }

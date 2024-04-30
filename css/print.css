@@ -88,6 +88,10 @@
     line-height: 2vh;
   }
 
+  .translation {
+    display: none;
+  }
+
   .all-wrapper {
     padding: 0;
     max-height: 100vh;

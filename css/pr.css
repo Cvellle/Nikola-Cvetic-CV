@@ -35,6 +35,9 @@
         width: 17em;
         cursor: text;
     }
+    .translation {
+        display: none;
+    }
     .all-wrapper {
         padding: 0;
     }
