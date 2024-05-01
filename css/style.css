@@ -47,10 +47,9 @@ h4 {
     top: 50px;
     right: 50px;
     z-index: 1000; }
-
-  a {
-    margin: 0 10px;
-    font-size: 25px; } }
+    .translation a {
+      margin: 0 10px;
+      font-size: 25px; } }
 .all-wrapper {
   padding: 0 0 0 2.5%; }
 
