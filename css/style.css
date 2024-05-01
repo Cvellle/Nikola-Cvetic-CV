@@ -29,18 +29,28 @@ h4 {
   padding-inline-end: 0; }
 
 .translation {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  z-index: 1000; }
+  position: relative;
+  display: flex;
+  top: 0px;
+  width: 100%;
+  justify-content: flex-end; }
+  .translation a {
+    color: #8d8d8d;
+    margin: 2vw 20px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; }
 
-.translation a {
-  color: #8d8d8d;
-  margin: 0 10px;
-  font-size: 25px;
-  font-weight: bold;
-  text-decoration: none; }
+@media only screen and (min-width: 1025px) {
+  .translation {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1000; }
 
+  a {
+    margin: 0 10px;
+    font-size: 25px; } }
 .all-wrapper {
   padding: 0 0 0 2.5%; }
 
