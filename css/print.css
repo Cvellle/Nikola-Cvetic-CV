@@ -194,6 +194,10 @@
     z-index: 1;
   }
 
+  .licni2 h1 {
+    font-size: 1.4rem;
+  }
+
   .licni2 h2 {
     margin-top: 3%;
   }
