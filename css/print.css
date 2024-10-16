@@ -123,7 +123,6 @@
   h1 {
     position: relative;
     top: 0vh;
-    margin-top: 2vw;
   }
 
   .circular--portrait {
@@ -238,7 +237,7 @@
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    height: 5vh;
+    height: 9vh;
     transform: translateY(0.1vh);
     line-height: 2vw;
     padding: 0.5vw 0 0.5vw 20vw;
@@ -292,9 +291,6 @@
     min-width: 100%;
   }
 
-  .iskustvo p > * {
-  }
-
   .works {
     position: relative;
     width: 100%;
@@ -311,6 +307,15 @@
     font-size: 1.15vw;
   }
 
+  .iskustvo .industry {
+    background: #333134;
+    border-radius: 0.3vw;
+    padding: 0.15vw 0.3vw;
+    margin: 0 0.3vw;
+    font-weight: 900;
+    color: white;
+  }
+
   .jez {
     background-color: var(--differentBackground);
     position: relative;
@@ -319,7 +324,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0.4vh 0 0.4vh 20vw;
+    padding: 0.15vh 0 0.15vh 20vw;
     color: white;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
@@ -328,11 +333,11 @@
   .kursevi {
     position: relative;
     width: 100%;
-    height: 9.5vh;
+    height: 8.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0.4vh 0 0.4vh 20vw;
+    padding: 0.15vh 0 0.15vh 20vw;
     color: white;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
@@ -342,11 +347,11 @@
     background-color: var(--differentBackground);
     position: relative;
     width: 100%;
-    height: 9.5vh;
+    height: 8.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0.4vh 0 0.4vh 20vw;
+    padding: 0.15vh 0 0.15vh 20vw;
     color: white;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
@@ -355,11 +360,11 @@
   .ostale {
     position: relative;
     width: 100%;
-    height: 9.5vh;
+    height: 8.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0.4vh 0 0.4vh 20vw;
+    padding: 0.15vh 0 0.15vh 20vw;
     border-radius: 0px 0px 0px 7rem;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
@@ -387,6 +392,7 @@
     text-decoration: none;
   }
   * {
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }

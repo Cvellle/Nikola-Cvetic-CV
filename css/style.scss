@@ -159,7 +159,7 @@ h1 {
 @media only screen and (min-width: 1025px) {
   h1 {
     margin-top: -1vw;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -230,6 +230,18 @@ h2 {
     font-size: 22px;
   }
 }
+.licni2 .developer {
+  font-size: 3.5vw;
+}
+@media only screen and (min-width: 768px) {
+  .licni2 .developer {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+}
+.licni2 .introduction {
+  margin-top: 0;
+}
 
 .iskustvo h2 {
   top: 5.5vw;
@@ -275,10 +287,9 @@ input {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   height: 20vw;
   width: 97.5%;
-  margin-top: 7vh;
   margin-top: 10vw;
   padding: 4.6vw 0 4.6vw 15.7vw;
   background: white;
@@ -446,8 +457,16 @@ input {
 }
 .iskustvo .jobs p .job-header {
   display: flex;
+  flex-wrap: nowrap;
   min-width: 100%;
 }
+
+@media only screen and (min-width: 1025px) {
+  .iskustvo .jobs p .job-header {
+    flex-wrap: nowrap;
+  }
+}
+
 .iskustvo .jobs p .job-header .period {
   margin-left: auto;
   color: gray;
@@ -464,6 +483,15 @@ input {
   display: flex;
 }
 .iskustvo .tech .words span {
+  background: #333134;
+  border-radius: 0.3vw;
+  padding: 0.15vw 0.3vw;
+  margin: 0 0.3vw;
+  font-weight: 900;
+  color: white;
+}
+
+.iskustvo .industry {
   background: #333134;
   border-radius: 0.3vw;
   padding: 0.15vw 0.3vw;
@@ -934,3 +962,4 @@ p {
 }
 
 /*# sourceMappingURL=style.css.map */
+// sass --watch css/style.scss:css/style.css
