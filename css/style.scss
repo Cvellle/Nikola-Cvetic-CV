@@ -1,3 +1,5 @@
+// sass --watch css/style.scss:css/style.css
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
   font-family: "Century Gothic";
@@ -240,7 +242,10 @@ h2 {
   }
 }
 .licni2 .introduction {
-  margin-top: 10px;
+  line-height: unset;
+}
+.licni2 .introduction a {
+  display: block;
 }
 
 .iskustvo h2 {
@@ -307,7 +312,6 @@ input {
   }
 }
 .licni2 p {
-  height: 3vw;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {

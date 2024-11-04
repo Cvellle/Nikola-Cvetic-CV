@@ -245,7 +245,20 @@
   }
 
 .licni2 .introduction {
-   margin-top: 0px;
+  margin: 0;
+}
+
+.licni2 .introduction p {
+  line-height: 0.3vw;
+  height: 0.3vw;
+  margin: 0;
+}
+
+.licni2 .introduction a {
+  display: block;
+  line-height: 0.3vw;
+  height: 0.3vw;
+  margin: 0;
 }
 
   .licni {
