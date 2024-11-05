@@ -162,13 +162,12 @@ h1 {
 }
 .circular--portrait {
   position: absolute;
-  left: 20px;
-  width: 8vw;
-  height: 8vw;
+  top: 1vw;
+  left: 4vw;
+  width: 10vw;
+  height: 10vw;
   overflow: hidden;
   border-radius: 50%;
-  top: 17%;
-  left: 5%;
 }
 
 @media only screen and (max-width: 767px) {
