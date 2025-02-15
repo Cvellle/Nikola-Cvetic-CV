@@ -256,11 +256,12 @@
   margin: 0;
 }
 
-.licni2 .introduction a {
+.licni2 .introduction a, .introduction .portfolio {
   display: block;
   line-height: 0.3vw;
   height: 0.3vw;
   margin: 0;
+  font-size: 50px;
 }
 
   .licni {

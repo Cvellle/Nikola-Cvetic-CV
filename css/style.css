@@ -250,10 +250,14 @@ h2 {
 }
 .licni2 .introduction {
   line-height: unset;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .licni2 .introduction a {
   display: block;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .iskustvo h2 {
