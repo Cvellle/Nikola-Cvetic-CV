@@ -259,12 +259,17 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
 }
+
 .licni2 .introduction a {
   display: block;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 900;
 }
-
+@media only screen and (min-width: 768px) {
+  .licni2 .introduction a {
+    font-size: 20px;
+  }
+}
 .iskustvo h2 {
   top: 5.5vw;
 }
