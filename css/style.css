@@ -531,6 +531,10 @@ input {
   color: white;
 }
 
+.job-header {
+  font-size: 19px;
+}
+
 .job-desc {
   display: block;
 }
