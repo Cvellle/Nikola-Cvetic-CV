@@ -18,12 +18,9 @@
     --sectionYpadding: 2vh;
     --smallSectionHeight: 9.2vh;
     --font: 'Open sans', sans-serif;
-    --backgroundColor: #d8f1ee;
-    --backgroundColor: #d8eef1;
-    --backgroundColor: rgba(245, 245, 245, 0.432);
-    --backgroundColor: #9ec9eb;
     --backgroundColor: white;
-    --differentBackground: #f9fdfd;
+    /* --differentBackground: #f9fdfd; */
+    --differentBackground: white;
     --borderColor: #95d3e5;
     --borderColor: rgb(98, 78, 107);
     --borderColor: rgb(255, 255, 255);
@@ -286,28 +283,29 @@
   }
 
   .iskustvo {
+    padding-left: 20vw;
     background-color: var(--differentBackground);
     position: relative;
     width: 100%;
-    /* comment if needed */
-    /* height: 30.8vh; */
+    height: 45vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     color: white;
     border-right: var(--borderWidth) solid var(--borderColor);
-    padding-left: 20vw;
     z-index: 10;
   }
 
   .jobs {
+    padding-top: 1.5vh;
     width: 100%;
   }
 
-  .iskustvo p {
+  .iskustvo .job { 
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 1vh;
   }
 
   .job-header {
@@ -439,4 +437,5 @@ br + span {
 
 .tech {
   display: flex;
+  margin-top: 2vh;
 }

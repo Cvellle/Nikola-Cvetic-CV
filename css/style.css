@@ -519,6 +519,7 @@ input {
   margin: 0 0.3vw;
   font-weight: 900;
   color: white;
+  white-space: pre;
 }
 
 .iskustvo .industry {
@@ -528,6 +529,10 @@ input {
   margin: 0 0.3vw;
   font-weight: 900;
   color: white;
+}
+
+.job-desc {
+  display: block;
 }
 
 .leftDiv {
