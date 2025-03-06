@@ -531,10 +531,11 @@ input {
   color: white;
 }
 
-.job-header {
-  font-size: 19px;
+@media only screen and (min-width: 1025px) {
+  .job-header {
+    font-size: 19px;
+  }
 }
-
 .job-desc {
   display: block;
 }
