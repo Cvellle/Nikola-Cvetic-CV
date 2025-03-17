@@ -15,7 +15,7 @@
 
 @media only print {
   :root {
-    --sectionYpadding: 2vh;
+    --sectionYpadding: 5.2vh;
     --smallSectionHeight: 9.2vh;
     --font: 'Open sans', sans-serif;
     --backgroundColor: white;
@@ -287,7 +287,7 @@
     background-color: var(--differentBackground);
     position: relative;
     width: 100%;
-    height: 45vh;
+    height: 43vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -305,7 +305,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
   }
 
   .job-header {
