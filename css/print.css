@@ -26,8 +26,8 @@
     --borderColor: rgb(98, 78, 107);
     --borderColor: rgb(255, 255, 255);
     --borderWidth: 1.1vw;
-    --leftDivBg: #cae8e6;
     --leftDivBg: rgba(212, 241, 245, 0.473);
+    /* --leftDivBg: #cae8e646; */
     --mainFont: 1.4vw;
     --linksColor: #47869b;
     --linksColor: rgb(142, 89, 167);
@@ -152,6 +152,7 @@
   }
 
   .leftDiv {
+    border-right: 10px solid rgba(0, 0, 0, 0.651);
     position: absolute;
     left: 0;
     display: block;
@@ -162,6 +163,7 @@
   }
 
   .words {
+    padding-top: 1.5vh;
     display: inline-block !important;
     flex: 1 1 100%;
   }
@@ -299,7 +301,7 @@
     background-color: var(--differentBackground);
     position: relative;
     width: 100%;
-    height: 43vh;
+    /* height: 43vh; */
     height: 46vh;
     display: flex;
     flex-direction: column;
@@ -310,10 +312,8 @@
   }
 
   .jobs {
-    /* padding-top: 1.5vh; */
-    padding-top: 0vh;
+    padding-top: 1.5vh;
     margin: 0;
-    padding: 0;
     width: 100%;
   }
 
@@ -321,7 +321,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 0.2vh;
+    margin-bottom: 3vh;
     /* margin-bottom: 0.2vh; */
   }
 
@@ -468,6 +468,6 @@ br + span {
 
 .tech {
   display: flex;
-  margin-top: 2vh;
-  margin-top: 1.5vh;
+  margin-top: 0.5vh;
+  /* margin-top: 2.5vh; */
 }
