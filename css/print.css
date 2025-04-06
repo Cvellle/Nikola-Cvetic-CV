@@ -15,6 +15,7 @@
 
 @media only print {
   :root {
+    --mainTextColor: rgb(15, 13, 82);
     --sectionYpadding: 5.2vh;
     --sectionYpadding: 4.2vh;
     --smallSectionHeight: 9vh;
@@ -75,6 +76,7 @@
     font-weight: 900;
     color: #bddfe6;
     color: rgba(0, 0, 0, 0.671);
+    color: var(--mainTextColor);
     margin: 0.5vw 0vw;
   }
 
@@ -131,16 +133,17 @@
     /* display: flex; */
     margin-right: auto;
     align-self: center;
-    top: 1vw;
-    left: 4vw;
+    /* top: 1vw; */
+    /* left: 4vw; */
     height: 11vw;
-    width: 11vw;
+    /* width: 11vw; */
+    width: 100%;
     /* top: 2vw;
     left: 3vw;
     height: 12vw; 
     width: 12vw; */
     border-radius: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: 0.5s;
     -webkit-transition: 0.5s;
     z-index: 51;
@@ -152,13 +155,13 @@
   }
 
   .leftDiv {
-    border-right: 10px solid rgba(0, 0, 0, 0.651);
+    /* border-right: 10px solid rgba(0, 0, 0, 0.651); */
     position: absolute;
     left: 0;
     display: block;
     background: var(--leftDivBg);
     height: 100%;
-    width: 18vw;
+    width: 11vh;
     z-index: 0;
   }
 
@@ -193,6 +196,7 @@
     font-family: Trebuchet MS, sans-serif;
     font-weight: 900;
     color: var(--h2Color);
+    color: var(--mainTextColor);
     z-index: 1;
   }
 
@@ -201,12 +205,17 @@
     font-size: 3.5vw;
   }
 
+
   .licni2 h1 + p {
     margin-top: 0.5vw;
     font-size: 1.7vw;
   }
 
   .licni2 h2 {
+    margin-top: 3%;
+  }
+
+  .licni h2 {
     margin-top: 3%;
   }
 
@@ -241,18 +250,23 @@
   }
 
   .licni2 {
-    background-color: var(--differentBackground);
+    /* background-color: var(--differentBackground); */
+    background-color: rgb(203, 226, 231);
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     transform: translateY(0.1vh);
     line-height: 2vw;
     padding: 0.5vw 0 0.5vw 20vw;
     border-right: none;
     z-index: 100;
+  }
+
+  .licni2 .title {
+    color: white;
   }
 
   .licni2 .introduction {
@@ -288,7 +302,7 @@
     background: var(--backgroundColor);
     border-right: none;
     z-index: 100;
-    border-top: 0.15rem solid rgb(226, 226, 226);
+    /* border-top: 0.15rem solid rgb(226, 226, 226); */
     border-bottom: 0.15rem solid rgb(226, 226, 226);
   }
 
@@ -302,7 +316,7 @@
     position: relative;
     width: 100%;
     /* height: 43vh; */
-    height: 36.5vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
