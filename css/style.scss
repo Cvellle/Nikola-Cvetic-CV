@@ -7,11 +7,6 @@
     url(../century-gothic-font/CenturyGothic.ttf);
   font-weight: bold;
 }
-
-$mainTextColor: rgb(15, 13, 82);
-$licni2Bg: rgb(199, 230, 236);
-$licniBg: white;
-
 body {
   background: #cae8e6;
   overflow-x: hidden;
@@ -117,7 +112,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   position: fixed;
-  bottom: 0.2vw;
+  bottom: 1.5vw;
   right: 1.1vw;
   width: 5vw;
   height: auto;
@@ -133,7 +128,7 @@ h4 {
   height: 120px;
 }
 .print-text {
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 900;
 }
 .print-img {
@@ -171,7 +166,6 @@ h1 {
   position: relative;
   font-size: 6vw;
   margin-top: -0.5vw;
-  font-weight: 900;
 }
 @media only screen and (min-width: 768px) {
   h1 {
@@ -188,8 +182,7 @@ h1 {
 .circular--portrait {
   position: absolute;
   top: 1vw;
-  left: 2.5vw;
-  // width: 100%;
+  left: 4vw;
   width: 10vw;
   height: 10vw;
   overflow: hidden;
@@ -197,9 +190,8 @@ h1 {
 }
 @media only screen and (max-width: 767px) {
   .circular--portrait {
-    // top: 22%;
+    top: 22%;
     width: 12vw;
-    width: 100%;
     height: 12vw;
   }
 }
@@ -207,7 +199,6 @@ h1 {
   .circular--portrait {
     top: 25%;
     width: 10vw;
-    width: 100%;
     height: 10vw;
   }
 }
@@ -223,8 +214,7 @@ h2 {
   top: 4.5vw;
   left: 2vw;
   font-weight: 900;
-  // color: rgba(0, 0, 0, 0.671);
-  color: $mainTextColor;
+  color: rgba(0, 0, 0, 0.671);
   z-index: 100;
 }
 @media only screen and (min-width: 768px) {
@@ -300,7 +290,7 @@ p,
 input {
   font-size: 1.02vw;
   font-weight: 900;
-  color: $mainTextColor;
+  color: black;
   font-size: 2.5vw;
   line-height: 5vw;
   word-break: keep-all;
@@ -325,8 +315,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // height: 23vw;
-  height: 15vw;
+  height: 23vw;
   width: 97.5%;
   margin-top: 10vw;
   padding: 4.6vw 0 4.6vw 15.7vw;
@@ -335,19 +324,10 @@ input {
   overflow: visible;
   z-index: 100;
   padding-left: 20vw;
-  background-color: $licni2Bg;
 }
-
-@media only screen and (min-width: 768px) {
-  .licni2 {
-    height: 18vw;
-  }
-}
-
 @media only screen and (min-width: 1025px) {
   .licni2 {
     height: 10.5vw;
-    height: 13vw;
     margin-top: 2.5vw;
     width: 97.5%;
     padding-left: 20vw;
@@ -392,14 +372,6 @@ input {
   }
 }
 
-.title {
-  color: white;
-}
-
-.developer {
-  color: $mainTextColor;
-}
-
 .licni {
   position: relative;
   display: flex;
@@ -407,10 +379,10 @@ input {
   justify-content: space-around;
   height: 25vw;
   width: 97.5%;
-  // border-top: 0.15rem solid #e2e2e2;
+  border-top: 0.15rem solid #e2e2e2;
   border-bottom: 0.15rem solid #e2e2e2;
   padding: 4.6vw 0 4.6vw 15.7vw;
-  background: $licniBg;
+  background: white;
   border-right: none;
   overflow: visible;
   z-index: 100;
@@ -418,7 +390,7 @@ input {
 }
 @media only screen and (min-width: 1025px) {
   .licni {
-    height: 14vw;
+    height: 12.5vw;
     width: 97.5%;
     padding-left: 20vw;
   }
@@ -524,7 +496,6 @@ input {
 .iskustvo .jobs p .job-header .period {
   margin-left: auto;
   color: gray;
-  color: $mainTextColor;
   font-size: 2vw;
 }
 @media only screen and (min-width: 1025px) {
@@ -564,12 +535,10 @@ input {
   display: block;
 }
 .leftDiv {
-  color: rgb(44, 41, 126);
   position: absolute;
   top: 0;
   left: 0;
-  // width: 18vw;
-  width: 15vw;
+  width: 18vw;
   height: 100%;
   background-color: rgba(212, 241, 245, 0.473);
 }
