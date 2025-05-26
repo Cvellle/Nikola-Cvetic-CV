@@ -302,7 +302,7 @@
 
   .iskustvo {
     padding-left: 20vw;
-    padding-bottom: 1vw;
+    padding-bottom: 0vw;
     background-color: var(--differentBackground);
     position: relative;
     width: 100%;
@@ -326,13 +326,17 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 1vh;
+    margin-bottom: 0.3vh;
     /* margin-bottom: 0.2vh; */
   }
 
   .job-header {
     display: flex;
     min-width: 100%;
+  }
+
+  .skills {
+    margin-top: 0;
   }
 
   .works {
