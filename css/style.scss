@@ -324,10 +324,11 @@ input {
   overflow: visible;
   z-index: 100;
   padding-left: 20vw;
+  background: rgba(212, 241, 245, 0.473);
 }
 @media only screen and (min-width: 1025px) {
   .licni2 {
-    height: 10.5vw;
+    height: 12vw;
     margin-top: 2.5vw;
     width: 97.5%;
     padding-left: 20vw;
@@ -1010,8 +1011,7 @@ p {
     padding-top: 2vw;
     padding-bottom: 2vw;
   }
-} 
-
+}
 
 /*# sourceMappingURL=style.css.map */
 // sass --watch css/style.scss:css/style.css
