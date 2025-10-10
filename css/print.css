@@ -18,18 +18,19 @@
     --sectionYpadding: 4.2vh;
     --smallSectionHeight: 9vh;
     --font: "Open sans", sans-serif;
-    --backgroundColor: white;
-    --differentBackground: white;
-    --topSectionBackground: rgb(35 39 47);
-    --borderColor: rgb(255, 255, 255);
-    --borderWidth: 1.1vw;
-    --leftDivBg: rgb(35 39 47);
-    --mainFont: 1.4vw;
+    --topSectionBackground: rgba(223, 247, 247, 0.295);
+    --leftDivBg: rgba(222, 245, 250, 0.7);
+    --h2Color: rgb(170, 212, 221);
+    --h2Color: rgb(18, 35, 83);
     --linksColor: #5a9bcc;
     /* --skillsBackground: #333134; */
     --skillsBackground: rgb(35 39 47);
     --skillsColor: white;
-    --h2Color: rgb(88 196 220);
+    --borderColor: rgb(255, 255, 255);
+    --borderWidth: 1.1vw;
+    --mainFont: 1.4vw;
+    --backgroundColor: white;
+    --differentBackground: white;
   }
 
   body,
@@ -123,7 +124,7 @@
     /* display: flex; */
     margin-right: auto;
     align-self: center;
-    top: 1.5vw;
+    top: 1vw;
     left: 4vw;
     height: 11vw;
     width: 11vw;
@@ -245,7 +246,6 @@
     padding: 0.5vw 0 0.5vw 20vw;
     border-right: none;
     z-index: 100;
-    color: white;
   }
 
   .licni2 .introduction {
@@ -264,11 +264,6 @@
     padding: 0.5vw 0.5vw 0.5vw 0;
     color: var(--linksColor);
   } */
-
-  p.developer {
-    color: white;
-    font-size: 3vw;
-  }
 
   .licni {
     position: relative;
