@@ -740,6 +740,8 @@ input {
   .works {
     border-right: 0.8vw solid white;
     width: 97.5%;
+    flex: row;
+    flex-wrap: nowrap;
   }
 }
 @media only screen and (min-width: 1025px) {

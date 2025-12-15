@@ -719,7 +719,20 @@ input {
   .works {
     border-right: 0.8vw solid white;
     width: 97.5%;
+    flex: row;
+    flex-wrap: nowrap;
   }
+
+  // .works-container {
+  //   flex-direction: row;
+  //   display: flex;
+  //   flex-wrap: nowrap;
+  // }
+
+  // .works-container > div {
+  //   width: 50%;
+  //   max-width: 50%;
+  // }
 }
 @media only screen and (min-width: 1025px) {
   .works p > span {
