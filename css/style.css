@@ -253,16 +253,16 @@ h2 {
   line-height: unset;
   display: flex;
   flex-wrap: nowrap;
+  font-size: 10px;
 }
 
 .licni2 .introduction a {
   display: block;
-  font-size: 10px;
   font-weight: 900;
 }
 
 @media only screen and (min-width: 768px) {
-  .licni2 .introduction a {
+  .licni2 .introduction {
     font-size: 20px;
   }
 }
