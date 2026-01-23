@@ -7,6 +7,10 @@
     url(../century-gothic-font/CenturyGothic.ttf);
   font-weight: bold;
 }
+
+$leftDivWidth: 24vw;
+$rightDivPadding: 25vw;
+
 body {
   background: #cae8e6;
   overflow-x: hidden;
@@ -324,7 +328,7 @@ input {
   border-right: none;
   overflow: visible;
   z-index: 100;
-  padding-left: 20vw;
+  padding-left: $rightDivPadding;
   background: rgba(212, 241, 245, 0.473);
 }
 @media only screen and (min-width: 1025px) {
@@ -332,7 +336,7 @@ input {
     height: 12vw;
     margin-top: 2.5vw;
     width: 97.5%;
-    padding-left: 20vw;
+    padding-left: $rightDivPadding;
   }
 }
 .licni2 p {
@@ -388,13 +392,13 @@ input {
   border-right: none;
   overflow: visible;
   z-index: 100;
-  padding-left: 20vw;
+  padding-left: $rightDivPadding;
 }
 @media only screen and (min-width: 1025px) {
   .licni {
     height: 12.5vw;
     width: 97.5%;
-    padding-left: 20vw;
+    padding-left: $rightDivPadding;
   }
 }
 .licni p {
@@ -455,13 +459,13 @@ input {
   color: white;
   border-right: 1.5vw solid white;
   z-index: 10;
-  padding-left: 20vw;
+  padding-left: $rightDivPadding;
 }
 @media only screen and (min-width: 1025px) {
   .iskustvo {
     width: 97.5%;
     border-right: 0.8vw solid white;
-    padding-left: 20vw;
+    padding-left: $rightDivPadding;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -507,7 +511,7 @@ input {
   }
 }
 .iskustvo .tech {
-  padding: 20px 50px 0 0;
+  padding: 0px 0px 0 0;
   display: flex;
 }
 .iskustvo .tech .words span {
@@ -540,7 +544,7 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  width: 18vw;
+  width: $leftDivWidth;
   height: 100%;
   background-color: rgba(212, 241, 245, 0.473);
 }
@@ -550,6 +554,10 @@ input {
   flex-direction: column;
   justify-content: space-around;
   transition: 0.3s;
+}
+.iskustvo .leftDiv {
+  display: block;
+  padding-left: 1vw;
 }
 .iskustvo > div:hover {
   transition: 0.3s;
@@ -688,7 +696,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
+  padding: 1.5vw 0 1.5vw $rightDivPadding;
   background-color: white;
   color: white;
   border-right: 2rem solid white;
@@ -703,7 +711,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
+  padding: 1.5vw 0 1.5vw $rightDivPadding;
   background-color: white;
   color: white;
   border-right: 2rem solid white;
@@ -748,7 +756,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
+  padding: 1.5vw 0 1.5vw $rightDivPadding;
   background-color: white;
   color: white;
   border-right: 2rem solid white;
@@ -788,7 +796,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
+  padding: 1.5vw 0 1.5vw $rightDivPadding;
   background-color: white;
   color: white;
   border-right: 2rem solid white;
@@ -836,7 +844,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
+  padding: 1.5vw 0 1.5vw $rightDivPadding;
   background-color: white;
   color: white;
   border-right: 2rem solid white;
@@ -885,7 +893,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1.5vw 0 1.5vw 20vw;
+  padding: 1.5vw 0 1.5vw $rightDivPadding;
   background-color: white;
   color: white;
   margin-bottom: 10%;

@@ -16,9 +16,10 @@
 @media only print {
   :root {
     --sectionYpadding: 4.2vh;
-    --smallSectionHeight: 9vh;
+    --rightSectionPadding: 24vw;
+    --smallSectionHeight: 8vh;
     --font: "Open sans", sans-serif;
-    --topSectionBackground: rgba(223, 247, 247, 0.295);
+    --topSectionBackground: rgba(223, 247, 247, 0.12);
     --leftDivBg: rgba(222, 245, 250, 0.7);
     --h2Color: rgb(170, 212, 221);
     --h2Color: rgb(18, 35, 83);
@@ -124,8 +125,8 @@
     /* display: flex; */
     margin-right: auto;
     align-self: center;
-    top: 1vw;
-    left: 4vw;
+    top: 3vw;
+    left: 5.5vw;
     height: 11vw;
     width: 11vw;
     /* top: 2vw;
@@ -151,7 +152,7 @@
     display: block;
     background: var(--leftDivBg);
     height: 100%;
-    width: 18vw;
+    width: 22vw;
     z-index: 0;
   }
 
@@ -240,10 +241,10 @@
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    height: 9.5vh;
+    /* height: 9.5vh; */
     transform: translateY(0.1vh);
     line-height: 2vw;
-    padding: 0.5vw 0 0.5vw 20vw;
+    padding: 0.5vw 0 0.5vw var(--rightSectionPadding);
     border-right: none;
     z-index: 100;
   }
@@ -275,7 +276,7 @@
     /* height: 12vh; */
     transform: translateY(0.1vh);
     line-height: 1vw;
-    padding: 2vw 0 2vw 20vw;
+    padding: 2vw 0 2vw var(--rightSectionPadding);
     background: var(--backgroundColor);
     border-right: none;
     z-index: 100;
@@ -288,19 +289,24 @@
   }
 
   .iskustvo {
-    padding-left: 20vw;
+    padding-left: var(--rightSectionPadding);
     padding-bottom: 0vw;
     background-color: var(--differentBackground);
     position: relative;
     width: 100%;
-    /* height: 43vh; */
-    height: 34vh;
+    height: 46vh;
+    /* height: 36vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     color: white;
     border-right: var(--borderWidth) solid var(--borderColor);
     z-index: 10;
+  }
+
+  .iskustvo .leftDiv {
+    display: block;
+    padding: 6vh 0vw 0 1vw;
   }
 
   .jobs {
@@ -334,7 +340,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0vh 0 0vh 20vw;
+    padding: 0vh 0 0vh var(--rightSectionPadding);
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
   }
@@ -347,7 +353,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--sectionYpadding) 0 var(--sectionYpadding) 20vw;
+    padding: var(--sectionYpadding) 0 var(--sectionYpadding)
+      var(--rightSectionPadding);
     color: white;
     border-right: var(--borderWidth) solid var(--borderColor);
   }
@@ -369,11 +376,12 @@
     background-color: var(--differentBackground);
     position: relative;
     width: 100%;
-    height: 9.2vh;
+    height: var(--smallSectionHeight);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--sectionYpadding) 0 var(--sectionYpadding) 20vw;
+    padding: var(--sectionYpadding) 0 var(--sectionYpadding)
+      var(--rightSectionPadding);
     color: white;
     border-right: var(--borderWidth) solid var(--borderColor);
   }
@@ -385,7 +393,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--sectionYpadding) 0 var(--sectionYpadding) 20vw;
+    padding: var(--sectionYpadding) 0 var(--sectionYpadding)
+      var(--rightSectionPadding);
     color: white;
     border-right: var(--borderWidth) solid var(--borderColor);
   }
@@ -398,7 +407,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--sectionYpadding) 0 var(--sectionYpadding) 20vw;
+    padding: var(--sectionYpadding) 0 var(--sectionYpadding)
+      var(--rightSectionPadding);
     color: white;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
@@ -411,7 +421,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--sectionYpadding) 0 var(--sectionYpadding) 20vw;
+    padding: var(--sectionYpadding) 0 var(--sectionYpadding)
+      var(--rightSectionPadding);
     border-radius: 0px 0px 0px 7rem;
     border-right: 1.5rem solid var(--borderColor);
     border-right: var(--borderWidth) solid var(--borderColor);
@@ -452,13 +463,8 @@
   justify-content: flex-end;
 }
 
-br + span {
-  display: none;
-}
-
-.tech {
-  display: flex;
-  margin-top: 0vh;
-  height: 7.7vh;
-  /* margin-top: 2.5vh; */
+.skills {
+  margin: 0;
+  padding: 0;
+  max-height: 15vh;
 }
