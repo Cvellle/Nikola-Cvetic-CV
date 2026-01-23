@@ -564,8 +564,7 @@ input {
   .personal {
     position: absolute;
     width: 100vw;
-    margin-left: 23vw;
-    background-color: rgba(212, 241, 245, 0.473);
+    margin-left: 24vw;
     padding: 3vw 0 3vw 0vw;
     z-index: -1;
   }
