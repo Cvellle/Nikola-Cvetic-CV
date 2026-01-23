@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
   font-family: "Century Gothic";
-  src: local("Century Gothic, sans-serif"),
+  src:
+    local("Century Gothic, sans-serif"),
     url(../century-gothic-font/CenturyGothic.ttf);
   font-weight: bold;
 }
@@ -184,7 +185,9 @@
     top: 0;
     left: 2.5vw;
     font-size: 1.7vw;
-    font-family: Trebuchet MS, sans-serif;
+    font-family:
+      Trebuchet MS,
+      sans-serif;
     font-weight: 900;
     color: var(--h2Color);
     z-index: 1;
@@ -294,7 +297,7 @@
     background-color: var(--differentBackground);
     position: relative;
     width: 100%;
-    height: 46vh;
+    height: 46.3vh;
     /* height: 36vh; */
     display: flex;
     flex-direction: column;
