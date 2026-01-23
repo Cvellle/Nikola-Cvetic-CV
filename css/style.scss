@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
   font-family: "Century Gothic";
-  src: local("Century Gothic, sans-serif"),
+  src:
+    local("Century Gothic, sans-serif"),
     url(../century-gothic-font/CenturyGothic.ttf);
   font-weight: bold;
 }
@@ -544,11 +545,29 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  width: $leftDivWidth;
+  min-width: $leftDivWidth;
   height: 100%;
   background-color: rgba(212, 241, 245, 0.473);
 }
 
+.iskustvo.leftDiv {
+  position: relative;
+}
+@media only screen and (max-width: 1025px) {
+  .iskustvo .jobs {
+    margin-top: 50vw;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .personal {
+    position: absolute;
+    width: calc(100vw);
+    margin-left: 23vw;
+    background-color: rgba(212, 241, 245, 0.473);
+    padding: 3vw 0 3vw 0vw;
+    z-index: -1;
+  }
+}
 .iskustvo > div {
   display: flex;
   flex-direction: column;
@@ -975,7 +994,9 @@ p a {
 .obrazovanje,
 .ostale {
   transition: 0.5s all;
-  -webkit-transition: all 0.7, border 0.01s;
+  -webkit-transition:
+    all 0.7,
+    border 0.01s;
 }
 
 div.iskustvo:hover,
