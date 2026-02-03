@@ -137,7 +137,7 @@ a:hover {
 .job-header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: baseline;
   font-weight: 700;
   color: var(--dark-navy);
@@ -147,6 +147,7 @@ a:hover {
   font-size: 0.85rem;
   color: var(--main-blue);
   font-style: italic;
+  margin-left: auto;
 }
 
 .skills {
@@ -215,3 +216,4 @@ a:hover {
     right: 4rem;
   }
 }
+// sass --watch css/style.scss:css/style.css
