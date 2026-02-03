@@ -186,7 +186,8 @@
     justify-content: flex-end;
   }
 
-  .skills {
+  .skills b {
+    font-size: 1.2vh;
     font-weight: 900;
   }
   .ostale {
