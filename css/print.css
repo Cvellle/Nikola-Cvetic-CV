@@ -1,6 +1,8 @@
 @media only print {
   :root {
-    --sectionYpadding: 4.2vh;
+    --sectionYpadding: 1vh;
+    --leftLine: #5a9bcc;
+    --leftLine: #5a9bcc35;
     --rightSectionPadding: 2vw;
     /* --smallSectionHeight: 8vh; */
     --smallSectionHeight: 10vh;
@@ -70,9 +72,14 @@
     color-adjust: exact;
   }
 
+  .all {
+    border-left: 1.5vh solid var(--leftLine);
+    height: 100vh;
+  }
+
   section {
-    padding: 0.65vh 2vh;
-    border-left: 2vh solid #5a9bcc;
+    padding: var(--sectionYpadding) 2vh;
+    /* border-left: 2vh solid #5a9bcc; */
   }
 
   .print {
@@ -152,12 +159,20 @@
 
   .top {
     padding-top: 3vh;
-    background-color: var(--topSectionBackground);
     height: 11.5vh;
   }
 
-  .licni {
-    /* height: 10vh; */
+  .personal {
+    justify-content: flex-end;
+    margin-top: -3vh;
+    margin-bottom: 0vh;
+    /* margin-left: auto;
+    width: 45vw; */
+  }
+
+  .personal p {
+    line-height: 0.7vh;
+    font-size: 0.7vh;
   }
 
   .iskustvo {
