@@ -2,14 +2,14 @@
 @media only print {
   :root {
     --sectionYpadding: 0.4vh;
-    --leftLine: #5a9bcc35;
     --leftLine: rgb(248, 252, 255);
     --leftLine: #5a9bcc;
+    --leftLine: #97d7e2e8;
     --navy: #122353;
     --rightSectionPadding: 2vw;
     --smallSectionHeight: 10vh;
     --font: "Open sans", sans-serif;
-    --topSectionBackground: #def3ff;
+    --topSectionBackground: #ccf1f8f8;
     --leftDivBg: rgba(222, 245, 250, 0.7);
     --h1Color: rgb(18, 35, 83);
     --h2Color: rgb(170, 212, 221);
@@ -107,7 +107,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color: var(--topSectionBackground); */
+    background-color: var(--topSectionBackground);
     margin-bottom: 3vh;
   }
 
