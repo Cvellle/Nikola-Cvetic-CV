@@ -9,7 +9,7 @@
     --rightSectionPadding: 2vw;
     --smallSectionHeight: 10vh;
     --font: "Open sans", sans-serif;
-    --topSectionBackground: #ccf1f8f8;
+    --topSectionBackground: #dff8fdf8;
     --leftDivBg: rgba(222, 245, 250, 0.7);
     --h1Color: rgb(18, 35, 83);
     --h2Color: rgb(170, 212, 221);
@@ -103,12 +103,13 @@
     padding-top: 0.5vh;
     /* padding-left: 3vh; */
     /* border-bottom: 1px solid var(--leftLine); */
-    border-bottom: 1px solid rgb(212, 210, 210);
+    /* border-bottom: 1px solid rgb(212, 210, 210); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--topSectionBackground);
     margin-bottom: 3vh;
+    border-radius: 0 0 3rem 0;
   }
 
   h1 {
