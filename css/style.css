@@ -72,8 +72,9 @@ body {
 }
 
 .top {
-  background-color: white;
-  border-bottom: 2px solid var(--main-blue);
+  background-color: #dff8fdf8;
+  border-radius: 0 0 6rem 0;
+  /* border-bottom: 2px solid var(--main-blue); */
   align-items: flex-start;
   padding-top: 3rem;
   width: 100%;
@@ -208,7 +209,7 @@ a:hover {
     order: 2;
     margin-bottom: 0;
     position: absolute;
-    top: 1rem;
+    top: 4rem;
     right: 4rem;
   }
 }
