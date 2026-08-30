@@ -100,7 +100,8 @@
   }
 
   .top {
-    padding-top: 0.5vh;
+    height: 9vh;
+    /* padding-top: 0.5vh; */
     /* padding-left: 3vh; */
     /* border-bottom: 1px solid var(--leftLine); */
     /* border-bottom: 1px solid rgb(212, 210, 210); */
@@ -109,16 +110,17 @@
     justify-content: center;
     background-color: var(--topSectionBackground);
     margin-bottom: 3vh;
-    border-radius: 0 0 3rem 0;
+    border-radius: 0 0 3rem 0rem;
   }
 
   h1 {
     position: relative;
+    margin-top: 0.5vh;
     text-align: center;
     top: 0vh;
     width: 100%;
     color: rgb(18, 35, 83);
-    font-size: 1.8vh;
+    font-size: 2vh;
   }
 
   .developer {
@@ -132,10 +134,10 @@
     position: absolute;
     margin-right: auto;
     align-self: center;
-    top: 2vh;
-    left: 3vh;
-    height: 11vw;
-    width: 11vw;
+    top: 3vh;
+    left: 1.8vh;
+    height: 10vw;
+    width: 10vw;
     outline: 0.5vh solid var(--leftLine);
     /* top: 2vw;
     left: 3vw;
@@ -192,7 +194,7 @@
   }
 
   .personal .links span {
-    margin-left: 3vh;
+    margin-left: 2vh;
   }
 
   .personal p {
