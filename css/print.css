@@ -108,7 +108,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--topSectionBackground);
+    /* background-color: var(--topSectionBackground); */
     margin-bottom: 3vh;
     border-radius: 0 0 3rem 0rem;
   }
@@ -134,7 +134,7 @@
     position: absolute;
     margin-right: auto;
     align-self: center;
-    top: 3vh;
+    top: 1.5vh;
     left: 1.8vh;
     height: 10vw;
     width: 10vw;
